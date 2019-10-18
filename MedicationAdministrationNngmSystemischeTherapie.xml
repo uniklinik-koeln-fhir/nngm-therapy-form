@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/MedicationAdministration" />
+  <version value="0.2" />
+  <name value="MedicationAdministrationNngm" />
+  <title value="nNGM Systemische Therapie" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-10-18" />
+  <publisher value="Universitätsklinikum Köln" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationAdministration" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationAdministration.extension">
+      <path value="MedicationAdministration.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationAdministration.extension:intention">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="intention" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-therapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="studientherapie" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie.extension:teilnahme">
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="teilnahme" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie.extension:studie">
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="studie" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie.extension:studie.value[x].display">
+      <path value="MedicationAdministration.extension.extension.value[x].display" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.extension:offLabelTherapie">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="offLabelTherapie" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OffLabelTherapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.status">
+      <path value="MedicationAdministration.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.statusReason">
+      <path value="MedicationAdministration.statusReason" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
+      </binding>
+    </element>
+    <element id="MedicationAdministration.statusReason.coding">
+      <path value="MedicationAdministration.statusReason.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.statusReason.text">
+      <path value="MedicationAdministration.statusReason.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.medication[x]">
+      <path value="MedicationAdministration.medication[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.medication[x].text">
+      <path value="MedicationAdministration.medication[x].text" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.subject">
+      <path value="MedicationAdministration.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.subject.reference">
+      <path value="MedicationAdministration.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.context">
+      <path value="MedicationAdministration.context" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.context.identifier">
+      <path value="MedicationAdministration.context.identifier" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.context.identifier.system">
+      <path value="MedicationAdministration.context.identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.context.identifier.value">
+      <path value="MedicationAdministration.context.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.supportingInformation">
+      <path value="MedicationAdministration.supportingInformation" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.supportingInformation.extension">
+      <path value="MedicationAdministration.supportingInformation.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationAdministration.supportingInformation.extension:therapieInformationen">
+      <path value="MedicationAdministration.supportingInformation.extension" />
+      <sliceName value="therapieInformationen" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.effective[x]">
+      <path value="MedicationAdministration.effective[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.effective[x].start">
+      <path value="MedicationAdministration.effective[x].start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.effective[x].end">
+      <path value="MedicationAdministration.effective[x].end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.performer">
+      <path value="MedicationAdministration.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.note">
+      <path value="MedicationAdministration.note" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.dosage">
+      <path value="MedicationAdministration.dosage" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x]">
+      <path value="MedicationAdministration.dosage.rate[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x].value">
+      <path value="MedicationAdministration.dosage.rate[x].value" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x].system">
+      <path value="MedicationAdministration.dosage.rate[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x].code">
+      <path value="MedicationAdministration.dosage.rate[x].code" />
+      <min value="1" />
+      <fixedCode value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
