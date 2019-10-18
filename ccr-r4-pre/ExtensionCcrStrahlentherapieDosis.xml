@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/strahlentherapie-dosis" />
+  <version value="0.2" />
+  <name value="ExtensionCcrStrahlentherapieDosis" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-10-18" />
+  <publisher value="Universitätsklinikum Köln" />
+  <fhirVersion value="4.0.0" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Procedure" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:einzeldosis">
+      <path value="Extension.extension" />
+      <sliceName value="einzeldosis" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:einzeldosis.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:einzeldosis.value[x].value">
+      <path value="Extension.extension.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:einzeldosis.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:einzeldosis.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+      <fixedCode value="Gy" />
+    </element>
+    <element id="Extension.extension:gesamtdosis">
+      <path value="Extension.extension" />
+      <sliceName value="gesamtdosis" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:gesamtdosis.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:gesamtdosis.value[x].value">
+      <path value="Extension.extension.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:gesamtdosis.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:gesamtdosis.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+      <fixedCode value="Gy" />
+    </element>
+    <element id="Extension.extension:boost">
+      <path value="Extension.extension" />
+      <sliceName value="boost" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:boost.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:boostdosis">
+      <path value="Extension.extension" />
+      <sliceName value="boostdosis" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:boostdosis.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="Extension.extension:boostdosis.value[x].value">
+      <path value="Extension.extension.value[x].value" />
+      <min value="1" />
+    </element>
+    <element id="Extension.extension:boostdosis.value[x].system">
+      <path value="Extension.extension.value[x].system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Extension.extension:boostdosis.value[x].code">
+      <path value="Extension.extension.value[x].code" />
+      <min value="1" />
+      <fixedCode value="Gy" />
+    </element>
+    <element id="Extension.extension:boostdosisInGesamtdosis">
+      <path value="Extension.extension" />
+      <sliceName value="boostdosisInGesamtdosis" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:boostdosisInGesamtdosis.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
