@@ -1,0 +1,41 @@
+<Procedure>
+  <id value="example"/>
+  <meta>
+    <profile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie"/>
+  </meta>
+   <extension url="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-op">
+      <valueCodeableConcept>
+          <coding>
+              <system value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op " />
+              <code value="kurativ" />
+              <display value="Kurativ" />
+          </coding>
+      </valueCodeableConcept>
+  </extension>
+  <status value="unknown"/>
+  <statusReason>
+    <coding>
+      <system value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason"/>
+      <code value="S"/>
+      <display value="Sonstiges"/>
+    </coding>
+    <text value=""/>
+  </statusReason>
+  <category>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/procedure-category"/>
+      <code value="387713003"/>
+      <display value="Surgical procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/ValueSet/procedure-code"/>
+      <code value="445232009"/>
+      <display value="Boost radiation therapy (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+</Procedure> 
