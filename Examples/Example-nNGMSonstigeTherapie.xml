@@ -1,27 +1,27 @@
 <Procedure>
-  <id value="example"/> 
-  <meta> 
-    <profile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie"/> 
-  </meta> 
-  <status value="completed"/> 
+  <id value="example"/>
+  <meta>
+    <profile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie"/>
+  </meta>
+  <status value="completed"/>
   <category>
     <coding>
-        <system value="https://www.uk-koeln.de/fhir/ValueSet/SonstigeTherapieCategory"/>
-        <code value="LV"/>
+        <system value="http://uk-koeln.de/fhir/CodeSystem/SonstigeTherapieCategory"/>
+        <code value="lv"/>
+		<display value="lokales Verfahren"/>
     </coding>
-    <text value="lokales Verfahren"/>
   </category>
-  <code> 
-    <coding> 
-      <system value="http://snomed.info/sct"/> 
-      <code value="442132006"/> 
-      <display value="Chemoembolization of hepatic artery (procedure)"/> 
-    </coding> 
-    <text value=""/> 
-  </code> 
-  <subject> 
-    <reference value="Patient/example"/> 
-  </subject> 
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="442132006"/>
+      <display value="Chemoembolization of hepatic artery (procedure)"/>
+    </coding>
+    <text value=""/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
   <bodySite>
     <coding>
       <system value="http://snomed.info/sct"/>
@@ -29,4 +29,4 @@
       <display value="Pulmonary artery within left lung (body structure)"/>
     </coding>
   </bodySite>
-</Procedure> 
+</Procedure>

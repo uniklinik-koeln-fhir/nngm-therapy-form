@@ -81,6 +81,10 @@
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/sonstige-therapie-grund-bsc" />
+      </binding>
     </element>
     <element id="Procedure.reasonCode.coding">
       <path value="Procedure.reasonCode.coding" />

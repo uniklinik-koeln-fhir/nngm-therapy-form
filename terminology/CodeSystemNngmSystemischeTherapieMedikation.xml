@@ -1,0 +1,95 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation" />
+	<version value="0.2" />
+	<name value="CodeSystemNngmSystemischeTherapieMedikation" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-03-03" />
+	<publisher value="Universitätsklinikum Köln"/>
+	<description value="nNGM Systemische Therapie: Medikation" />
+	<caseSensitive value="true" />
+	<content value="complete" />
+	<concept>
+		<code value="afatinib" />
+		<display value="Afatinib" />
+	</concept>
+	<concept>
+		<code value="alectinib" />
+		<display value="Alectinib" />
+	</concept>
+	<concept>
+		<code value="bgj398" />
+		<display value="BGJ398" />
+	</concept>
+	<concept>
+		<code value="brigatinib" />
+		<display value="Brigatinib" />
+	</concept>
+	<concept>
+		<code value="cabmatinib" />
+		<display value="Cabmatinib" />
+	</concept>
+	<concept>
+		<code value="cabozantinib" />
+		<display value="Cabozantinib" />
+	</concept>
+	<concept>
+		<code value="crizotinib" />
+		<display value="Crizotinib" />
+	</concept>
+	<concept>
+		<code value="ceritinib" />
+		<display value="Ceritinib" />
+	</concept>
+	<concept>
+		<code value="dabrafenib" />
+		<display value="Dabrafenib" />
+	</concept>
+	<concept>
+		<code value="dacumitinib" />
+		<display value="Dacumitinib" />
+	</concept>
+	<concept>
+		<code value="entrectinib" />
+		<display value="Entrectinib" />
+	</concept>
+	<concept>
+		<code value="erdafitinib" />
+		<display value="Erdafitinib" />
+	</concept>
+	<concept>
+		<code value="erlotinib" />
+		<display value="Erlotinib" />
+	</concept>
+	<concept>
+		<code value="gefitinib" />
+		<display value="Gefitinib" />
+	</concept>
+	<concept>
+		<code value="lorlatinib" />
+		<display value="Lorlatinib" />
+	</concept>
+	<concept>
+		<code value="nazartinib" />
+		<display value="Nazartinib" />
+	</concept>
+	<concept>
+		<code value="osimertinib" />
+		<display value="Osimertinib" />
+	</concept>
+	<concept>
+		<code value="rociletinib" />
+		<display value="Rociletinib" />
+	</concept>
+	<concept>
+		<code value="trametinib" />
+		<display value="Trametinib" />
+	</concept>
+	<concept>
+		<code value="vandetanib" />
+		<display value="Vandetanib" />
+	</concept>
+</CodeSystem>

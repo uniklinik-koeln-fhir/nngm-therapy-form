@@ -1,0 +1,23 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="http://uk-koeln.de/fhir/CodeSystem/nNGM/sonstige-therapie-grund-bsc" />
+	<version value="0.2" />
+	<name value="CodeSystemNngmSonstigeTherapieGrundBsc" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-03-03" />
+	<publisher value="Universitätsklinikum Köln"/>
+	<description value="nNGM sonstige Therapie: Grund für keine Therapie / BSC" />
+	<caseSensitive value="true" />
+	<content value="complete" />
+	<concept>
+		<code value="p" />
+		<display value="Patientenwusch" />
+	</concept>
+	<concept>
+		<code value="ecog" />
+		<display value="ECOG" />
+	</concept>
+</CodeSystem>

@@ -1,8 +1,8 @@
 <Procedure>
-  <id value="example"/> 
-  <meta> 
-    <profile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/OP"/> 
-  </meta> 
+  <id value="example"/>
+  <meta>
+    <profile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/OP"/>
+  </meta>
   <extension url="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-op">
       <valueCodeableConcept>
           <coding>
@@ -12,23 +12,23 @@
           </coding>
       </valueCodeableConcept>
   </extension>
-  <status value="preparation"/> 
+  <status value="preparation"/>
   <category>
     <coding>
-        <system value="https://www.uk-koeln.de/fhir/ValueSet/OpCategory" />
+        <system value="http://uk-koeln.de/fhir/CodeSystem/OpCategory" />
         <code value="rdp" />
+		<display value="Resektion des Primarius"/>
     </coding>
-    <text value="Resektion des Primarius"/>
   </category>
-  <code> 
-    <coding> 
-      <system value="https://www.uk-koeln.de/fhir/ValueSet/OpsUnk"/> 
-      <code value="Pneumektomie"/> 
-      <display value="Pneumektomie"/> 
-    </coding> 
-    <text value="Appendectomy"/> 
-  </code> 
-  <subject> 
-    <reference value="Patient/example"/> 
-  </subject> 
-</Procedure> 
+  <code>
+    <coding>
+      <system value="https://www.uk-koeln.de/fhir/ValueSet/OpsUnk"/>
+      <code value="5-328.0"/>
+      <display value="Erweiterte (Pleuro-)Pneum(on)ektomie: Pneum(on)ektomie"/>
+    </coding>
+    <text value="Pneunektomie"/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+</Procedure>
