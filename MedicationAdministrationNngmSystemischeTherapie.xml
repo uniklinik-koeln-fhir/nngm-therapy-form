@@ -95,6 +95,10 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation" />
+      </binding>
     </element>
     <element id="MedicationAdministration.medication[x].text">
       <path value="MedicationAdministration.medication[x].text" />
