@@ -35,6 +35,14 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:ektomie">
+      <path value="Procedure.extension" />
+      <sliceName value="ektomie" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://example.org/fhir/StructureDefinition/ektomie" />
+      </type>
+    </element>
     <element id="Procedure.partOf">
       <path value="Procedure.partOf" />
       <max value="1" />

@@ -45,6 +45,16 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationAdministration.extension:studientherapie.extension">
+      <path value="MedicationAdministration.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
     <element id="MedicationAdministration.extension:studientherapie.extension:teilnahme">
       <path value="MedicationAdministration.extension.extension" />
       <sliceName value="teilnahme" />
@@ -55,9 +65,17 @@
       <sliceName value="studie" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.extension:studientherapie.extension:studie.value[x].display">
-      <path value="MedicationAdministration.extension.extension.value[x].display" />
+    <element id="MedicationAdministration.extension:studientherapie.extension:studie.url">
+      <path value="MedicationAdministration.extension.extension.url" />
+      <fixedUri value="studie" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie.extension:studie.display">
+      <path value="MedicationAdministration.extension.extension.display" />
       <min value="1" />
+    </element>
+    <element id="MedicationAdministration.extension:studientherapie.url">
+      <path value="MedicationAdministration.extension.url" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
     </element>
     <element id="MedicationAdministration.extension:offLabelTherapie">
       <path value="MedicationAdministration.extension" />
@@ -68,6 +86,14 @@
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OffLabelTherapie" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:Erhaltungstherapie">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="Erhaltungstherapie" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie" />
+      </type>
     </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
@@ -86,6 +112,9 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.statusReason.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="MedicationAdministration.statusReason.text" />
       <mustSupport value="true" />
     </element>
@@ -101,6 +130,9 @@
       </binding>
     </element>
     <element id="MedicationAdministration.medication[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="MedicationAdministration.medication[x].text" />
       <min value="1" />
     </element>
@@ -154,6 +186,29 @@
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.supportingInformation.extension:hilfreich">
+      <path value="MedicationAdministration.supportingInformation.extension" />
+      <sliceName value="hilfreich" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/Extension/hilfreich" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.supportingInformation.extension:umgesetzt">
+      <path value="MedicationAdministration.supportingInformation.extension" />
+      <sliceName value="umgesetzt" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/Extension/umgesetzt" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
