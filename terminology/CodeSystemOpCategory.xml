@@ -13,27 +13,27 @@
 	<caseSensitive value="true" />
 	<content value="complete" />
 	<concept>
-		<code value="rdp" />
+		<code value="Resektion des Primarius" />
 		<display value="Resektion des Primarius" />
 	</concept>
 	<concept>
-		<code value="rvm" />
+		<code value="Resektion von Metastasen" />
 		<display value="Resektion von Metastasen" />
 	</concept>
 	<concept>
-		<code value="lr" />
+		<code value="Lymphknotenresektion (anders als Lymphadenektomie)" />
 		<display value="Lymphknotenresektion (anders als Lymphadenektomie)" />
 	</concept>
 	<concept>
-		<code value="rr" />
+		<code value="Resektion eines lokoregionären Rezidivs" />
 		<display value="Resektion eines lokoregionären Rezidivs" />
 	</concept>
 	<concept>
-		<code value="nr" />
+		<code value="Nachresektion" />
 		<display value="Nachresektion" />
 	</concept>
 	<concept>
-		<code value="revk" />
+		<code value="Revisions-OP wegen Komplikationen" />
 		<display value="Revisions-OP wegen Komplikationen" />
 	</concept>
 </CodeSystem>

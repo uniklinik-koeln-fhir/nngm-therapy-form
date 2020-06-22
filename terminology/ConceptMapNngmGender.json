@@ -1,0 +1,61 @@
+{
+    "resourceType":"ConceptMap",
+    "name":"Geschlecht",
+    "status":"active",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system":"email",
+                    "value":"fhir@healex.systems"
+                }
+            ]
+        }
+    ],
+    "description":"Maps the gender concepts of the internal nNGM forms to the offical administrative-gender ValueSet",
+    "group": [
+        {
+            "element": [
+                {
+                    "target": [
+                        {
+                            "code":"male",
+                            "display":"Male",
+                            "equivalence":"equivalent"
+                        }
+                    ],
+                    "code":"männlich",
+                    "display":"Männlich"
+                },
+                {
+                    "target": [
+                        {
+                            "code":"female",
+                            "display":"Female",
+                            "equivalence":"equivalent"
+                        }
+                    ],
+                    "code":"weiblich",
+                    "display":"Weiblich"
+                },
+                {
+                    "target": [
+                        {
+                            "code":"other",
+                            "display":"Other",
+                            "equivalence":"equivalent"
+                        }
+                    ],
+                    "code":"divers",
+                    "display":"Divers"
+                }
+            ],
+            "target":"http://hl7.org/fhir/administrative-gender"
+        }
+    ],
+    "url":"http://uk-koeln.de/fhir/ConceptMap/nngm/Geschlecht",
+    "version":"0.1",
+    "sourceUri":"http://uk-koeln.de/fhir/ValueSet/CTS/nNGM/Geschlecht",
+    "targetUri":"http://hl7.org/fhir/ValueSet/administrative-gender",
+    "title":"nNGM: ConceptMap Geschlecht"
+}

@@ -13,15 +13,15 @@
 	<caseSensitive value="true" />
 	<content value="complete" />
 	<concept>
-		<code value="lv" />
+		<code value="lokales Verfahren" />
 		<display value="Lokales Verfahren" />
 	</concept>
 	<concept>
-		<code value="av" />
+		<code value="anderes Verfahren" />
 		<display value="anderes Verfahren" />
 	</concept>
 	<concept>
-		<code value="kt" />
+		<code value="keine Therapie / Best Supportive Care" />
 		<display value="keine Therapie / Best Supportive Care" />
 	</concept>
 </CodeSystem>

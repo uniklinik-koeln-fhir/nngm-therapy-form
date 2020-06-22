@@ -1,0 +1,18 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/JJN",
+    "title": "JJN",
+    "status": "draft",
+    "compose": {
+      "include": [
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/ST_Ende_Grund"
+        }
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JJN</h2><tt>http://uk-koeln.de/fhir/ValueSet/nngm/JJN</tt></div>"
+    },
+    "name": "JJN"
+  }

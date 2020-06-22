@@ -12,7 +12,7 @@
 	<description value="Seitenlokalisation mit lungenspezifischer Ergänzung und Option 'N/A'"/>
 	<compose>
 		<include>
-			<valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION" />
+			<valueSet value="http://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION" />
 		</include>
 		<include>
 			<system value="http://uk-koeln.de/fhir/CodeSystem/Seitenlokalisation_Typ"/>

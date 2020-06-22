@@ -1,0 +1,90 @@
+{
+    "resourceType": "ConceptMap",
+    "title": "TherapeutischeIntention",
+    "status": "draft",
+    "group": [
+      {
+        "element": [
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "K"
+              }
+            ],
+            "code": "Kurativ"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "P"
+              }
+            ],
+            "code": "Pallitativ"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "A"
+              }
+            ],
+            "code": "Adjuvant"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "N"
+              }
+            ],
+            "code": "Neoadjuvant"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "Pr"
+              }
+            ],
+            "code": "Prophylaktisch"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "D"
+              }
+            ],
+            "code": "Definitiv mit Chemotherapie"
+          },
+          {
+            "target": [
+              {
+                "code": "S"
+              }
+            ],
+            "code": "Sonstiges"
+          },
+          {
+            "target": [
+              {
+                "equivalence": "equivalent",
+                "code": "X"
+              }
+            ],
+            "code": "N/A"
+          }
+        ]
+      }
+    ],
+    "url": "http://uk-koeln.de/fhir/ConceptMap/nngm/intention-therapie",
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TherapeutischeIntention</h2><tt>http://uk-koeln.de/fhir/ConceptMap/nngm/intention-therapie</tt></div>"
+    },
+    "sourceCanonical":"CTSTherapySTR",
+    "targetCanonical": "http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-therapie",
+    "name": "TherapeutischeIntention"
+  }

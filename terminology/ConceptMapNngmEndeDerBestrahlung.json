@@ -1,0 +1,91 @@
+{
+    "resourceType": "ConceptMap",
+    "title": "Ende Der Bestrahlung",
+    "status": "draft",
+    "group": [
+      {
+        "element": [
+          {
+            "target": [
+              {
+                "code": "E",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Regulaeres Ende"
+          },
+          {
+            "target": [
+              {
+                "code": "A",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Abbruch wegen Nebenwirkungen"
+          },
+          {
+            "target": [
+              {
+                "code": "Pa",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Pause wegen nenbenwirkungen"
+          },
+          {
+            "target": [
+              {
+                "code": "P",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Abbruch wegen Progress"
+          },
+          {
+            "target": [
+              {
+                "code": "Ab",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Ablehnung durch den Patienten"
+          },
+          {
+            "target": [
+              {
+                "code": "V",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Patient Verstorben"
+          },
+          {
+            "target": [
+              {
+                "code": "S",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "Sonstiges"
+          },
+          {
+            "target": [
+              {
+                "code": "U",
+                "equivalence": "equivalent"
+              }
+            ],
+            "code": "N/A"
+          }
+        ]
+      }
+    ],
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Ende Der Bestrahlung</h2><tt>https://www.uk-koeln.de/fhir/ConceptMap/nngm/ST_Ende_Grund</tt></div>"
+    },
+    "url": "https://www.uk-koeln.de/fhir/ConceptMap/nngm/ST_Ende_Grund",
+    "sourceCanonical": "CTSStrahlentherapie",
+    "targetCanonical": "https://www.uk-koeln.de/fhir/ValueSet/nngm/ST_Ende_Grund",
+    "name": "Ende_Der_Bestrahlung"
+  }

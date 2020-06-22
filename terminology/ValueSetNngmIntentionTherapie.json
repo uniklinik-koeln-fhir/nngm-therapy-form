@@ -1,0 +1,70 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/Valueset/nngm/intention-therapie",
+    "title": "Intention Therapie",
+    "status": "draft",
+    "contact": [
+      {
+        "telecom": [
+          {
+            "system": "email"
+          }
+        ]
+      }
+    ],
+    "compose": {
+      "include": [
+        {
+          "concept": [
+            {
+              "code": "Kurativ",
+              "display": "Kurativ"
+            },
+            {
+              "code": "Pallitativ",
+              "display": "Pallitativ"
+            },
+            {
+              "code": "Adjuvant",
+              "display": "Adjuvant"
+            },
+            {
+              "code": "Neoadjuvant",
+              "display": "Neoadjuvant"
+            },
+            {
+              "code": "Prophylaktisch",
+              "display": "Prophylaktisch"
+            },
+            {
+              "code": "Definmitiv mit Chemotherapie",
+              "display": "Definmitiv mit Chemotherapie"
+            }
+          ]
+        },
+        {
+          "concept": [
+            {
+              "code": "NA",
+              "display": "Not Available"
+            }
+          ],
+          "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+        },
+        {
+          "concept": [
+            {
+              "code": "definitiv mit Strahlentherapie",
+              "display": "definitiv mit Strahlentherapie"
+            }
+          ],
+          "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie-sup"
+        }
+      ]
+    },
+    "text": {
+      "status": "generated",
+      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Intention Therapie</h2><tt>http://uk-koeln.de/fhir/Valueset/nngm/intention-therapie</tt></div>"
+    },
+    "name": "Intention_Therapie"
+  }

@@ -58,7 +58,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.uk-koeln.de/fhir/ValueSet/OpCategory" />
+        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/OpCategory" />
       </binding>
     </element>
     <element id="Procedure.category.coding">
@@ -72,7 +72,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.uk-koeln.de/fhir/ValueSet/OpsUnk" />
+        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/OpsUnk" />
       </binding>
     </element>
     <element id="Procedure.code.coding">
@@ -84,7 +84,7 @@
       <path value="Procedure.subject" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM/patient" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -104,6 +104,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performer.actor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
     </element>
@@ -141,6 +144,9 @@
       <min value="1" />
     </element>
     <element id="Procedure.bodySite:lokalisation.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
     </element>
@@ -151,7 +157,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.uk-koeln.de/fhir/ValueSet/Seitenlokalisation_Typ" />
+        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/Seitenlokalisation_Typ" />
       </binding>
     </element>
     <element id="Procedure.bodySite:seitenlokalisation.coding">
@@ -159,6 +165,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite:seitenlokalisation.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
     </element>
