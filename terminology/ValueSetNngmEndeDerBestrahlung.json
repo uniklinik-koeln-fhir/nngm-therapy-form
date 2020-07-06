@@ -6,7 +6,7 @@
     "compose": {
       "include": [
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/ST_Ende_Grund"
+            "system": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund"
         },
         {
             "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
