@@ -31,7 +31,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-therapie" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nngm/intention-therapie" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -150,7 +150,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/icdo-o-3-t" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/StrahlentherapieBestrahlungsziel" />
       </binding>
     </element>
     <element id="Procedure.bodySite.coding">
