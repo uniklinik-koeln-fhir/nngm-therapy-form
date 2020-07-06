@@ -7,65 +7,40 @@
   },
   "url": "http://uk-koeln.de/fhir/Valueset/nngm/intention-therapie",
   "version": "0.1",
-  "title": "Intention Therapie",
+  "title": "nNGM CodeSystem Intention Therapie",
   "status": "draft",
   "experimental": true,
   "date": "2019-02-08",
   "publisher": "Universitätsklinikum Köln",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/centers",
   "content": "complete",
   "concept": [
     {
-      "code": "nNGM-Zentrum",
-      "display": "nNGM-Zentrum"
+      "code": "Kurativ",
+      "display": "Kurativ"
     },
     {
-      "code": "Universitäre Einrichtung",
-      "display": "Universitäre Einrichtung"
+      "code": "Palliativ",
+      "display": "Palliativ"
     },
     {
-      "code": "anderes Krankenhaus - Lungenkrebszentrum",
-      "display": "anderes Krankenhaus - Lungenkrebszentrum"
+      "code": "Adjuvant",
+      "display": "Adjuvant"
     },
     {
-      "code": "anderes Krankenhaus - Pneumologie",
-      "display": "anderes Krankenhaus - Pneumologie"
+      "code": "Neoadjuvant",
+      "display": "Neoadjuvant"
     },
     {
-      "code": "anderes Krankenhaus - Onkologie",
-      "display": "anderes Krankenhaus - Onkologie"
+      "code": "Prophylaktisch",
+      "display": "Prophylaktisch"
     },
     {
-      "code": "anderes Krankenhaus - Chirurgie",
-      "display": "anderes Krankenhaus - Chirurgie"
+      "code": "Definitiv mit Chemotherapie",
+      "display": "Definitiv mit Chemotherapie"
     },
     {
-      "code": "niedergelassene Einrichtung - Pneumologie",
-      "display": "niedergelassene Einrichtung - Pneumologie"
+      "code": "Sonstiges",
+      "display": "Sonstiges"
     },
-    {
-      "code": "niedergelassene Einrichtung - Onkologie",
-      "display": "niedergelassene Einrichtung - Onkologie"
-    },
-    {
-      "code": "niedergelassene Einrichtung - beides",
-      "display": "niedergelassene Einrichtung - beides"
-    },
-    {
-      "code": "niedergelassene Einrichtung - Strahlentherapie",
-      "display": "niedergelassene Einrichtung - Strahlentherapie"
-    },
-    {
-      "code": "niedergelassene Einrichtung - Chirurgie",
-      "display": "niedergelassene Einrichtung - Chirurgie"
-    },
-    {
-      "code": "niedergelassene Einrichtung - ausländische Einrichtung",
-      "display": "niedergelassene Einrichtung - ausländische Einrichtung"
-    },
-    {
-      "code": "niedergelassene Einrichtung - Andere",
-      "display": "niedergelassene Einrichtung - Andere"
-    }
   ]
 }
