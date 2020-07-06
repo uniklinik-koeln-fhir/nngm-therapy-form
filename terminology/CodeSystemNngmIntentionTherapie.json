@@ -8,6 +8,7 @@
   "url": "http://uk-koeln.de/fhir/Valueset/nngm/intention-therapie",
   "version": "0.1",
   "title": "nNGM CodeSystem Intention Therapie",
+  "name": "nNGM_CodeSystem_Intention_Therapie",
   "status": "draft",
   "experimental": true,
   "date": "2019-02-08",
