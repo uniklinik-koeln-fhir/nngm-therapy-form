@@ -1,18 +1,20 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/JJN",
-    "title": "JJN",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund",
+    "title": "nNGM Valueset Strahlentherapie Ende Grund",
     "status": "draft",
     "compose": {
       "include": [
         {
             "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/ST_Ende_Grund"
-        }
+        },
+        {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "concept":  [{
+                "code": "NA",
+                "display": "not applicable"
+            }]
       ]
     },
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JJN</h2><tt>http://uk-koeln.de/fhir/ValueSet/nngm/JJN</tt></div>"
-    },
-    "name": "JJN"
+    "name": "nNGM_ValueSet_Strahlentherapie_Ende_Grund"
   }
