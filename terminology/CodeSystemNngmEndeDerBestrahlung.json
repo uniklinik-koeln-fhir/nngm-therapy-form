@@ -7,31 +7,31 @@
     "content": "complete",
     "concept": [
       {
-        "code": "E",
+        "code": "Regulaeres Ende",
         "display": "Regulaeres Ende"
       },
       {
-        "code": "A",
+        "code": "Abbruch wegen Nebenwirkungen",
         "display": "Abbruch wegen Nebenwirkungen"
       },
       {
-        "code": "Pa",
+        "code": "Pause wegen nenbenwirkungen",
         "display": "Pause wegen nenbenwirkungen"
       },
       {
-        "code": "P",
+        "code": "Abbruch wegen Progress",
         "display": "Abbruch wegen Progress"
       },
       {
-        "code": "Ab",
+        "code": "Ablehnung durch den Patienten",
         "display": "Ablehnung durch den Patienten"
       },
       {
-        "code": "V",
+        "code": "Patient Verstorben",
         "display": "Patient Verstorben"
       },
       {
-        "code": "S",
+        "code": "Sonstiges",
         "display": "Sonstiges"
       },
       {
