@@ -1,22 +1,22 @@
 {
     "resourceType": "CodeSystem",
     "title": "EndeDerBestrahlung",
-    "url": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/ST_Ende_Grund",
+    "url": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund",
     "status": "draft",
     "compositional": false,
     "content": "complete",
     "concept": [
       {
         "code": "Regulaeres Ende",
-        "display": "Regulaeres Ende"
+        "display": "Reguläres Ende"
       },
       {
         "code": "Abbruch wegen Nebenwirkungen",
         "display": "Abbruch wegen Nebenwirkungen"
       },
       {
-        "code": "Pause wegen nenbenwirkungen",
-        "display": "Pause wegen nenbenwirkungen"
+        "code": "Pause wegen Nenbenwirkungen",
+        "display": "Pause wegen Nenbenwirkungen"
       },
       {
         "code": "Abbruch wegen Progress",
@@ -27,22 +27,14 @@
         "display": "Ablehnung durch den Patienten"
       },
       {
-        "code": "Patient Verstorben",
-        "display": "Patient Verstorben"
+        "code": "Patient verstorben",
+        "display": "Patient verstorben"
       },
       {
         "code": "Sonstiges",
         "display": "Sonstiges"
-      },
-      {
-        "code": "N/A",
-        "display": "N/A"
       }
     ],
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>EndeDerBestrahlung</h2><tt>https://www.uk-koeln.de/fhir/CodeSystem/nngm/ST_Ende_Grund</tt><p></p></div>"
-    },
-    "count": 9,
-    "name": "EndeDerBestrahlung"
+    "count": 7,
+    "name": "nNGM_CodeSytem_Strahlentherapie_Ende_Grund"
   }
