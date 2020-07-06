@@ -5,7 +5,7 @@
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "url": "http://uk-koeln.de/fhir/Valueset/nngm/intention-therapie",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
   "version": "0.1",
   "title": "nNGM CodeSystem Intention Therapie",
   "name": "nNGM_CodeSystem_Intention_Therapie",
