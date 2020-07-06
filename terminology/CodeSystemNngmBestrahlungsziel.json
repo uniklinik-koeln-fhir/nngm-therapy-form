@@ -1,7 +1,8 @@
 {
   "resourceType": "CodeSystem",
-  "title": "Strahlentherapie Bestrahlungsziel",
-  "url": "http://uk-koeln.de/fhir/CodeSystem/StrahlentherapieBestrahlungsziel",
+  "title": "nNGM: CodeSystem Strahlentherapie Bestrahlungsziel",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/Strahlentherapie_Bestrahlungsziel",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/Strahlentherapie_Bestrahlungsziel",
   "status": "draft",
   "contact": [
     {
@@ -28,6 +29,10 @@
       "display": "Brustwand rechts"
     },
     {
+      "code": "Brustwand rechts",
+      "display": "Brustwand links"
+    },
+    {
       "code": "Knochen",
       "display": "Knochen"
     },
@@ -36,17 +41,10 @@
       "display": "Gehirn"
     },
     {
-      "code": "Mediastinum"
-    },
-    {
-      "code": "N/A",
-      "display": "N/A"
+      "code": "Mediastinum",
+      "display": "Mediastinum"
     }
   ],
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Strahlentherapie Bestrahlungsziel</h2><tt>http://uk-koeln.de/fhir/CodeSystem/StrahlentherapieBestrahlungsziel</tt><p></p></div>"
-  },
-  "count": 8,
-  "name": "Strahlentherapie_Bestrahlungsziel"
+  "count": 7,
+  "name": "nNGM_CodeSystem_Strahlentherapie_Bestrahlungsziel"
 }
