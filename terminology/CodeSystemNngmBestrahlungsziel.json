@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "Strahlentherapie Bestrahlungsziel",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/StrahlentherapieBestrahlungsziel",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Primärtumorregion",
+      "display": "Primärtumorregion"
+    },
+    {
+      "code": "Regionäre Lymphabflusswege",
+      "display": "Regionäre Lymphabflusswege"
+    },
+    {
+      "code": "Brustwand rechts",
+      "display": "Brustwand rechts"
+    },
+    {
+      "code": "Knochen",
+      "display": "Knochen"
+    },
+    {
+      "code": "Gehirn",
+      "display": "Gehirn"
+    },
+    {
+      "code": "Mediastinum"
+    },
+    {
+      "code": "N/A",
+      "display": "N/A"
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Strahlentherapie Bestrahlungsziel</h2><tt>http://uk-koeln.de/fhir/CodeSystem/StrahlentherapieBestrahlungsziel</tt><p></p></div>"
+  },
+  "count": 8,
+  "name": "Strahlentherapie_Bestrahlungsziel"
+}
