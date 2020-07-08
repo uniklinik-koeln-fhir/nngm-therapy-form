@@ -1,0 +1,22 @@
+{
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/operationLokalisation",
+    "title": "JNU",
+    "status": "draft",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.uk-koeln.de/fhir/CodeSystem/operationLokalisation"
+            },
+            {
+                "concept": [
+                    {
+                        "code": "NA"
+                    }
+                ],
+                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+            }
+        ]
+    },
+    "name": "operationLokalisation"
+}

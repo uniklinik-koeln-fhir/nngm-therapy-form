@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://uk-koeln.de/fhir/ValueSet/Ektomie"/>
+	<version value="0.1" />
+	<name value="Ektomie"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-03-03"/>
+	<publisher value="Universitätsklinikum Köln"/>
+	<description value="Ektomie"/>
+    <concept>
+		<code value="Ja"/>
+		<display value="Ja"/>
+	</concept>
+    <concept>
+		<code value="Nein"/>
+		<display value="Nein"/>
+	</concept>
+	<concept>
+		<code value="NA"/>
+		<display value="not applicable"/>
+	</concept>
+</ValueSet>

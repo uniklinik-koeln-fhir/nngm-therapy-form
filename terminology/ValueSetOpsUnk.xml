@@ -12,13 +12,13 @@
 	<description value="OPS-Codierung mit Zusatzoption 'unbekannt'"/>
 	<compose>
 		<include>
-			<system value="http://fhir.de/CodeSystem/dimdi/ops" />
+			<system value="http://uk-koeln.de/fhir/CodeSystem/ArtDesEingriffs" />
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
 			<concept>
-				<code value="UNK"/>
-				<display value="unknown"/>
+				<code value="NA"/>
+				<display value="not applicable"/>
 			</concept>
 		</include>
 	</compose>
