@@ -40,7 +40,7 @@
       <sliceName value="ektomie" />
       <type>
         <code value="Extension" />
-        <profile value="http://example.org/fhir/StructureDefinition/ektomie" />
+        <profile value= "http://uk-koeln.de/fhir/Extension/ektomie" />
       </type>
     </element>
     <element id="Procedure.partOf">
