@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/Ektomie",
+  "title": "Ektomie",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "Ja",
+            "display": "Ja"
+          },
+          {
+            "code": "Nein",
+            "display": "Nein"
+          },
+          {
+            "code": "NA",
+            "display": "not available"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Ektomie</h2><tt>http://uk-koeln.de/fhir/ValueSet/Ektomie</tt></div>"
+  },
+  "name": "Ektomie"
+}
