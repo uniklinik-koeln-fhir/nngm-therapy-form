@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/grundnichtumsetzung",
+  "version": "0.1",
+  "title": "nNGM CodeSystem Intention Therapie",
+  "name": "nNGM_CodeSystem_Intention_Therapie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-02-08",
+  "publisher": "Universitätsklinikum Köln",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Ablehnung durch den Patienten",
+      "display": "Ablehnung durch den Patienten"
+    },
+    {
+      "code": "Aktuelle Medikamente",
+      "display": "Aktuelle Medikamente"
+    },
+    {
+      "code": "Anderes",
+      "display": "Anderes"
+    },
+    {
+      "code": "Begleiterkrankungen/Allgemeinzustand des Patienten",
+      "display": "Begleiterkrankungen/Allgemeinzustand des Patienten"
+    },
+    {
+      "code": "Logistischer Aufwand",
+      "display": "Logistischer Aufwand"
+    },
+    {
+      "code": "Mangelnde Compliance vom Patienten",
+      "display": "Mangelnde Compliance vom Patienten"
+    },
+    {
+      "code": "Versicherungsstatus",
+      "display": "Versicherungsstatus"
+    },
+    {
+      "code": "Vortherapien",
+      "display": "Vortherapien"
+    }
+  ]
+}
