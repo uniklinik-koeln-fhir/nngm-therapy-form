@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+  "version": "0.1",
+  "name": "adt-intention-therapie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Intention von systemischen und Strahlentherapien",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "palliativ",
+      "display": "palliativ"
+    },
+    {
+      "code": "kurativ",
+      "display": "kurativ"
+    },
+    {
+      "code": "adjuvant",
+      "display": "adjuvant"
+    },
+    {
+      "code": "neoadjuvant",
+      "display": "neoadjuvant"
+    },
+    {
+      "code": "definitiv mit Strahlentherapie",
+      "display": "definitiv mit Strahlentherapie"
+    },
+    {
+      "code": "N/A",
+      "display": "N/A"
+    }
+  ]
+}

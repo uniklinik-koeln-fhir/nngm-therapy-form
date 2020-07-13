@@ -37,16 +37,6 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationAdministration.extension:intention">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="intention" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-therapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationAdministration.extension:studientherapie">
       <path value="MedicationAdministration.extension" />
       <sliceName value="studientherapie" />
@@ -123,6 +113,14 @@
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/grundnichtumsetzung" />
       </binding>
+    </element>
+    <element id="MedicationAdministration.extension:intentionTherapie">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="intentionTherapie" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/Extension/intentionTherapie" />
+      </type>
     </element>
     <element id="MedicationAdministration.identifier.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
