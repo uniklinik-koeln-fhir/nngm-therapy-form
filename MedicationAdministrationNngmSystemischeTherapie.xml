@@ -161,6 +161,13 @@
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
       <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationAdministrationStatus" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/StatusTherapie" />
+      </binding>
     </element>
     <element id="MedicationAdministration.statusReason">
       <path value="MedicationAdministration.statusReason" />

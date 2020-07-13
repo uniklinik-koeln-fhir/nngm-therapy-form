@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "title": "nNGM: CodeSystem Strahlentherapie Status Therapie",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/StatusTherapie",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email"
+        }
+      ]
+    }
+  ],
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Reguläres Ende",
+      "display": "Reguläres Ende"
+    },
+    {
+      "code": "Abbruch wegen Nebenwirkungen",
+      "display": "Abbruch wegen Nebenwirkungen"
+    },
+    {
+      "code": "Pause wegen Nebenwirkungen",
+      "display": "Pause wegen Nebenwirkungen"
+    },
+    {
+      "code": "Abbruch wegen Progress",
+      "display": "Abbruch wegen Progress"
+    },
+    {
+      "code": "Ablehnung durch den Patienten",
+      "display": "Ablehnung durch den Patienten"
+    },
+    {
+      "code": "Vielversprechendere Therapieoption",
+      "display": "Vielversprechendere Therapieoption"
+    },
+    {
+      "code": "Patient verstorben",
+      "display": "Patient verstorben"
+    },
+    {
+      "code": "Sonstiges",
+      "display": "Sonstiges"
+    },
+    {
+      "code": "N/A",
+      "display": "N/A"
+    }
+  ],
+  "name": "nNGM_CodeSystem_StatusTherapie"
+}
