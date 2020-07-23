@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/best-response0.1" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/best-response" />
   <name value="BestResponse" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
