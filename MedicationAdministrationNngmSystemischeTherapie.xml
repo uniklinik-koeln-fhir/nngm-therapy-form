@@ -15,18 +15,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationAdministration.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.meta.security.display" />
-    </element>
-    <element id="MedicationAdministration.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.meta.tag.display" />
-    </element>
     <element id="MedicationAdministration.extension">
       <path value="MedicationAdministration.extension" />
       <slicing>
@@ -102,7 +90,6 @@
     <element id="MedicationAdministration.extension:grundNichtumsetsung">
       <path value="MedicationAdministration.extension" />
       <sliceName value="grundNichtumsetsung" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -117,46 +104,55 @@
     <element id="MedicationAdministration.extension:intentionTherapie">
       <path value="MedicationAdministration.extension" />
       <sliceName value="intentionTherapie" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/Extension/intentionTherapie" />
       </type>
     </element>
-    <element id="MedicationAdministration.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.identifier.type.coding.display" />
+    <element id="MedicationAdministration.extension:supportingInformation">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="supportingInformation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
+      </type>
+      <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+    <element id="MedicationAdministration.extension:supportingInformation.extension:hilfreich">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
       </extension>
-      <path value="MedicationAdministration.identifier.type.text" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="hilfreich" />
+      <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+    <element id="MedicationAdministration.extension:supportingInformation.extension:umgesetzt">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
       </extension>
-      <path value="MedicationAdministration.identifier.assigner.display" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="umgesetzt" />
+      <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.partOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+    <element id="MedicationAdministration.extension:supportingInformation.extension:nichtumsetzungGrund">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
       </extension>
-      <path value="MedicationAdministration.partOf.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.partOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
       </extension>
-      <path value="MedicationAdministration.partOf.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.partOf.display" />
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="nichtumsetzungGrund" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
@@ -181,30 +177,12 @@
       <path value="MedicationAdministration.statusReason.coding" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.statusReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.statusReason.coding.display" />
-    </element>
     <element id="MedicationAdministration.statusReason.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="MedicationAdministration.statusReason.text" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.category.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.category.coding.display" />
-    </element>
-    <element id="MedicationAdministration.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.category.text" />
     </element>
     <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
@@ -216,12 +194,6 @@
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation" />
       </binding>
-    </element>
-    <element id="MedicationAdministration.medication[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.medication[x].coding.display" />
     </element>
     <element id="MedicationAdministration.medication[x].text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -242,30 +214,6 @@
       <path value="MedicationAdministration.subject.reference" />
       <min value="1" />
     </element>
-    <element id="MedicationAdministration.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.subject.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.subject.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.subject.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.subject.identifier.assigner.display" />
-    </element>
-    <element id="MedicationAdministration.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.subject.display" />
-    </element>
     <element id="MedicationAdministration.context">
       <path value="MedicationAdministration.context" />
       <mustSupport value="true" />
@@ -273,18 +221,6 @@
     <element id="MedicationAdministration.context.identifier">
       <path value="MedicationAdministration.context.identifier" />
       <min value="1" />
-    </element>
-    <element id="MedicationAdministration.context.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.context.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.identifier.type.text" />
     </element>
     <element id="MedicationAdministration.context.identifier.system">
       <path value="MedicationAdministration.context.identifier.system" />
@@ -294,98 +230,9 @@
       <path value="MedicationAdministration.context.identifier.value" />
       <min value="1" />
     </element>
-    <element id="MedicationAdministration.context.identifier.assigner.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.identifier.assigner.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.context.identifier.assigner.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.identifier.assigner.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.context.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.identifier.assigner.display" />
-    </element>
-    <element id="MedicationAdministration.context.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.context.display" />
-    </element>
     <element id="MedicationAdministration.supportingInformation">
       <path value="MedicationAdministration.supportingInformation" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.extension">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationAdministration.supportingInformation.extension:therapieInformationen">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <sliceName value="therapieInformationen" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.extension:hilfreich">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <sliceName value="hilfreich" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/Extension/hilfreich" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.extension:umgesetzt">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <sliceName value="umgesetzt" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/Extension/umgesetzt" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.supportingInformation.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.supportingInformation.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.supportingInformation.identifier.assigner.display" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.supportingInformation.display" />
     </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
@@ -406,102 +253,6 @@
       <path value="MedicationAdministration.performer" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.performer.function.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.performer.function.coding.display" />
-    </element>
-    <element id="MedicationAdministration.performer.function.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.performer.function.text" />
-    </element>
-    <element id="MedicationAdministration.performer.actor.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.performer.actor.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.performer.actor.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.performer.actor.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.performer.actor.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.performer.actor.display" />
-    </element>
-    <element id="MedicationAdministration.reasonCode.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.reasonCode.coding.display" />
-    </element>
-    <element id="MedicationAdministration.reasonCode.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.reasonCode.text" />
-    </element>
-    <element id="MedicationAdministration.reasonReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.reasonReference.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.reasonReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.reasonReference.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.reasonReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.reasonReference.display" />
-    </element>
-    <element id="MedicationAdministration.request.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.request.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.request.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.request.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.request.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.request.display" />
-    </element>
-    <element id="MedicationAdministration.device.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.device.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.device.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.device.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.device.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.device.display" />
-    </element>
     <element id="MedicationAdministration.note">
       <path value="MedicationAdministration.note" />
       <mustSupport value="true" />
@@ -509,48 +260,6 @@
     <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.dosage.site.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.site.coding.display" />
-    </element>
-    <element id="MedicationAdministration.dosage.site.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.site.text" />
-    </element>
-    <element id="MedicationAdministration.dosage.route.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.route.coding.display" />
-    </element>
-    <element id="MedicationAdministration.dosage.route.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.route.text" />
-    </element>
-    <element id="MedicationAdministration.dosage.method.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.method.coding.display" />
-    </element>
-    <element id="MedicationAdministration.dosage.method.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.method.text" />
-    </element>
-    <element id="MedicationAdministration.dosage.dose.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.dose.unit" />
     </element>
     <element id="MedicationAdministration.dosage.rate[x]">
       <path value="MedicationAdministration.dosage.rate[x]" />
@@ -563,12 +272,6 @@
       <path value="MedicationAdministration.dosage.rate[x].value" />
       <min value="1" />
     </element>
-    <element id="MedicationAdministration.dosage.rate[x].unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.dosage.rate[x].unit" />
-    </element>
     <element id="MedicationAdministration.dosage.rate[x].system">
       <path value="MedicationAdministration.dosage.rate[x].system" />
       <min value="1" />
@@ -578,24 +281,6 @@
       <path value="MedicationAdministration.dosage.rate[x].code" />
       <min value="1" />
       <fixedCode value="1" />
-    </element>
-    <element id="MedicationAdministration.eventHistory.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.eventHistory.identifier.type.coding.display" />
-    </element>
-    <element id="MedicationAdministration.eventHistory.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.eventHistory.identifier.type.text" />
-    </element>
-    <element id="MedicationAdministration.eventHistory.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.eventHistory.display" />
     </element>
   </differential>
 </StructureDefinition>
