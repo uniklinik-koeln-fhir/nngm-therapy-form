@@ -27,20 +27,12 @@
         "display": "Keilresektion/Lasernukleation"
       },
       {
-        "code": "Keilresektion/Lasernukleation",
-        "display": "Keilresektion/Lasernukleation"
-      },
-      {
         "code": "Segmentresektion",
         "display": "Segmentresektion"
       },
       {
         "code": "Metastasenresektion",
         "display": "Metastasenresektion"
-      },
-      {
-        "code": "Wedge Resection",
-        "display": "Wedge Resection"
       },
       {
         "code": "Pleurektomie (Dekortikation)",

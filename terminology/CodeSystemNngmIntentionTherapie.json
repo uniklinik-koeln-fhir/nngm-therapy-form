@@ -24,6 +24,14 @@
       "display": "Palliativ"
     },
     {
+      "code": "Revision/Komplikation",
+      "display": "Revision/Komplikation"
+    },
+    {
+      "code": "Diagnostisch",
+      "display": "Diagnostisch"
+    },
+    {
       "code": "Adjuvant",
       "display": "Adjuvant"
     },
@@ -38,6 +46,10 @@
     {
       "code": "Definitiv mit Chemotherapie",
       "display": "Definitiv mit Chemotherapie"
+    },
+    {
+      "code": "Definitiv mit Strahlentherapie",
+      "display": "Definitiv mit Strahlentherapie"
     },
     {
       "code": "Sonstiges",

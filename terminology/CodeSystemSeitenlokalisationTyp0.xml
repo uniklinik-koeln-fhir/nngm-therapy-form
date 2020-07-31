@@ -13,7 +13,19 @@
 	<caseSensitive value="true" />
 	<content value="complete" />
 	<concept>
-		<code value="M" />
+		<code value="Rechts" />
+		<display value="Rechts" />
+	</concept>
+	<concept>
+		<code value="Links" />
+		<display value="Links" />
+	</concept>
+	<concept>
+		<code value="Beidseitig" />
+		<display value="Beidseitig" />
+	</concept>
+	<concept>
+		<code value="Mittig" />
 		<display value="Mittig" />
 	</concept>
 </CodeSystem>

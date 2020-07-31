@@ -13,19 +13,19 @@
 	<caseSensitive value="true" />
 	<content value="complete" />
 	<concept>
-		<code value="kb" />
+		<code value="konventionelle Bestrahlung" />
 		<display value="konventionelle Bestrahlung" />
 	</concept>
 	<concept>
-		<code value="c" />
+		<code value="Cyberknife" />
 		<display value="Cyberknife" />
 	</concept>
 	<concept>
-		<code value="ssb" />
+		<code value="sonstige stereotaktische Bestrahlung" />
 		<display value="sonstige stereotaktische Bestrahlung" />
 	</concept>
 	<concept>
-		<code value="seed" />
+		<code value="Seed Implantation" />
 		<display value="Seed Implantation" />
 	</concept>
 </CodeSystem>

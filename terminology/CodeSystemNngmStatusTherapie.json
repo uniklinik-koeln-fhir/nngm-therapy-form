@@ -46,10 +46,6 @@
     {
       "code": "Sonstiges",
       "display": "Sonstiges"
-    },
-    {
-      "code": "N/A",
-      "display": "N/A"
     }
   ],
   "name": "nNGM_CodeSystem_StatusTherapie"
