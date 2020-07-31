@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/bestesAnsprechen",
+  "title": "Systematische Therapie BestesAnsprechen",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/DivergentesGeschehen"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/recist"
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Systematische Therapie BestesAnsprechen</h2><tt>http://uk-koeln.de/fhir/ValueSet/bestesAnsprechen</tt></div>"
+  },
+  "date": "2020-07-31",
+  "name": "Systematische_Therapie_BestesAnsprechen"
+}
