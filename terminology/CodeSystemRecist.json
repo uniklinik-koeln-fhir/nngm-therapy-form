@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/recist",
+  "version": "0.1",
+  "name": "recist",
+  "status": "draft",
+  "experimental": true,
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "RECIST-Kriterien",
+  "caseSensitive": true,
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/cancer-base/recist",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "CR",
+      "display": "Complete Remission"
+    },
+    {
+      "code": "PR",
+      "display": "Partial Remission"
+    },
+    {
+      "code": "PD",
+      "display": "Progressive Disease"
+    },
+    {
+      "code": "SD",
+      "display": "Stable Disease"
+    }
+  ]
+}
