@@ -1,33 +1,18 @@
 {
   "resourceType": "ValueSet",
   "url": "http://uk-koeln.de/fhir/ValueSet/beurteilungnach",
-  "version": "0.1",
-  "name": "recist",
+  "title": "Systematische Therapie BeurteilungNach",
   "status": "draft",
-  "experimental": true,
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "RECIST-Kriterien",
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/recist"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/BeurteilungNach"
       }
     ]
   },
-  "expansion": {
-    "identifier": "uk-koeln-work-recist-1",
-    "timestamp": "2018-10-31",
-    "total": 4,
-    "contains": [
-    {
-      "code": "RECIST",
-      "display": "RECIST"
-    },
-    {
-      "code": "Behandelnder Arzt",
-      "display": "Behandelnder Arzt"
-    }
-    ]
-  }
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Systematische Therapie BeurteilungNach</h2><tt>http://uk-koeln.de/fhir/ValueSet/beurteilungnach</tt></div>"
+  },
+  "name": "Systematische_Therapie_BeurteilungNach"
 }
