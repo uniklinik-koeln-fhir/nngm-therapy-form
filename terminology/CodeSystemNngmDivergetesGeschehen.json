@@ -3,15 +3,6 @@
   "title": "Systematische Therapie Bestes Ansprechen Divergentes Geschehen",
   "url": "http://uk-koeln.de/fhir/CodeSystem/DivergentesGeschehen",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
   "compositional": false,
   "content": "complete",
   "concept": [
