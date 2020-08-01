@@ -5,11 +5,11 @@
         "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
       ]
     },
-    "url": "http://uk-koeln.de/fhir/CodeSystem/ngnm/ArtDesEingriffs",
-    "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/ArtDesEingriffs",
+    "url": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+    "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffs",
     "version": "1.0",
-    "title": "nNGM: CodeSystem ArtDesEingriffs",
-    "name": "nNGM_CodeSystem_ArtDesEingriffs",
+    "title": "nNGM: CodeSystem Operation ArtDesEingriffs",
+    "name": "nNGM_CodeSystem_Operation_ArtDesEingriffs",
     "status": "active",
     "experimental": false,
     "date": "2018-10-31",
