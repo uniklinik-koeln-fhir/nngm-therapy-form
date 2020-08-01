@@ -5,8 +5,8 @@
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/BeurteilungNach",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/BeurteilungNach",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieBeurteilungNach",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach",
   "version": "1.0",
   "title": "nNGM: CodeSystem Systemische Therapie BeurteilungNach",
   "name": "nNMG_CodeSystem_Systemische-Therapie_BeurteilungNach",
