@@ -1,0 +1,40 @@
+{
+	"resourceType": "CodeSystem",
+	"meta": {
+	  "profile": [
+		"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+	  ]
+	},
+	"url": "http://uk-koeln.de/fhir/CodeSystem/OperationSeitenlokalisation",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/OperationSeitenlokalisation",
+	"version": "1.0",
+	"experimental": false,
+	"title": "nNGM: CodeSystem Operation Seitenlokalisation",
+	"name": "nNGM_CodeSystem_Operation_Seitenlokalisation",
+	"status": "active",
+	"date": "2020-03-03",
+	"publisher": "Universitätsklinikum Köln",
+	"description": "Lungenspezifische Ergänzungen zur Seitenlokalisation",
+	"compositional": false, 
+	"caseSensitive": true,
+	"content": "complete",
+	"count": 4,
+	"concept": [
+	  {
+		"code": "Rechts",
+		"display": "Rechts"
+	  },
+	  {
+		"code": "Links",
+		"display": "Links"
+	  },
+	  {
+		"code": "Beidseitig",
+		"display": "Beidseitig"
+	  },
+	  {
+		"code": "Mittig",
+		"display": "Mittig"
+	  }
+	]
+  }
