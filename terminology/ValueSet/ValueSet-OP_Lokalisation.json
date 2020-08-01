@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK",
   "version": "1.0",
   "name": "OperationLokalisation",
   "status": "active",
