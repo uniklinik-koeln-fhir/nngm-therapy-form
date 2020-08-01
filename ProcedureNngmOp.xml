@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
@@ -40,7 +40,7 @@
       <sliceName value="ektomie" />
       <type>
         <code value="Extension" />
-        <profile value= "http://uk-koeln.de/fhir/Extension/ektomie" />
+        <profile value="http://uk-koeln.de/fhir/Extension/ektomie" />
       </type>
     </element>
     <element id="Procedure.partOf">
@@ -80,7 +80,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/OpsUnk" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK" />
       </binding>
     </element>
     <element id="Procedure.code.coding">
@@ -116,6 +116,22 @@
         <valueBoolean value="true" />
       </extension>
       <path value="Procedure.performer.actor.display" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureReason" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op" />
+      </binding>
+    </element>
+    <element id="Procedure.reasonCode.coding">
+      <path value="Procedure.reasonCode.coding" />
       <min value="1" />
     </element>
     <element id="Procedure.bodySite">

@@ -3,52 +3,45 @@
   "url": "http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op",
   "version": "0.1",
   "name": "adt-intention-op",
-  "status": "draft",
-  "experimental": true,
+  "status": "active",
   "date": "2018-10-31",
   "publisher": "Uniklinik Köln",
   "description": "Intention von Operationen und anderen Eingriffen",
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op"
-      }
-    ]
-  },
-  "expansion": {
-    "identifier": "uk-koeln-work-intention-op-1",
-    "timestamp": "2018-10-31",
-    "total": 6,
-    "contains": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "K",
-        "display": "kurativ"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+        "concept": [
+          {
+            "code": "palliativ",
+            "display": "palliativ"
+          },
+          {
+            "code": "kurativ",
+            "display": "kurativ"
+          },
+          {
+            "code": "Revision/Komplikation",
+            "display": "Revision/Komplikation"
+          },
+          {
+            "code": "Diagnostisch",
+            "display": "Diagnostisch"
+          },
+          {
+            "code": "Sonstiges",
+            "display": "Sonstiges"
+          }
+        ]
       },
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "P",
-        "display": "palliativ"
-      },
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "D",
-        "display": "diagnostisch"
-      },
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "R",
-        "display": "Revision/Komplikation"
-      },
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "S",
-        "display": "sonstiges"
-      },
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/cancer-base/adt/intention-op",
-        "code": "X",
-        "display": "fehlende Angabe"
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
       }
     ]
   }

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK",
+  "version": "0.1",
+  "title": "nNGM: CodeSystem Operation ArtDesEingriffs",
+  "name": "nNGM_CodeSystem_Operation_ArtDesEingriffs",
+  "status": "active",
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "ArtDesEingriffs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}
