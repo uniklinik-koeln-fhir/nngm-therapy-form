@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/BeurteilungNach",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/BeurteilungNach",
+  "version": "1.0",
+  "title": "nNGM: CodeSystem Systematische Therapie BeurteilungNach",
+  "name": "nNMG_CodeSystem_Systematische-Therapie_BeurteilungNach",
+  "status": "active",
+  "experimental": false,
+  "date": "2020-07-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Systematische-Therapie_BeurteilungNach",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "count": 2,
+  "concept": [
+    {
+      "code": "RECIST",
+      "display": "RECIST"
+    },
+    {
+      "code": "Behandelnder Arzt",
+      "display": "Behandelnder Arzt"
+    }
+  ]
+}

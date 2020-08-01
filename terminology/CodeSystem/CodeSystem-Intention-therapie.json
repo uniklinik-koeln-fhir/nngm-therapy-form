@@ -16,6 +16,7 @@
   "publisher": "Uniklinik Köln",
   "description": "Intention von systemischen und Strahlentherapien",
   "caseSensitive": true,
+  "compositional": false,
   "content": "complete",
   "count": 5,
   "concept": [
