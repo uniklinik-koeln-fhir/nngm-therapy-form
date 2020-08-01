@@ -39,6 +39,26 @@
     {
       "code": "definitiv mit Strahlentherapie",
       "display": "definitiv mit Strahlentherapie"
+    },
+    {
+      "code": "Prophylaktisch",
+      "display": "Prophylaktisch"
+    },
+    {
+      "code": "Definitiv mit Chemotherapie",
+      "display": "Definitiv mit Chemotherapie"
+    },
+    {
+      "code": "Sonstiges",
+      "display": "Sonstiges"
+    },
+    {
+      "code": "Revision/Komplikation",
+      "display": "Revision/Komplikation"
+    },
+    {
+      "code": "Diagnostisch",
+      "display": "Diagnostisch"
     }
   ]
 }
