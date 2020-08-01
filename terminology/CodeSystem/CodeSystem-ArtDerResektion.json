@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/OperationArtResektion",
+  "version": "1.0",
+  "title": "nNGM: CodeSystem Operation Art der Resektion",
+  "name": "nNGM_CodeSystem_Operation_ArtDerResektion",
+  "status": "active",
+  "experimental": true,
+  "date": "2020-03-03",
+  "publisher": "Universitätsklinikum Köln",
+  "description": "OP-Kategorien",
+  "compositional": false, 
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "Resektion des Primarius",
+      "display": "Resektion des Primarius"
+    },
+    {
+      "code": "Resektion von Metastasen",
+      "display": "Resektion von Metastasen"
+    },
+    {
+      "code": "Lymphknotenresektion (anders als Lymphadenektomie)",
+      "display": "Lymphknotenresektion (anders als Lymphadenektomie)"
+    },
+    {
+      "code": "Resektion eines lokoregionären Rezidivs",
+      "display": "Resektion eines lokoregionären Rezidivs"
+    },
+    {
+      "code": "Nachresektion",
+      "display": "Nachresektion"
+    },
+    {
+      "code": "Revisions-OP wegen Komplikationen",
+      "display": "Revisions-OP wegen Komplikationen"
+    }
+  ]
+}
