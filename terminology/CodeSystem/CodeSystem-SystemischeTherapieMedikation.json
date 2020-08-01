@@ -1,0 +1,104 @@
+{
+	"resourceType": "CodeSystem",
+	"meta": {
+	  "profile": [
+		"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+	  ]
+	},
+	"url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieMedikation",
+	"version": "1.0",
+	"name": "nNGM_CodeSystem_SystemischeTherapie_Medikation",
+	"title": "nNGM: CodeSystem Systemsische Therapie Medikation",
+	"status": "active",
+	"experimental": true,
+	"date": "2019-02-08",
+	"publisher": "Universitätsklinikum Köln",
+	"description": "Systemische Therapie Status Therapie",
+	"caseSensitive": true,
+	"compositional": false,
+	"content": "complete",
+	"count": 20,
+	"concept": [
+	  {
+		"code": "Afatinib",
+		"display": "Afatinib"
+	  },
+	  {
+		"code": "Afatinib/Cetuximab",
+		"display": "Alectinib"
+	  },
+	  {
+		"code": "Alectinib",
+		"display": "Alectinib"
+	  },
+	  {
+		"code": "Atezolizumab",
+		"display": "Atezolizumab"
+	  },
+	  {
+		"code": "Avelumab",
+		"display": "Avelumab"
+	  },
+	  {
+		"code": "Axitinib",
+		"display": "Axitinib"
+	  },
+	  {
+		"code": "Bevacizumab",
+		"display": "Bevacizumab"
+	  },
+	  {
+		"code": "BGJ398",
+		"display": "BGJ398"
+	  },
+	  {
+		"code": "Brigatinib",
+		"display": "Brigatinib"
+	  },
+	  {
+		"code": "Cabmatinib",
+		"display": "Cabmatinib"
+	  },
+	  {
+		"code": "Cabozantinib",
+		"display": "Cabozantinib"
+	  },
+	  {
+		"code": "Carboplatin",
+		"display": "Carboplatin"
+	  },
+	  {
+		"code": "Carboplatin/Etoposid",
+		"display": "Carboplatin/Etoposid"
+	  },
+	  {
+		"code": "Carboplatin/Gemcitabine",
+		"display": "Carboplatin/Gemcitabine"
+	  },
+	  {
+		"code": "Carboplatin/nab-Paclitaxel",
+		"display": "Carboplatin/nab-Paclitaxel"
+	  },
+	  {
+		"code": "Carboplatin/nab-Paclitaxel/Bevacizumab",
+		"display": "Carboplatin/nab-Paclitaxel/Bevacizumab"
+	  },
+	  {
+		"code": "Carboplatin/nab-Paclitaxel/Bevacizumab/Atezolizumab",
+		"display": "Carboplatin/nab-Paclitaxel/Bevacizumab/Atezolizumab"
+	  },
+	  {
+		"code": "Carboplatin/nab-Paclitaxel/Pembrolizumab",
+		"display": "Carboplatin/nab-Paclitaxel/Pembrolizumab"
+	  },
+	  {
+		"code": "Carboplatin/Paclitaxel",
+		"display": "Carboplatin/Paclitaxel"
+	  },
+	  {
+		"code": "Carboplatin/Paclitaxel/Bevacizumab",
+		"display": "Carboplatin/Paclitaxel/Bevacizumab"
+	  }
+	]
+  }
