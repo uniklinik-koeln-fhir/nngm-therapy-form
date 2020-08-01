@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
@@ -24,16 +24,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-    </element>
-    <element id="Procedure.extension:intention">
-      <path value="Procedure.extension" />
-      <sliceName value="intention" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nngm/intention-therapie" />
-      </type>
-      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:dosis">
       <path value="Procedure.extension" />
@@ -108,7 +98,35 @@
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
+      <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.extension">
+      <path value="Procedure.code.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.code.extension:artDerBestrahlung">
+      <path value="Procedure.code.extension" />
+      <sliceName value="artDerBestrahlung" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding.system">
+      <path value="Procedure.code.coding.system" />
+      <fixedUri value="http://ncit.nci.nih.gov" />
+    </element>
+    <element id="Procedure.code.coding.code">
+      <path value="Procedure.code.coding.code" />
+      <fixedCode value="C15313" />
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
@@ -142,7 +160,25 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performer.actor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Procedure.performer.actor.display" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureReason" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-therapie" />
+      </binding>
+    </element>
+    <element id="Procedure.reasonCode.coding">
+      <path value="Procedure.reasonCode.coding" />
       <min value="1" />
     </element>
     <element id="Procedure.bodySite">
@@ -150,7 +186,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/icdo-o-3-t" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/Bestrahlungsziel" />
       </binding>
     </element>
     <element id="Procedure.bodySite.coding">

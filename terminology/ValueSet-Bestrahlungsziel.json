@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/Bestrahlungsziel",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Strahlentherapie Bestrahlungsziel",
+  "name": "nNGM_ValueSet_Strahlentherapie_Bestrahlungsziel",
+  "status": "active",
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Bestrahlungsziel",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}
