@@ -5,8 +5,8 @@
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/grundnichtumsetzung",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/grundnichtumsetzung",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung",
   "version": "1.0",
   "title": "nNGM CodeSystem Systemische Therapie Grund Nichtumsetzung",
   "name": "nNGM_CodeSystem_ SystemischeTherapie_GrundNichtumsetzung",
