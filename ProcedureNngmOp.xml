@@ -152,7 +152,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/icdo-o-3-t" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation" />
       </binding>
     </element>
     <element id="Procedure.bodySite:lokalisation.coding">
@@ -181,7 +181,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/Seitenlokalisation_Typ" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/OperationSeitenlokalisation" />
       </binding>
     </element>
     <element id="Procedure.bodySite:seitenlokalisation.coding">
