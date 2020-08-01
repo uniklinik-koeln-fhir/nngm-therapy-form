@@ -5,15 +5,20 @@
       "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/grundnichtumsetzung",
-  "version": "0.1",
-  "title": "nNGM CodeSystem Intention Therapie",
-  "name": "nNGM_CodeSystem_Intention_Therapie",
-  "status": "draft",
-  "experimental": true,
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/grundnichtumsetzung",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/grundnichtumsetzung",
+  "version": "1.0",
+  "title": "nNGM CodeSystem Systemische Therapie Grund Nichtumsetzung",
+  "name": "nNGM_CodeSystem_ SystemischeTherapie_GrundNichtumsetzung",
+  "status": "active",
+  "experimental": false,
   "date": "2019-02-08",
   "publisher": "Universitätsklinikum Köln",
+  "description": "Systemische Therapie Grund Nichtumsetzung",
+  "caseSensitive": true,
+  "compositional": false,
   "content": "complete",
+  "count": 8,
   "concept": [
     {
       "code": "Ablehnung durch den Patienten",
