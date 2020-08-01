@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation",
+  "version": "1.0",
+  "experimental": false,
+  "title": "nNGM: CodeSystem Operation Lokalisation",
+  "name": "nNGM_CodeSystem_Operation_Lokalisation",
+  "status": "active",
+  "date": "2020-03-03",
+  "publisher": "Universitätsklinikum Köln",
+  "description": "nNGM Operation Loaklisation",
+  "compositional": false, 
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "Lunge",
+      "display": "Lunge"
+    },
+    {
+      "code": "Leber",
+      "display": "Leber"
+    },
+    {
+      "code": "Gehirn",
+      "display": "Gehirn"
+    },
+    {
+      "code": "Nebenniere",
+      "display": "Nebenniere"
+    }
+  ]
+}
