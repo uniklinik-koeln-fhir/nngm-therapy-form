@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie-deprecated" />
   <version value="0.2" />
   <name value="ProcedureNngmStrahlentherapie" />
   <title value="nNGM Strahlentherapie" />
@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Procedure" />
@@ -142,6 +142,9 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performer.actor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
     </element>
@@ -150,7 +153,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/icdo-o-3-t" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/StrahlentherapieBestrahlungsziel" />
       </binding>
     </element>
     <element id="Procedure.bodySite.coding">

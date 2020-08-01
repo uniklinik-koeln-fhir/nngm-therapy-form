@@ -1,8 +1,9 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op",
-  "version": "0.1",
-  "name": "adt-intention-op",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-op",
+  "version": "1.0",
+  "title": "nNGM: CodeSystem Intention DesEingriffs",
+  "name": "nNGM_CodeSystem_Intention_DesEingriffs",
   "status": "active",
   "date": "2018-10-31",
   "publisher": "Uniklinik Köln",

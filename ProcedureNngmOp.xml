@@ -25,23 +25,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Procedure.extension:intention">
+    <element id="Procedure.extension:lymphadenektomie">
       <path value="Procedure.extension" />
-      <sliceName value="intention" />
-      <max value="1" />
+      <sliceName value="lymphadenektomie" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/intention-op" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/lymphadenektomie" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.extension:ektomie">
-      <path value="Procedure.extension" />
-      <sliceName value="ektomie" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/Extension/ektomie" />
-      </type>
     </element>
     <element id="Procedure.partOf">
       <path value="Procedure.partOf" />
@@ -79,14 +70,49 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK" />
+        <strength value="example" />
       </binding>
+    </element>
+    <element id="Procedure.code.extension">
+      <path value="Procedure.code.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.code.extension:artDesEingriffs">
+      <path value="Procedure.code.extension" />
+      <sliceName value="artDesEingriffs" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.extension:resektion">
+      <path value="Procedure.code.extension" />
+      <sliceName value="resektion" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs-copy" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding.system">
+      <path value="Procedure.code.coding.system" />
+      <fixedUri value="http://ncit.nci.nih.gov" />
+    </element>
+    <element id="Procedure.code.coding.code">
+      <path value="Procedure.code.coding.code" />
+      <fixedCode value="C15329" />
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
@@ -136,59 +162,43 @@
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite.extension">
+      <path value="Procedure.bodySite.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="coding.system" />
+          <path value="url" />
         </discriminator>
         <rules value="open" />
       </slicing>
+    </element>
+    <element id="Procedure.bodySite.extension:seitenlokalisation">
+      <path value="Procedure.bodySite.extension" />
+      <sliceName value="seitenlokalisation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/seitenlokalisation" />
+      </type>
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.bodySite:lokalisation">
-      <path value="Procedure.bodySite" />
-      <sliceName value="lokalisation" />
-      <max value="1" />
-      <mustSupport value="true" />
+    <element id="Procedure.bodySite.coding">
+      <path value="Procedure.bodySite.coding" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation" />
       </binding>
     </element>
-    <element id="Procedure.bodySite:lokalisation.coding">
-      <path value="Procedure.bodySite.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.bodySite:lokalisation.coding.system">
+    <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
-      <min value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Procedure.bodySite:lokalisation.coding.code">
+    <element id="Procedure.bodySite.coding.code">
       <path value="Procedure.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.bodySite:lokalisation.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.bodySite:seitenlokalisation">
-      <path value="Procedure.bodySite" />
-      <sliceName value="seitenlokalisation" />
-      <max value="1" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/OperationSeitenlokalisation" />
-      </binding>
-    </element>
-    <element id="Procedure.bodySite:seitenlokalisation.coding">
-      <path value="Procedure.bodySite.coding" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.bodySite:seitenlokalisation.text">
+    <element id="Procedure.bodySite.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>

@@ -1,17 +1,17 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion",
   "version": "1.0",
-  "title": "nNGM: CodeSystem Operation ArtDesEingriffs",
-  "name": "nNGM_CodeSystem_Operation_ArtDesEingriffs",
+  "title": "nNGM: CodeSystem Operation ArtDerResektion",
+  "name": "nNGM_CodeSystem_Operation_ArtDerResektion",
   "status": "active",
   "date": "2018-10-31",
   "publisher": "Uniklinik Köln",
-  "description": "ArtDesEingriffs",
+  "description": "ArtDerResektion",
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion"
       },
       {
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
