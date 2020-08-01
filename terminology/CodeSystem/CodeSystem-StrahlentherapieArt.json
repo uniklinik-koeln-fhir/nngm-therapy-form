@@ -1,0 +1,40 @@
+{
+	"resourceType": "CodeSystem",
+	"meta": {
+	  "profile": [
+		"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+	  ]
+	},
+	"url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieArtDerBestrahlung",
+	"version": "1.0",
+	"title": "nNGM: CodeSystem Strahlentherapie Art der Bestrahlung",
+	"name": "nNGM_CodeSystem_Strahlentherapie_ArtDerBestrahlung",
+	"status": "active",
+	"experimental": false,
+	"date": "2020-03-03",
+	"publisher": "Universitätsklinikum Köln",
+	"description": "nNGM Strahlentherapiearten",
+	"compositional": false,
+	"caseSensitive": true,
+	"content": "complete",
+	"count": 4,
+	"concept": [
+	  {
+		"code": "konventionelle Bestrahlung",
+		"display": "konventionelle Bestrahlung"
+	  },
+	  {
+		"code": "Cyberknife",
+		"display": "Cyberknife"
+	  },
+	  {
+		"code": "sonstige stereotaktische Bestrahlung",
+		"display": "sonstige stereotaktische Bestrahlung"
+	  },
+	  {
+		"code": "Seed Implantation",
+		"display": "Seed Implantation"
+	  }
+	]
+  }
