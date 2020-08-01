@@ -34,6 +34,15 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:episodeOfCare">
+      <path value="Procedure.extension" />
+      <sliceName value="episodeOfCare" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.partOf">
       <path value="Procedure.partOf" />
       <max value="1" />
@@ -83,21 +92,21 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Procedure.code.extension:artDesEingriffs">
-      <path value="Procedure.code.extension" />
-      <sliceName value="artDesEingriffs" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Procedure.code.extension:resektion">
       <path value="Procedure.code.extension" />
       <sliceName value="resektion" />
       <type>
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs-copy" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.extension:artDesEingriffs">
+      <path value="Procedure.code.extension" />
+      <sliceName value="artDesEingriffs" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs" />
       </type>
       <mustSupport value="true" />
     </element>
