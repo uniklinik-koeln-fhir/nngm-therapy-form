@@ -1,10 +1,24 @@
 {
     "resourceType": "CodeSystem",
-    "title": "EndeDerBestrahlung",
-    "url": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund",
-    "status": "draft",
-    "compositional": false,
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      ]
+    },
+    "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund",
+    "valueSet": "http://uk-koeln.de/fhir/ValueSeet/nngm/Strahlentherapie_Ende_Grund",
+    "version": "1.0",
+    "experimental": false,
+    "title": "nNGM: CodeSystem Strahlentherapie Ende der Bestrahlung",
+    "name": "nNGM_CodeSystem_Strahlentherapie_EndeDerBestrahlung",
+    "status": "active",
+    "date": "2019-02-08",
+    "publisher": "Universitätsklinikum Köln",
+    "description": "Strahlentherapie Bestrahlungsziel",
+    "compositional": false, 
+    "caseSensitive": true,
     "content": "complete",
+    "count": 7,
     "concept": [
       {
         "code": "Regulaeres Ende",
@@ -35,6 +49,4 @@
         "display": "Sonstiges"
       }
     ],
-    "count": 7,
-    "name": "nNGM_CodeSytem_Strahlentherapie_Ende_Grund"
   }
