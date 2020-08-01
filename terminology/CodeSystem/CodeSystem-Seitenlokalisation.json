@@ -5,8 +5,8 @@
 		"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 	  ]
 	},
-	"url": "http://uk-koeln.de/fhir/CodeSystem/OperationSeitenlokalisation",
-	"valueSet": "http://uk-koeln.de/fhir/ValueSet/OperationSeitenlokalisation",
+	"url": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationSeitenlokalisation",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/OperationSeitenlokalisation",
 	"version": "1.0",
 	"experimental": false,
 	"title": "nNGM: CodeSystem Operation Seitenlokalisation",
