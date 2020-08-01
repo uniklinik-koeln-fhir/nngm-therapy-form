@@ -223,15 +223,9 @@
     </element>
     <element id="Procedure.outcome">
       <path value="Procedure.outcome" />
-      <mustSupport value="true" />
       <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/residualtumor" />
+        <strength value="example" />
       </binding>
-    </element>
-    <element id="Procedure.outcome.coding">
-      <path value="Procedure.outcome.coding" />
-      <min value="1" />
     </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />

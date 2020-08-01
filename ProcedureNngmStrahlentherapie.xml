@@ -75,6 +75,7 @@
     <element id="Procedure.statusReason.coding">
       <path value="Procedure.statusReason.coding" />
       <min value="1" />
+      <max value="1" />
     </element>
     <element id="Procedure.category">
       <path value="Procedure.category" />
@@ -174,7 +175,6 @@
           <valueString value="ProcedureReason" />
         </extension>
         <strength value="required" />
-        <valueSet value="" />
       </binding>
     </element>
     <element id="Procedure.reasonCode.coding">
@@ -191,21 +191,6 @@
     </element>
     <element id="Procedure.bodySite.coding">
       <path value="Procedure.bodySite.coding" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.outcome">
-      <path value="Procedure.outcome" />
-      <mustSupport value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureOutcome" />
-        </extension>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund" />
-      </binding>
-    </element>
-    <element id="Procedure.outcome.coding">
-      <path value="Procedure.outcome.coding" />
       <min value="1" />
     </element>
     <element id="Procedure.note">
