@@ -1,19 +1,24 @@
 {
   "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieStatusTherapie",
+  "version": "1.0",
   "title": "nNGM: CodeSystem Strahlentherapie Status Therapie",
-  "url": "http://uk-koeln.de/fhir/CodeSystem/StatusTherapie",
-  "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
+  "name": "nNGM_CodeSystem_Strahlentherapie_StatusTherapie",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-08",
+  "publisher": "Universitätsklinikum Köln",
+  "description": "Systemische Therapie Status Therapie",
+  "caseSensitive": true,
   "compositional": false,
   "content": "complete",
+  "count": 8,
   "concept": [
     {
       "code": "Reguläres Ende",
@@ -47,6 +52,5 @@
       "code": "Sonstiges",
       "display": "Sonstiges"
     }
-  ],
-  "name": "nNGM_CodeSystem_StatusTherapie"
+  ]
 }
