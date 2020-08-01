@@ -1,10 +1,23 @@
 {
     "resourceType": "CodeSystem",
-    "title": "Strahlentherapie Bestrahlungsziel",
-    "url": "http://uk-koeln.de/fhir/CodeSystem/ArtDesEingriffs",
-    "status": "draft",
+    "meta": {
+      "profile": [
+        "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+      ]
+    },
+    "url": "http://uk-koeln.de/fhir/CodeSystem/ngnm/ArtDesEingriffs",
+    "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/ArtDesEingriffs",
+    "title": "nNGM: CodeSystem ArtDesEingriffs",
+    "name": "nNGM:_CodeSystem_ArtDesEingriffs",
+    "status": "active",
+    "experimental": false,
+    "date": "2018-10-31",
+    "publisher": "Uniklinik Köln",
+    "description": "ArtDesEingriffs",
     "compositional": false,
+    "caseSensitive": true,
     "content": "complete",
+    "count": 8,
     "concept": [
       {
         "code": "Bilobektomie",
@@ -38,11 +51,5 @@
         "code": "Pleurektomie (Dekortikation)",
         "display": "Pleurektomie (Dekortikation)"
       }
-    ],
-    "text": {
-      "status": "generated",
-      "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Strahlentherapie Bestrahlungsziel</h2><tt>http://uk-koeln.de/fhir/CodeSystem/StrahlentherapieBestrahlungsziel</tt><p></p></div>"
-    },
-    "count": 8,
-    "name": "Strahlentherapie_Bestrahlungsziel"
+    ]
   }
