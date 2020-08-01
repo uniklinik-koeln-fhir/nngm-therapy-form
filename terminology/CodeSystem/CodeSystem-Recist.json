@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieRECIST",
+  "version": "1.0",
+  "title": "nNGM: CodeSystem Systemsiche Therapie RECIST",
+  "name": "nNGM_CodeSystem_SystemischeTherapie_RECIST",
+  "status": "active",
+  "experimental": false,
+  "date": "2019-02-08",
+  "publisher": "Universitätsklinikum Köln",
+  "description": "Systemsiche Therapie RECIST",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "CR",
+      "display": "Complete Remission"
+    },
+    {
+      "code": "PR",
+      "display": "Partial Remission"
+    },
+    {
+      "code": "PD",
+      "display": "Progressive Disease"
+    },
+    {
+      "code": "SD",
+      "display": "Stable Disease"
+    }
+  ]
+}
