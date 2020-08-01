@@ -9,7 +9,7 @@
 	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SonstigeTherapieArtDerTherapie",
 	"version": "1.0",
 	"title": "nNGM: CodeSystem Sonstige Therapie Art Der Therapie",
-	"name": "nNGM_CodeSystem_SonstigeTherapie_ArtDertherapie",
+	"name": "nNGM_CodeSystem_SonstigeTherapie_ArtDerTherapie",
 	"status": "active",
 	"experimental": false,
 	"date": "2020-03-03",
