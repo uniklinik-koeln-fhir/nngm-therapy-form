@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Operation ArtDerResektion",
+  "name": "nNGM_ValueSet_Operation_ArtDerResektion",
+  "status": "active",
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "ArtDerResektion",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie"
+      }
+    ]
+  }
+}
