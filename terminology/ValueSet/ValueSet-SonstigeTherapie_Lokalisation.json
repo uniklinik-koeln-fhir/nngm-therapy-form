@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Operation Lokalisation",
+  "name": "nNGM_ValueSet_OperationLokalisation",
+  "status": "active",
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "nNGM Operation Lokalisation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+        "concept": [
+          {
+            "code": "Lunge",
+            "display": "Lunge"
+          },
+          {
+            "code": "Leber",
+            "display": "Leber"
+          }
+        ]
+      },
+      {
+        "system": "http://ncit.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}
