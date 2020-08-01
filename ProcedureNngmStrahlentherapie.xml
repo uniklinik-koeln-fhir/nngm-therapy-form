@@ -193,6 +193,21 @@
       <path value="Procedure.bodySite.coding" />
       <min value="1" />
     </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureOutcome" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund" />
+      </binding>
+    </element>
+    <element id="Procedure.outcome.coding">
+      <path value="Procedure.outcome.coding" />
+      <min value="1" />
+    </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />
       <mustSupport value="true" />
