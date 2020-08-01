@@ -7,6 +7,7 @@
     },
     "url": "http://uk-koeln.de/fhir/CodeSystem/ngnm/ArtDesEingriffs",
     "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/ArtDesEingriffs",
+    "version": "1.0",
     "title": "nNGM: CodeSystem ArtDesEingriffs",
     "name": "nNGM:_CodeSystem_ArtDesEingriffs",
     "status": "active",
