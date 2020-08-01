@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-therapie",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-strahlentherapie",
   "version": "0.1",
   "name": "adt-intention-therapie",
   "status": "draft",
@@ -12,6 +12,15 @@
     "include": [
       {
         "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
       }
     ]
   }
