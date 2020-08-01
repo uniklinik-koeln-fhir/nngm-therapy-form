@@ -1,20 +1,24 @@
 {
   "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Bestrahlungsziel",
+  "version": "1.0",
+  "experimental": false,
   "title": "nNGM: CodeSystem Strahlentherapie Bestrahlungsziel",
-  "url": "http://uk-koeln.de/fhir/CodeSystem/Strahlentherapie_Bestrahlungsziel",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/Strahlentherapie_Bestrahlungsziel",
+  "name": "nNGM_CodeSystem_Strahlentherapie_Bestrahlungsziel",
   "status": "draft",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "email"
-        }
-      ]
-    }
-  ],
-  "compositional": false,
+  "date": "2019-02-08",
+  "publisher": "Universitätsklinikum Köln",
+  "description": "Abrechnungsinformation im Kontext von nNGM",
+  "compositional": false, 
+  "caseSensitive": true,
   "content": "complete",
+  "count": 7,
   "concept": [
     {
       "code": "Primärtumorregion",
@@ -44,7 +48,5 @@
       "code": "Mediastinum",
       "display": "Mediastinum"
     }
-  ],
-  "count": 7,
-  "name": "nNGM_CodeSystem_Strahlentherapie_Bestrahlungsziel"
+  ]
 }
