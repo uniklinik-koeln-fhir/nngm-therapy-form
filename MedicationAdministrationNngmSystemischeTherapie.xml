@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="MedicationAdministration" />
@@ -25,35 +25,14 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationAdministration.extension:intention">
-      <path value="MedicationAdministration.extension" />
-      <sliceName value="intention" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nngm/intention-therapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationAdministration.extension:studientherapie">
       <path value="MedicationAdministration.extension" />
       <sliceName value="studientherapie" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.extension:studientherapie.extension">
-      <path value="MedicationAdministration.extension.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
     </element>
     <element id="MedicationAdministration.extension:studientherapie.extension:teilnahme">
       <path value="MedicationAdministration.extension.extension" />
@@ -65,17 +44,12 @@
       <sliceName value="studie" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.extension:studientherapie.extension:studie.url">
-      <path value="MedicationAdministration.extension.extension.url" />
-      <fixedUri value="studie" />
-    </element>
-    <element id="MedicationAdministration.extension:studientherapie.extension:studie.display">
-      <path value="MedicationAdministration.extension.extension.display" />
-      <min value="1" />
-    </element>
-    <element id="MedicationAdministration.extension:studientherapie.url">
-      <path value="MedicationAdministration.extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
+    <element id="MedicationAdministration.extension:studientherapie.extension:studie.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationAdministration.extension.extension.value[x].text" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.extension:offLabelTherapie">
       <path value="MedicationAdministration.extension" />
@@ -118,6 +92,27 @@
       <path value="MedicationAdministration.statusReason.text" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationAdministration.category">
+      <path value="MedicationAdministration.category" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.category.coding">
+      <path value="MedicationAdministration.category.coding" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/medicationAdministrationCategory" />
+      </binding>
+    </element>
+    <element id="MedicationAdministration.category.coding.system">
+      <path value="MedicationAdministration.category.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.category.coding.code">
+      <path value="MedicationAdministration.category.coding.code" />
+      <min value="1" />
+    </element>
     <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
       <type>
@@ -150,6 +145,7 @@
     </element>
     <element id="MedicationAdministration.context">
       <path value="MedicationAdministration.context" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.context.identifier">
@@ -188,28 +184,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.supportingInformation.extension:hilfreich">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <sliceName value="hilfreich" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/Extension/hilfreich" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.supportingInformation.extension:umgesetzt">
-      <path value="MedicationAdministration.supportingInformation.extension" />
-      <sliceName value="umgesetzt" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/Extension/umgesetzt" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
       <type>
@@ -228,6 +202,24 @@
     <element id="MedicationAdministration.performer">
       <path value="MedicationAdministration.performer" />
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.performer.actor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationAdministration.performer.actor.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.reasonCode">
+      <path value="MedicationAdministration.reasonCode" />
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationAdministrationReason" />
+        </extension>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/intention-systemisch" />
+      </binding>
     </element>
     <element id="MedicationAdministration.note">
       <path value="MedicationAdministration.note" />

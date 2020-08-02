@@ -1,8 +1,8 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/grundnichtumsetzung",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung",
   "version": "0.1",
-  "name": "grundNichtumsetsung",
+  "name": "grundNichtumsetzung",
   "status": "draft",
   "experimental": true,
   "date": "2018-10-31",
@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/grundnichtumsetzung"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung"
       }
     ]
   }

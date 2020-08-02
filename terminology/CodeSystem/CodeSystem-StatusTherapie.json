@@ -18,38 +18,29 @@
   "caseSensitive": true,
   "compositional": false,
   "content": "complete",
-  "count": 8,
   "concept": [
     {
-      "code": "Reguläres Ende",
-      "display": "Reguläres Ende"
+      "code": "nebenwirkungen",
+      "display": "Nebenwirkungen"
     },
     {
-      "code": "Abbruch wegen Nebenwirkungen",
-      "display": "Abbruch wegen Nebenwirkungen"
-    },
-    {
-      "code": "Pause wegen Nebenwirkungen",
-      "display": "Pause wegen Nebenwirkungen"
-    },
-    {
-      "code": "Abbruch wegen Progress",
-      "display": "Abbruch wegen Progress"
-    },
-    {
-      "code": "Ablehnung durch den Patienten",
+      "code": "ablehnungPatient",
       "display": "Ablehnung durch den Patienten"
     },
     {
-      "code": "Vielversprechendere Therapieoption",
+      "code": "progress",
+      "display": "Progress"
+    },
+    {
+      "code": "vielversprechendereTherapieoption",
       "display": "Vielversprechendere Therapieoption"
     },
     {
-      "code": "Patient verstorben",
+      "code": "verstorben",
       "display": "Patient verstorben"
     },
     {
-      "code": "Sonstiges",
+      "code": "sonstiges",
       "display": "Sonstiges"
     }
   ]

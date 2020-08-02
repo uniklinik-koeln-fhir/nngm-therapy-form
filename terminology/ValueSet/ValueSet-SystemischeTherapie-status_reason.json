@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeStatusReason",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Statusreason Systemische Therapie",
+  "name": "nNGM_ValueSet_Statusreason_Sytemische_Therapie",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Statusreason Systemische Therapie",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "not-applicable",
+            "display": "Not Applicable"
+          }
+        ]
+      }
+    ]
+  }
+}

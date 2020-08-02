@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-op",
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-systemisch",
   "version": "1.0",
-  "title": "nNGM: ValueSet Operation Intention des Eingriffs",
-  "name": "nNGM_ValueSet_Operation_IntentionDesEingriffs",
+  "title": "nNGM: ValueSet Intention der sytemischen Therapie",
+  "name": "nNGM_ValueSet_Intention_der_sytemischen_Therapie",
   "status": "active",
   "experimental": false,
   "date": "2018-10-31",
@@ -23,16 +23,16 @@
             "display": "kurativ"
           },
           {
-            "code": "Revision/Komplikation",
-            "display": "Revision/Komplikation"
+            "code": "adjuvant",
+            "display": "adjuvant"
           },
           {
-            "code": "Diagnostisch",
-            "display": "Diagnostisch"
+            "code": "neoadjuvant",
+            "display": "neoadjuvant"
           },
           {
-            "code": "Sonstiges",
-            "display": "Sonstiges"
+            "code": "definitiv mit Strahlentherapie",
+            "display": "definitiv mit Strahlentherapie"
           }
         ]
       },
@@ -40,8 +40,8 @@
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
         "concept": [
           {
-            "code": "unknown",
-            "display": "Unknown"
+            "code": "not-applicable",
+            "display": "Not Applicable"
           }
         ]
       }
