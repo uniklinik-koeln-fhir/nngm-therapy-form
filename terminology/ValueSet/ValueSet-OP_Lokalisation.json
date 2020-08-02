@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Operation Lokalisation",
+  "name": "nNGM_ValueSet_Operation_Lokalisation",
+  "status": "active",
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "nNGM Operation Lokalisation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown",
+            "display": "Unknown"
+          }
+        ]
+      },
+      {
+        "system": "http://ncit.nci.nih.gov",
+        "concept": [
+          {
+            "code": "C17649",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

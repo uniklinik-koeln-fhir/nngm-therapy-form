@@ -1,17 +1,17 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-strahlentherapie",
-  "version": "0.1",
-  "name": "adt-intention-therapie",
-  "status": "draft",
-  "experimental": true,
+  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion",
+  "version": "1.0",
+  "title": "nNGM: ValueSet Operation ArtDerResektion",
+  "name": "nNGM_ValueSet_Operation_ArtDerResektion",
+  "status": "active",
   "date": "2018-10-31",
   "publisher": "Uniklinik Köln",
-  "description": "Intention von systemischen und Strahlentherapien",
+  "description": "ArtDerResektion",
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion"
       },
       {
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
