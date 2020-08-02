@@ -97,7 +97,7 @@
       <sliceName value="resektion" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs-copy" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/resektion" />
       </type>
       <mustSupport value="true" />
     </element>
