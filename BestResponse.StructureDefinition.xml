@@ -2,8 +2,8 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/best-response" />
   <name value="BestResponse" />
-  <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="sct-concept" />
     <uri value="http://snomed.info/conceptdomain" />
@@ -35,6 +35,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation.partOf">
+      <path value="Observation.partOf" />
+      <min value="1" />
+    </element>
     <element id="Observation.status">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="default: final" />
@@ -52,10 +56,40 @@
       <path value="Observation.code" />
       <mustSupport value="true" />
     </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ncit.nci.nih.gov" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="C94536" />
+    </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.identifier">
+      <path value="Observation.subject.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <mustSupport value="false" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/bestesAnsprechen" />
+      </binding>
     </element>
     <element id="Observation.method">
       <path value="Observation.method" />
@@ -66,12 +100,12 @@
           <valueString value="ObservationMethod" />
         </extension>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/beurteilungnach" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach" />
       </binding>
     </element>
-    <element id="Observation.component">
-      <path value="Observation.component" />
-      <max value="0" />
+    <element id="Observation.method.coding">
+      <path value="Observation.method.coding" />
+      <min value="1" />
     </element>
   </differential>
 </StructureDefinition>

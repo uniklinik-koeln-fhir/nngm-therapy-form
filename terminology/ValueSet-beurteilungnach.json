@@ -1,18 +1,14 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/beurteilungnach",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach",
   "title": "Systematische Therapie BeurteilungNach",
   "status": "draft",
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/BeurteilungNach"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieBeurteilungNach"
       }
     ]
-  },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Systematische Therapie BeurteilungNach</h2><tt>http://uk-koeln.de/fhir/ValueSet/beurteilungnach</tt></div>"
   },
   "name": "Systematische_Therapie_BeurteilungNach"
 }

@@ -68,6 +68,26 @@
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:Erhaltungstherapie.extension:option">
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="option" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:Erhaltungstherapie.extension:medikament">
+      <path value="MedicationAdministration.extension.extension" />
+      <sliceName value="medikament" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.extension:nebenwirkung">
+      <path value="MedicationAdministration.extension" />
+      <sliceName value="nebenwirkung" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/Nebenwirkung" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
@@ -78,7 +98,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeStatusReason" />
       </binding>
     </element>
     <element id="MedicationAdministration.statusReason.coding">

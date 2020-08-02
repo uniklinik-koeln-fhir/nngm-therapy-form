@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/Extension/grundnichtumsetzung" />
-  <name value="GrundNichtumsetzung" />
-  <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/Nebenwirkung" />
+  <version value="0.2" />
+  <name value="ExtensionNngmNebenwirkung" />
+  <status value="active" />
+  <date value="2019-10-18" />
+  <publisher value="Universitätsklinikum Köln" />
+  <description value="Sind Nebenwirkungen Grad III / Grad aufgetreten" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -14,19 +18,20 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/Extension/grundnichtumsetzung" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/Nebenwirkung" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="boolean" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/grundnichtumsetzung" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
