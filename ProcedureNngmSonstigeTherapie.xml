@@ -26,6 +26,25 @@
       </extension>
       <path value="Procedure.meta.tag.display" />
     </element>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:maintenance">
+      <path value="Procedure.extension" />
+      <sliceName value="maintenance" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.identifier.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
