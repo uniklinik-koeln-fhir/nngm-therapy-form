@@ -152,6 +152,10 @@
       </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+      </binding>
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />

@@ -44,17 +44,9 @@
       <sliceName value="studie" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.extension:studientherapie.extension:studie.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="MedicationAdministration.extension.extension.value[x].text" />
-      <mustSupport value="true" />
-    </element>
     <element id="MedicationAdministration.extension:offLabelTherapie">
       <path value="MedicationAdministration.extension" />
       <sliceName value="offLabelTherapie" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OffLabelTherapie" />
@@ -229,6 +221,10 @@
       </extension>
       <path value="MedicationAdministration.performer.actor.display" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+      </binding>
     </element>
     <element id="MedicationAdministration.reasonCode">
       <path value="MedicationAdministration.reasonCode" />

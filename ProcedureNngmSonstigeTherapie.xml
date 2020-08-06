@@ -14,18 +14,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
   <derivation value="constraint" />
   <differential>
-    <element id="Procedure.meta.security.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.meta.security.display" />
-    </element>
-    <element id="Procedure.meta.tag.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.meta.tag.display" />
-    </element>
     <element id="Procedure.extension">
       <path value="Procedure.extension" />
       <slicing>
@@ -45,75 +33,9 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.identifier.type.text" />
-    </element>
-    <element id="Procedure.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.identifier.assigner.display" />
-    </element>
-    <element id="Procedure.basedOn.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.basedOn.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.basedOn.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.basedOn.identifier.type.text" />
-    </element>
-    <element id="Procedure.basedOn.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.basedOn.display" />
-    </element>
-    <element id="Procedure.partOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.partOf.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.partOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.partOf.identifier.type.text" />
-    </element>
-    <element id="Procedure.partOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.partOf.display" />
-    </element>
     <element id="Procedure.status">
       <path value="Procedure.status" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.statusReason.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.statusReason.coding.display" />
-    </element>
-    <element id="Procedure.statusReason.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.statusReason.text" />
     </element>
     <element id="Procedure.category">
       <path value="Procedure.category" />
@@ -126,18 +48,6 @@
     <element id="Procedure.category.coding">
       <path value="Procedure.category.coding" />
       <min value="1" />
-    </element>
-    <element id="Procedure.category.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.category.coding.display" />
-    </element>
-    <element id="Procedure.category.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.category.text" />
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
@@ -179,12 +89,6 @@
       <min value="1" />
       <fixedCode value="C15645" />
     </element>
-    <element id="Procedure.code.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.code.coding.display" />
-    </element>
     <element id="Procedure.code.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -204,48 +108,6 @@
       <path value="Procedure.subject.reference" />
       <min value="1" />
     </element>
-    <element id="Procedure.subject.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.subject.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.subject.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.subject.identifier.type.text" />
-    </element>
-    <element id="Procedure.subject.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.subject.identifier.assigner.display" />
-    </element>
-    <element id="Procedure.subject.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.subject.display" />
-    </element>
-    <element id="Procedure.encounter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.encounter.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.encounter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.encounter.identifier.type.text" />
-    </element>
-    <element id="Procedure.encounter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.encounter.display" />
-    </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
       <type>
@@ -261,75 +123,9 @@
       <path value="Procedure.performed[x].end" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.recorder.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.recorder.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.recorder.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.recorder.identifier.type.text" />
-    </element>
-    <element id="Procedure.recorder.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.recorder.display" />
-    </element>
-    <element id="Procedure.asserter.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.asserter.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.asserter.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.asserter.identifier.type.text" />
-    </element>
-    <element id="Procedure.asserter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.asserter.display" />
-    </element>
     <element id="Procedure.performer">
       <path value="Procedure.performer" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.performer.function.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.function.coding.display" />
-    </element>
-    <element id="Procedure.performer.function.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.function.text" />
-    </element>
-    <element id="Procedure.performer.actor.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.actor.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.performer.actor.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.actor.identifier.type.text" />
-    </element>
-    <element id="Procedure.performer.actor.identifier.assigner.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.actor.identifier.assigner.display" />
     </element>
     <element id="Procedure.performer.actor.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -337,42 +133,10 @@
       </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
-    </element>
-    <element id="Procedure.performer.onBehalfOf.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.onBehalfOf.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.performer.onBehalfOf.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.onBehalfOf.identifier.type.text" />
-    </element>
-    <element id="Procedure.performer.onBehalfOf.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.performer.onBehalfOf.display" />
-    </element>
-    <element id="Procedure.location.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.location.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.location.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.location.identifier.type.text" />
-    </element>
-    <element id="Procedure.location.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.location.display" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+      </binding>
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
@@ -404,7 +168,6 @@
     <element id="Procedure.reasonCode.extension:grundKeineTherapie">
       <path value="Procedure.reasonCode.extension" />
       <sliceName value="grundKeineTherapie" />
-      <min value="0" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -423,36 +186,6 @@
     <element id="Procedure.reasonCode.coding.code">
       <path value="Procedure.reasonCode.coding.code" />
       <min value="1" />
-    </element>
-    <element id="Procedure.reasonCode.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.reasonCode.coding.display" />
-    </element>
-    <element id="Procedure.reasonCode.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.reasonCode.text" />
-    </element>
-    <element id="Procedure.reasonReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.reasonReference.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.reasonReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.reasonReference.identifier.type.text" />
-    </element>
-    <element id="Procedure.reasonReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.reasonReference.display" />
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
@@ -474,12 +207,6 @@
       <path value="Procedure.bodySite.coding.code" />
       <min value="1" />
     </element>
-    <element id="Procedure.bodySite.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.bodySite.coding.display" />
-    </element>
     <element id="Procedure.bodySite.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -487,141 +214,9 @@
       <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.outcome.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.outcome.coding.display" />
-    </element>
-    <element id="Procedure.outcome.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.outcome.text" />
-    </element>
-    <element id="Procedure.report.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.report.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.report.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.report.identifier.type.text" />
-    </element>
-    <element id="Procedure.report.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.report.display" />
-    </element>
-    <element id="Procedure.complication.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.complication.coding.display" />
-    </element>
-    <element id="Procedure.complication.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.complication.text" />
-    </element>
-    <element id="Procedure.complicationDetail.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.complicationDetail.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.complicationDetail.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.complicationDetail.identifier.type.text" />
-    </element>
-    <element id="Procedure.complicationDetail.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.complicationDetail.display" />
-    </element>
-    <element id="Procedure.followUp.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.followUp.coding.display" />
-    </element>
-    <element id="Procedure.followUp.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.followUp.text" />
-    </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.focalDevice.action.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.focalDevice.action.coding.display" />
-    </element>
-    <element id="Procedure.focalDevice.action.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.focalDevice.action.text" />
-    </element>
-    <element id="Procedure.focalDevice.manipulated.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.focalDevice.manipulated.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.focalDevice.manipulated.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.focalDevice.manipulated.identifier.type.text" />
-    </element>
-    <element id="Procedure.focalDevice.manipulated.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.focalDevice.manipulated.display" />
-    </element>
-    <element id="Procedure.usedReference.identifier.type.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.usedReference.identifier.type.coding.display" />
-    </element>
-    <element id="Procedure.usedReference.identifier.type.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.usedReference.identifier.type.text" />
-    </element>
-    <element id="Procedure.usedReference.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.usedReference.display" />
-    </element>
-    <element id="Procedure.usedCode.coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.usedCode.coding.display" />
-    </element>
-    <element id="Procedure.usedCode.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Procedure.usedCode.text" />
     </element>
   </differential>
 </StructureDefinition>
