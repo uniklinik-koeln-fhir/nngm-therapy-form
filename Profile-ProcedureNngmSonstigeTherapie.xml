@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie" />
+  <version value="0.2" />
+  <name value="ProcedureNngmSonstigeTherapie" />
+  <title value="nNGM Sonstige Therapie" />
+  <status value="active" />
+  <date value="2019-10-18" />
+  <publisher value="Universitätsklinikum Köln" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure.extension">
+      <path value="Procedure.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.extension:maintenance">
+      <path value="Procedure.extension" />
+      <sliceName value="maintenance" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.status">
+      <path value="Procedure.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie" />
+      </binding>
+    </element>
+    <element id="Procedure.category.coding">
+      <path value="Procedure.category.coding" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.code">
+      <path value="Procedure.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.extension">
+      <path value="Procedure.code.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.code.extension:methode">
+      <path value="Procedure.code.extension" />
+      <sliceName value="methode" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/methode-sonstige-therapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding.system">
+      <path value="Procedure.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://ncit.nci.nih.gov" />
+    </element>
+    <element id="Procedure.code.coding.code">
+      <path value="Procedure.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="C15645" />
+    </element>
+    <element id="Procedure.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Procedure.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.subject.reference">
+      <path value="Procedure.subject.reference" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <type>
+        <code value="Period" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performed[x].start">
+      <path value="Procedure.performed[x].start" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performed[x].end">
+      <path value="Procedure.performed[x].end" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer.actor.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Procedure.performer.actor.display" />
+      <min value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+      </binding>
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
+      </binding>
+    </element>
+    <element id="Procedure.reasonCode.extension">
+      <path value="Procedure.reasonCode.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Procedure.reasonCode.extension:beschreibungAlternativeMethode">
+      <path value="Procedure.reasonCode.extension" />
+      <sliceName value="beschreibungAlternativeMethode" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.reasonCode.extension:grundKeineTherapie">
+      <path value="Procedure.reasonCode.extension" />
+      <sliceName value="grundKeineTherapie" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/grund-keine-therapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.reasonCode.coding">
+      <path value="Procedure.reasonCode.coding" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.reasonCode.coding.system">
+      <path value="Procedure.reasonCode.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.reasonCode.coding.code">
+      <path value="Procedure.reasonCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
+      </binding>
+    </element>
+    <element id="Procedure.bodySite.coding">
+      <path value="Procedure.bodySite.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite.coding.system">
+      <path value="Procedure.bodySite.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.bodySite.coding.code">
+      <path value="Procedure.bodySite.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Procedure.bodySite.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Procedure.bodySite.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.note">
+      <path value="Procedure.note" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
