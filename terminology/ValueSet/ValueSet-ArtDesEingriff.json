@@ -2,8 +2,8 @@
   "resourceType": "ValueSet",
   "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK",
   "version": "1.0",
-  "title": "nNGM: CodeSystem Operation ArtDesEingriffs",
-  "name": "nNGM_CodeSystem_Operation_ArtDesEingriffs",
+  "title": "nNGM: ValueSet Operation ArtDesEingriffs",
+  "name": "nNGM_ValueSet_Operation_ArtDesEingriffs",
   "status": "active",
   "experimental": false,
   "date": "2018-10-31",
@@ -12,7 +12,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs"
       },
       {
         "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
