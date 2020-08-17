@@ -53,6 +53,23 @@
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion" />
       </binding>
     </element>
+    <element id="Extension.extension:resektionsart.value[x].coding">
+      <path value="Extension.extension.value[x].coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:resektionsart.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:resektionsart.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
+    </element>
     <element id="Extension.extension:resektionsstatus">
       <path value="Extension.extension" />
       <sliceName value="resektionsstatus" />
@@ -68,15 +85,27 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/resektionsstatus" />
+      </binding>
     </element>
     <element id="Extension.extension:resektionsstatus.value[x].coding">
       <path value="Extension.extension.value[x].coding" />
       <min value="1" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/resektionsstatus" />
-      </binding>
+    </element>
+    <element id="Extension.extension:resektionsstatus.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.extension:resektionsstatus.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
