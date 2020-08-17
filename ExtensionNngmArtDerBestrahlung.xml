@@ -31,8 +31,20 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/StrahlentherapieArtDerBestrahlung" />
       </binding>
+    </element>
+    <element id="Extension.value[x].coding.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].coding.display" />
+    </element>
+    <element id="Extension.value[x].text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Extension.value[x].text" />
     </element>
   </differential>
 </StructureDefinition>
