@@ -1,21 +1,23 @@
 {
-    "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund",
-    "title": "nNGM Valueset Strahlentherapie Ende Grund",
-    "status": "draft",
-    "compose": {
-      "include": [
-        {
-            "system": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund"
-        },
-        {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "concept":  [{
-                "code": "NA",
-                "display": "not applicable"
-            }]
-        }
-      ]
-    },
-    "name": "nNGM_ValueSet_Strahlentherapie_Ende_Grund"
-  }
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund",
+  "title": "nNGM Valueset Strahlentherapie Ende Grund",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Ende_Grund"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "NA",
+            "display": "not applicable"
+          }
+        ]
+      }
+    ]
+  },
+  "name": "nNGM_ValueSet_Strahlentherapie_Ende_Grund"
+}

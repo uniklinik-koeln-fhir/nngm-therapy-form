@@ -11,7 +11,41 @@
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "concept": [
+          {
+            "code": "Ablehnung durch den Patienten",
+            "display": "Ablehnung durch den Patienten"
+          },
+          {
+            "code": "Aktuelle Medikamente",
+            "display": "Aktuelle Medikamente"
+          },
+          {
+            "code": "Anderes",
+            "display": "Anderes"
+          },
+          {
+            "code": "Begleiterkrankungen/Allgemeinzustand des Patienten",
+            "display": "Begleiterkrankungen/Allgemeinzustand des Patienten"
+          },
+          {
+            "code": "Logistischer Aufwand",
+            "display": "Logistischer Aufwand"
+          },
+          {
+            "code": "Mangelnde Compliance vom Patienten",
+            "display": "Mangelnde Compliance vom Patienten"
+          },
+          {
+            "code": "Versicherungsstatus",
+            "display": "Versicherungsstatus"
+          },
+          {
+            "code": "Vortherapien",
+            "display": "Vortherapien"
+          }
+        ]
       }
     ]
   }

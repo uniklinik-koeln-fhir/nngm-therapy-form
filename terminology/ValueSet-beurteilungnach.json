@@ -6,7 +6,17 @@
   "compose": {
     "include": [
       {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieBeurteilungNach"
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieBeurteilungNach",
+        "concept": [
+          {
+            "code": "RECIST",
+            "display": "RECIST"
+          },
+          {
+            "code": "Behandelnder Arzt",
+            "display": "Behandelnder Arzt"
+          }
+        ]
       }
     ]
   },
