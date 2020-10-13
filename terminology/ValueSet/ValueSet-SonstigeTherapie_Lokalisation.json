@@ -1,37 +1,49 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Sonstige Therapie Lokalisation",
-  "name": "nNGM_ValueSet_SonstigeTherapie_Lokalisation",
   "status": "active",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "nNGM Operation Lokalisation",
   "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
-        "concept": [
+      "include": [
           {
-            "code": "Lunge",
-            "display": "Lunge"
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "concept": [
+                  {
+                      "code": "Lunge",
+                      "display": "Lunge"
+                  },
+                  {
+                      "code": "Leber",
+                      "display": "Leber"
+                  }
+              ]
           },
           {
-            "code": "Leber",
-            "display": "Leber"
+              "system": "http://ncit.nci.nih.gov",
+              "concept": [
+                  {
+                      "code": "C17649",
+                      "display": "Other"
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "system": "http://ncit.nci.nih.gov",
-        "concept": [
+      ]
+  },
+  "expansion": {
+      "identifier": "c76e0499-d7f3-4b5a-88f0-098a6390dadd",
+      "timestamp": "2020-10-13T10:42:38+00:00",
+      "total": 2,
+      "contains": [
           {
-            "code": "C17649",
-            "display": "Other"
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Lunge",
+              "display": "Lunge"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Leber",
+              "display": "Leber"
           }
-        ]
-      }
-    ]
+      ]
   }
 }

@@ -1,36 +1,66 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Operation Lokalisation",
-  "name": "nNGM_ValueSet_Operation_Lokalisation",
   "status": "active",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "nNGM Operation Lokalisation",
   "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "concept": [
+      "include": [
           {
-            "code": "unknown",
-            "display": "Unknown"
-          }
-        ]
-      },
-      {
-        "system": "http://ncit.nci.nih.gov",
-        "concept": [
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation"
+          },
           {
-            "code": "C17649",
-            "display": "Other"
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "concept": [
+                  {
+                      "code": "unknown",
+                      "display": "Unknown"
+                  }
+              ]
+          },
+          {
+              "system": "http://ncit.nci.nih.gov",
+              "concept": [
+                  {
+                      "code": "C17649",
+                      "display": "Other"
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
+  },
+  "expansion": {
+      "identifier": "47969658-65a1-4554-94da-67007dbfe2da",
+      "timestamp": "2020-10-13T10:42:20+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Lunge",
+              "display": "Lunge"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Leber",
+              "display": "Leber"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Gehirn",
+              "display": "Gehirn"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+              "version": "1.0",
+              "code": "Nebenniere",
+              "display": "Nebenniere"
+          },
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "version": "4.0.1",
+              "code": "unknown",
+              "display": "Unknown"
+          }
+      ]
   }
 }

@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/ecog",
+  "title": "ECOG",
+  "status": "draft",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.276.0.76.3.1.131.1.5.153",
+        "concept": [
+          {
+            "code": "0",
+            "display": "ECOG 0 - normale, uneingeschränkte Aktivität, wie vor der Erkrankung"
+          },
+          {
+            "code": "1",
+            "display": "ECOG 1 - Einschränkung bei körperlicher Anstrengung, gehfähig, leichte körperliche Arbeit möglich"
+          },
+          {
+            "code": "2",
+            "display": "ECOG 2 - gefähig, Selbstversorgung möglich, aber nicht arbeitsfähig, kann mehr als 50% der Wachzeit aufstehen"
+          },
+          {
+            "code": "3",
+            "display": "ECOG 3 - nur begrenzte Selbstversorgung möglich, 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden"
+          },
+          {
+            "code": "4",
+            "display": "ECOG 4 - völlig pflegebedürftig, keinerlei Selbstversorgung möglich, völlig an Bett oder Stuhl gebunden"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "concept": [
+          {
+            "code": "NA"
+          }
+        ]
+      }
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ECOG</h2><tt>http://uk-koeln.de/fhir/ValueSet/nngm/ecog</tt></div>"
+  },
+  "name": "ECOG"
+}

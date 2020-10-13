@@ -1,28 +1,81 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Operation ArtDesEingriffs",
-  "name": "nNGM_ValueSet_Operation_ArtDesEingriffs",
   "status": "active",
-  "experimental": false,
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "ArtDesEingriffs",
   "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "concept": [
+      "include": [
           {
-            "code": "unknown",
-            "display": "Unknown"
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs"
+          },
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "concept": [
+                  {
+                      "code": "unknown",
+                      "display": "Unknown"
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
+  },
+  "expansion": {
+      "identifier": "33d68ab5-5e4b-4acf-b590-26440df764bf",
+      "timestamp": "2020-10-13T10:41:14+00:00",
+      "total": 9,
+      "contains": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Bilobektomie",
+              "display": "Bilobektomie"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Pneumektomie",
+              "display": "Pneumektomie"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Lobektomie",
+              "display": "Lobektomie"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Thorakoskopie mit Pleurodese",
+              "display": "Thorakoskopie mit Pleurodese"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Keilresektion/Lasernukleation",
+              "display": "Keilresektion/Lasernukleation"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Segmentresektion",
+              "display": "Segmentresektion"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Metastasenresektion",
+              "display": "Metastasenresektion"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/ngnm/OperationArtDesEingriffs",
+              "version": "1.0",
+              "code": "Pleurektomie (Dekortikation)",
+              "display": "Pleurektomie (Dekortikation)"
+          },
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "version": "4.0.1",
+              "code": "unknown",
+              "display": "Unknown"
+          }
+      ]
   }
 }

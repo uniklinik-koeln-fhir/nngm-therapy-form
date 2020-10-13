@@ -1,0 +1,75 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "compose": {
+      "include": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieDivergentesGeschehen",
+              "concept": [
+                  {
+                      "code": "Divergentes Geschehen (nach RECIST nicht möglich)",
+                      "display": "Divergentes Geschehen (nach RECIST nicht möglich)"
+                  }
+              ]
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+              "concept": [
+                  {
+                      "code": "CR",
+                      "display": "Complete Remission"
+                  },
+                  {
+                      "code": "PR",
+                      "display": "Partial Remission"
+                  },
+                  {
+                      "code": "PD",
+                      "display": "Progressive Disease"
+                  },
+                  {
+                      "code": "SD",
+                      "display": "Stable Disease"
+                  }
+              ]
+          }
+      ]
+  },
+  "expansion": {
+      "identifier": "ff5d3d23-09b6-4703-af73-c1afd23d9c28",
+      "timestamp": "2020-10-13T10:41:19+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieDivergentesGeschehen",
+              "version": "1.0",
+              "code": "Divergentes Geschehen (nach RECIST nicht möglich)",
+              "display": "Divergentes Geschehen (nach RECIST nicht möglich)"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+              "version": "1.0",
+              "code": "PD",
+              "display": "Progressive Disease"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+              "version": "1.0",
+              "code": "CR",
+              "display": "Complete Remission"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+              "version": "1.0",
+              "code": "PR",
+              "display": "Partial Remission"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieRECIST",
+              "version": "1.0",
+              "code": "SD",
+              "display": "Stable Disease"
+          }
+      ]
+  }
+}
