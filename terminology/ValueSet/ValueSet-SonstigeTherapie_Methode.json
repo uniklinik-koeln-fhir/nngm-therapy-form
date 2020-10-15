@@ -1,45 +1,51 @@
 {
-  "resourceType": "ValueSet",
-  "status": "active",
-  "compose": {
-      "include": [
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode"
-          },
-          {
-              "system": "http://ncit.nci.nih.gov",
-              "concept": [
-                  {
-                      "code": "C17649",
-                      "display": "Other"
-                  }
-              ]
-          }
-      ]
-  },
-  "expansion": {
-      "identifier": "fd65cee3-866e-4ada-a34d-db93a2f75d68",
-      "timestamp": "2020-10-13T10:42:45+00:00",
-      "total": 3,
-      "contains": [
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
-              "version": "1.0",
-              "code": "Selektive interne Radiotherapie",
-              "display": "Selektive interne Radiotherapie"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
-              "version": "1.0",
-              "code": "Radiofrequenzablation",
-              "display": "Radiofrequenzablation"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
-              "version": "1.0",
-              "code": "Transarterielle Chemoembolisation",
-              "display": "Transarterielle Chemoembolisation"
-          }
-      ]
-  }
+    "resourceType": "ValueSet",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode"
+            },
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "concept": [
+                    {
+                        "code": "C17649",
+                        "display": "Other"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "a35c51af-66a8-401d-b986-bcdd7bcac442",
+        "timestamp": "2020-10-15T13:27:53+00:00",
+        "total": 4,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
+                "version": "1.0",
+                "code": "Selektive interne Radiotherapie",
+                "display": "Selektive interne Radiotherapie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
+                "version": "1.0",
+                "code": "Radiofrequenzablation",
+                "display": "Radiofrequenzablation"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode",
+                "version": "1.0",
+                "code": "Transarterielle Chemoembolisation",
+                "display": "Transarterielle Chemoembolisation"
+            },
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "version": "20.02d",
+                "code": "C17649",
+                "display": "Other"
+            }
+        ]
+    }
 }
