@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung",
+  "version": "0.1",
+  "name": "grundNichtumsetzung",
+  "status": "draft",
+  "experimental": true,
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Grund nichtumsetsung Systemische therapie",
+  "compose": {
+    "include": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "concept": [
+          {
+            "code": "Ablehnung durch den Patienten",
+            "display": "Ablehnung durch den Patienten"
+          },
+          {
+            "code": "Aktuelle Medikamente",
+            "display": "Aktuelle Medikamente"
+          },
+          {
+            "code": "Anderes",
+            "display": "Anderes"
+          },
+          {
+            "code": "Begleiterkrankungen/Allgemeinzustand des Patienten",
+            "display": "Begleiterkrankungen/Allgemeinzustand des Patienten"
+          },
+          {
+            "code": "Logistischer Aufwand",
+            "display": "Logistischer Aufwand"
+          },
+          {
+            "code": "Mangelnde Compliance vom Patienten",
+            "display": "Mangelnde Compliance vom Patienten"
+          },
+          {
+            "code": "Versicherungsstatus",
+            "display": "Versicherungsstatus"
+          },
+          {
+            "code": "Vortherapien",
+            "display": "Vortherapien"
+          }
+        ]
+      }
+    ]
+  }
+}

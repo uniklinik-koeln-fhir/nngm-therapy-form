@@ -1,0 +1,330 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation"/>
+	<version value="0.2" />
+	<name value="NngmSystemischeTherapieMedikation"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2020-03-03"/>
+	<publisher value="Universitätsklinikum Köln"/>
+	<description value="nNGM Systemische Therapie: Medikation"/>
+	<compose>
+		<include>
+			<system value="http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation" />
+			<concept>
+        <code value="Afatinib" />
+        <display value="Afatinib" />
+    </concept>
+    <concept>
+        <code value="Alectinib" />
+        <display value="Alectinib" />
+    </concept>
+    <concept>
+        <code value="BGJ398" />
+        <display value="BGJ398" />
+    </concept>
+    <concept>
+        <code value="Brigatinib" />
+        <display value="Brigatinib" />
+    </concept>
+    <concept>
+        <code value="Cabmatinib" />
+        <display value="Cabmatinib" />
+    </concept>
+    <concept>
+        <code value="Cabozantinib" />
+        <display value="Cabozantinib" />
+    </concept>
+    <concept>
+        <code value="Crizotinib" />
+        <display value="Crizotinib" />
+    </concept>
+    <concept>
+        <code value="Ceritinib" />
+        <display value="Ceritinib" />
+    </concept>
+    <concept>
+        <code value="Dabrafenib" />
+        <display value="Dabrafenib" />
+    </concept>
+    <concept>
+        <code value="Dacomitinib" />
+        <display value="Dacomitinib" />
+    </concept>
+    <concept>
+        <code value="Entrectinib" />
+        <display value="Entrectinib" />
+    </concept>
+    <concept>
+        <code value="Erdafitinib" />
+        <display value="Erdafitinib" />
+    </concept>
+    <concept>
+        <code value="Erlotinib" />
+        <display value="Erlotinib" />
+    </concept>
+    <concept>
+        <code value="Gefitinib" />
+        <display value="Gefitinib" />
+    </concept>
+    <concept>
+        <code value="Lorlatinib" />
+        <display value="Lorlatinib" />
+    </concept>
+    <concept>
+        <code value="Nazartinib" />
+        <display value="Nazartinib" />
+    </concept>
+    <concept>
+        <code value="Osimertinib" />
+        <display value="Osimertinib" />
+    </concept>
+    <concept>
+        <code value="Rociletinib" />
+        <display value="Rociletinib" />
+    </concept>
+    <concept>
+        <code value="Trametinib" />
+        <display value="Trametinib" />
+    </concept>
+    <concept>
+        <code value="Vandetanib" />
+        <display value="Vandetanib" />
+    </concept>
+    <concept>
+        <code value="Vemurafenib" />
+        <display value="Vemurafenib" />
+    </concept>
+    <concept>
+        <code value="Atezolizumab" />
+        <display value="Atezolizumab" />
+    </concept>
+    <concept>
+        <code value="Avelumab" />
+        <display value="Avelumab" />
+    </concept>
+    <concept>
+        <code value="Durvalumab" />
+        <display value="Durvalumab" />
+    </concept>
+    <concept>
+        <code value="Ipilimumab" />
+        <display value="Ipilimumab" />
+    </concept>
+    <concept>
+        <code value="Nivolumab" />
+        <display value="Nivolumab" />
+    </concept>
+    <concept>
+        <code value="Pembrolizumab" />
+        <display value="Pembrolizumab" />
+    </concept>
+    <concept>
+        <code value="Spartalizumab" />
+        <display value="Spartalizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin" />
+        <display value="Carboplatin" />
+    </concept>
+    <concept>
+        <code value="Cisplatin" />
+        <display value="Cisplatin" />
+    </concept>
+    <concept>
+        <code value="Docetaxel" />
+        <display value="Docetaxel" />
+    </concept>
+    <concept>
+        <code value="Etoposid" />
+        <display value="Etoposid" />
+    </concept>
+    <concept>
+        <code value="Gemcitabine" />
+        <display value="Gemcitabine" />
+    </concept>
+    <concept>
+        <code value="Ifosfamid" />
+        <display value="Ifosfamid" />
+    </concept>
+    <concept>
+        <code value="Paclitaxel" />
+        <display value="Paclitaxel" />
+    </concept>
+    <concept>
+        <code value="Nab-Paclitaxel" />
+        <display value="Nab-Paclitaxel" />
+    </concept>
+    <concept>
+        <code value="Pemetrexed" />
+        <display value="Pemetrexed" />
+    </concept>
+    <concept>
+        <code value="Topotecan" />
+        <display value="Topotecan" />
+    </concept>
+    <concept>
+        <code value="Topotecan oral" />
+        <display value="Topotecan oral" />
+    </concept>
+    <concept>
+        <code value="Vinorelbine" />
+        <display value="Vinorelbine" />
+    </concept>
+    <concept>
+        <code value="Vinorelbine oral" />
+        <display value="Vinorelbine oral" />
+    </concept>
+    <concept>
+        <code value="Bevacizumab" />
+        <display value="Bevacizumab" />
+    </concept>
+    <concept>
+        <code value="Cetuximab" />
+        <display value="Cetuximab" />
+    </concept>
+    <concept>
+        <code value="Nintedanib" />
+        <display value="Nintedanib" />
+    </concept>
+    <concept>
+        <code value="Ramucirumab" />
+        <display value="Ramucirumab" />
+    </concept>
+    <concept>
+        <code value="Sunitinib" />
+        <display value="Sunitinib" />
+    </concept>
+    <concept>
+        <code value="Sorafenib" />
+        <display value="Sorafenib" />
+    </concept>
+    <concept>
+        <code value="Axitinib" />
+        <display value="Axitinib" />
+    </concept>
+    <concept>
+        <code value="Interleukin 2" />
+        <display value="Interleukin 2" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Paclitaxel" />
+        <display value="Carboplatin/Paclitaxel" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Paclitaxel/Pembrolizumab" />
+        <display value="Carboplatin/Paclitaxel/Pembrolizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/nab-Paclitaxel/Pembrolizumab" />
+        <display value="Carboplatin/nab-Paclitaxel/Pembrolizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/nab-Paclitaxel" />
+        <display value="Carboplatin/nab-Paclitaxel" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Paclitaxel/Bevacizumab" />
+        <display value="Carboplatin/Paclitaxel/Bevacizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/nab-Paclitaxel/Bevacizumab" />
+        <display value="Carboplatin/nab-Paclitaxel/Bevacizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Paclitaxel/Bevacizumab/Atezolizumab" />
+        <display value="Carboplatin/Paclitaxel/Bevacizumab/Atezolizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/nab-Paclitaxel/Bevacizumab/Atezolizumab" />
+        <display value="Carboplatin/nab-Paclitaxel/Bevacizumab/Atezolizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Pemetrexed" />
+        <display value="Carboplatin/Pemetrexed" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Pemetrexed/Bevacizumab" />
+        <display value="Carboplatin/Pemetrexed/Bevacizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Pemetrexed/Pembrolizumab" />
+        <display value="Carboplatin/Pemetrexed/Pembrolizumab" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Gemcitabine" />
+        <display value="Carboplatin/Gemcitabine" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Vinorelbine" />
+        <display value="Carboplatin/Vinorelbine" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Vinorelbine oral" />
+        <display value="Carboplatin/Vinorelbine oral" />
+    </concept>
+    <concept>
+        <code value="Carboplatin/Etoposid" />
+        <display value="Carboplatin/Etoposid" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Pemetrexed" />
+        <display value="Cisplatin/Pemetrexed" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Pemetrexed/Bevacizumab" />
+        <display value="Cisplatin/Pemetrexed/Bevacizumab" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Vinorelbine" />
+        <display value="Cisplatin/Vinorelbine" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Vinorelbine oral" />
+        <display value="Cisplatin/Vinorelbine oral" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Gemcitabine" />
+        <display value="Cisplatin/Gemcitabine" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/Paclitaxel" />
+        <display value="Cisplatin/Paclitaxel" />
+    </concept>
+    <concept>
+        <code value="Cisplatin/nabPaclitaxel" />
+        <display value="Cisplatin/nabPaclitaxel" />
+    </concept>
+    <concept>
+        <code value="Docetaxel/Nintedanib" />
+        <display value="Docetaxel/Nintedanib" />
+    </concept>
+    <concept>
+        <code value="Docetaxel/Ramucirumab" />
+        <display value="Docetaxel/Ramucirumab" />
+    </concept>
+    <concept>
+        <code value="Dabrafenib/Trametinib" />
+        <display value="Dabrafenib/Trametinib" />
+    </concept>
+    <concept>
+        <code value="Nazartinib/Trametinib" />
+        <display value="Nazartinib/Trametinib" />
+    </concept>
+    <concept>
+        <code value="Nazartinib/Capmatinib" />
+        <display value="Nazartinib/Capmatinib" />
+    </concept>
+    <concept>
+        <code value="Afatinib/Cetuximab" />
+        <display value="Afatinib/Cetuximab" />
+    </concept>
+    <concept>
+        <code value="Nivolumab/Ipilimumab" />
+        <display value="Nivolumab/Ipilimumab" />
+    </concept>
+		</include>
+	</compose>
+</ValueSet>

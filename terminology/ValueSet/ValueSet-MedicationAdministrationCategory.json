@@ -1,38 +1,43 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/medicationAdministrationCategory",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Category Values für Systemische Therapie",
-  "name": "nNGM_ValueSet_Category_der_sytemischen_Therapie",
   "status": "active",
-  "experimental": false,
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "Katgorien der Systemischen Therapie",
   "compose": {
-    "include": [
-      {
-        "system": "http://ncit.nci.nih.gov",
-        "concept": [
+      "include": [
           {
-            "code": "C25446",
-            "display": "Änderung"
+              "system": "http://ncit.nci.nih.gov",
+              "concept": [
+                  {
+                      "code": "C25446",
+                      "display": "Änderung"
+                  },
+                  {
+                      "code": "C85582",
+                      "display": "aktuelle Therapie"
+                  }
+              ]
           },
           {
-            "code": "C85582",
-            "display": "aktuelle Therapie"
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "concept": [
+                  {
+                      "code": "not-applicable",
+                      "display": "Not Applicable"
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "concept": [
+      ]
+  },
+  "expansion": {
+      "identifier": "50a7dc69-cfcb-4a52-b513-fb119e70a85e",
+      "timestamp": "2020-10-13T10:42:13+00:00",
+      "total": 1,
+      "contains": [
           {
-            "code": "not-applicable",
-            "display": "Not Applicable"
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "version": "4.0.1",
+              "code": "not-applicable",
+              "display": "Not Applicable"
           }
-        ]
-      }
-    ]
+      ]
   }
 }

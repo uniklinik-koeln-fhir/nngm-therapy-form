@@ -1,37 +1,55 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Sonstige Therapie Lokalisation",
-  "name": "nNGM_ValueSet_SonstigeTherapie_Lokalisation",
-  "status": "active",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "nNGM Operation Lokalisation",
-  "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
-        "concept": [
-          {
-            "code": "Lunge",
-            "display": "Lunge"
-          },
-          {
-            "code": "Leber",
-            "display": "Leber"
-          }
+    "resourceType": "ValueSet",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+                "concept": [
+                    {
+                        "code": "Lunge",
+                        "display": "Lunge"
+                    },
+                    {
+                        "code": "Leber",
+                        "display": "Leber"
+                    }
+                ]
+            },
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "concept": [
+                    {
+                        "code": "C17649",
+                        "display": "Other"
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "system": "http://ncit.nci.nih.gov",
-        "concept": [
-          {
-            "code": "C17649",
-            "display": "Other"
-          }
+    },
+    "expansion": {
+        "identifier": "d83a51ba-adb7-4aaa-8172-3bf2a39e0e1c",
+        "timestamp": "2020-10-15T13:28:02+00:00",
+        "total": 3,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+                "version": "1.0",
+                "code": "Lunge",
+                "display": "Lunge"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+                "version": "1.0",
+                "code": "Leber",
+                "display": "Leber"
+            },
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "version": "20.02d",
+                "code": "C17649",
+                "display": "Other"
+            }
         ]
-      }
-    ]
-  }
+    }
 }

@@ -1,27 +1,57 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/StrahlentherapieArtDerBestrahlung",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Strahlentherapie Art Der Bestrahlung",
-  "name": "nNGM_ValueSet_Strahlentherapie_ArtDerBestrahlung",
   "status": "active",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "Bestrahlungsziel",
   "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung"
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "concept": [
+      "include": [
           {
-            "code": "unknown",
-            "display": "Unknown"
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung"
+          },
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "concept": [
+                  {
+                      "code": "unknown",
+                      "display": "Unknown"
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
+  },
+  "expansion": {
+      "identifier": "fc60d7a6-d014-4358-85da-19e295c66f04",
+      "timestamp": "2020-10-13T10:41:02+00:00",
+      "total": 5,
+      "contains": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+              "version": "1.0",
+              "code": "konventionelle Bestrahlung",
+              "display": "konventionelle Bestrahlung"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+              "version": "1.0",
+              "code": "Cyberknife",
+              "display": "Cyberknife"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+              "version": "1.0",
+              "code": "sonstige stereotaktische Bestrahlung",
+              "display": "sonstige stereotaktische Bestrahlung"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+              "version": "1.0",
+              "code": "Seed Implantation",
+              "display": "Seed Implantation"
+          },
+          {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "version": "4.0.1",
+              "code": "unknown",
+              "display": "Unknown"
+          }
+      ]
   }
 }
