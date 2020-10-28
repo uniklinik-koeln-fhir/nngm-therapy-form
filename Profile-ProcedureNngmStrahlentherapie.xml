@@ -159,7 +159,7 @@
     <element id="Procedure.statusReason.coding">
       <path value="Procedure.statusReason.coding" />
       <min value="1" />
-      <max value="1" />
+      <max value="*" />
     </element>
     <element id="Procedure.statusReason.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">

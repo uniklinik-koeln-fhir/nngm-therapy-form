@@ -12,7 +12,7 @@
 	<description value="Grund für Therapieende"/>
 	<compose>
          <include>
-             <system value="https://www.uk-koeln.de/fhir/CodeSystem/ST_Ende_Grund" />
+             <system value="https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund" />
          </include>
      </compose>
  </ValueSet>
