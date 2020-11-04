@@ -1,6 +1,8 @@
 {
-  "resourceType": "ValueSet",
-  "status": "active",
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-therapie",
+    "title": "nNGM ValueSet Intention Therapie",
+    "status": "draft",
   "compose": {
       "include": [
           {

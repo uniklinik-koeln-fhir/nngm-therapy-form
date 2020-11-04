@@ -1,6 +1,13 @@
 {
     "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieMethodeUNK",
+    "version": "1.0",
+    "title": "nNGM: ValueSet Sonstige Therapie Methode",
+    "name": "nNGM_ValueSet_SonstigeTherapie_Methode",
     "status": "active",
+    "date": "2018-10-31",
+    "publisher": "Uniklinik Köln",
+    "description": "nNGM Operation Lokalisation",
     "compose": {
         "include": [
             {

@@ -1,6 +1,13 @@
 {
-  "resourceType": "ValueSet",
-  "status": "active",
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie",
+    "version": "1.0",
+    "title": "nNGM: ValueSet Sonstige Therapie Art der Therapie",
+    "name": "nNGM_ValueSet_SonstigeTherapie_ArtDerTherapie",
+    "status": "active",
+    "date": "2018-10-31",
+    "publisher": "Uniklinik Köln",
+    "description": "ArtDerTherapie",
   "compose": {
       "include": [
           {

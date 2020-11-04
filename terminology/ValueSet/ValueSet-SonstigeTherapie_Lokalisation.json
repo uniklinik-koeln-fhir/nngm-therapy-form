@@ -1,6 +1,9 @@
 {
     "resourceType": "ValueSet",
-    "status": "active",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK",
+    "version": "1.0",
+    "title": "nNGM: ValueSet Sonstige Therapie Lokalisation",
+    "name": "nNGM_ValueSet_SonstigeTherapie_Lokalisation",
     "compose": {
         "include": [
             {
