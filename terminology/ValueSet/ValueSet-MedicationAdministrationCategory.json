@@ -1,6 +1,14 @@
 {
-  "resourceType": "ValueSet",
-  "status": "active",
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/medicationAdministrationCategory",
+    "version": "1.0",
+    "title": "nNGM: ValueSet Category Values für Systemische Therapie",
+    "name": "nNGM_ValueSet_Category_der_sytemischen_Therapie",
+    "status": "active",
+    "experimental": false,
+    "date": "2018-10-31",
+    "publisher": "Uniklinik Köln",
+    "description": "Katgorien der Systemischen Therapie",
   "compose": {
       "include": [
           {
