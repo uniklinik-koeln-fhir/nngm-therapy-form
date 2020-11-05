@@ -2,6 +2,7 @@
     "resourceType": "ValueSet",
     "url": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach",
     "title": "Systematische Therapie BeurteilungNach",
+    "name": "Systematische_Therapie_BeurteilungNach",
     "status": "draft",
     "compose": {
         "include": [
