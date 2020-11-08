@@ -4,11 +4,10 @@
   <version value="0.2" />
   <name value="ExtensionCcrStudientherapie" />
   <title value="Studientherapie" />
-  <status value="draft" />
-  <experimental value="true" />
+  <status value="active" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
@@ -29,19 +28,7 @@
   <differential>
     <element id="Extension">
       <path value="Extension" />
-      <short value="Optional Extensions Element" />
-      <definition value="Optional Extension Element - found in all resources." />
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
+      <max value="1" />
     </element>
     <element id="Extension.extension">
       <path value="Extension.extension" />
@@ -58,6 +45,10 @@
       <sliceName value="teilnahme" />
       <max value="1" />
     </element>
+    <element id="Extension.extension:teilnahme.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="teilnahme" />
+    </element>
     <element id="Extension.extension:teilnahme.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
@@ -69,6 +60,10 @@
       <path value="Extension.extension" />
       <sliceName value="studie" />
     </element>
+    <element id="Extension.extension:studie.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="studie" />
+    </element>
     <element id="Extension.extension:studie.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
@@ -77,17 +72,9 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ResearchStudy" />
       </type>
     </element>
-    <element id="Extension.extension:studiensubjekt">
-      <path value="Extension.extension" />
-      <sliceName value="studiensubjekt" />
-    </element>
-    <element id="Extension.extension:studiensubjekt.value[x]">
-      <path value="Extension.extension.value[x]" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ResearchSubject" />
-      </type>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

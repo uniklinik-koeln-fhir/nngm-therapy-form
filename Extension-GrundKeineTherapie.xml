@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
-  <name value="ArtDerBestrahlung" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/grund-keine-therapie" />
+  <name value="GrundKeineTherapie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -13,7 +13,7 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Procedure.code" />
+    <expression value="Procedure.reasonCode" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
@@ -21,7 +21,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/grund-keine-therapie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -31,7 +31,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/StrahlentherapieArtDerBestrahlung" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SonstigeTherapieGrundKeineTherapieUNK" />
       </binding>
     </element>
     <element id="Extension.value[x].coding.display">

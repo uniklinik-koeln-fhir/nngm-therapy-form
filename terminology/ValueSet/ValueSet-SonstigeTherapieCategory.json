@@ -1,18 +1,43 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Sonstige Therapie Art der Therapie",
-  "name": "nNGM_ValueSet_SonstigeTherapie_ArtDerTherapie",
-  "status": "active",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "ArtDerTherapie",
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie",
+    "version": "1.0",
+    "title": "nNGM: ValueSet Sonstige Therapie Art der Therapie",
+    "name": "nNGM_ValueSet_SonstigeTherapie_ArtDerTherapie",
+    "status": "active",
+    "date": "2018-10-31",
+    "publisher": "Uniklinik Köln",
+    "description": "ArtDerTherapie",
   "compose": {
-    "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie"
-      }
-    ]
+      "include": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie"
+          }
+      ]
+  },
+  "expansion": {
+      "identifier": "39adf258-c7ca-4b97-af90-d1fe2598ff92",
+      "timestamp": "2020-10-13T10:42:52+00:00",
+      "total": 3,
+      "contains": [
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+              "version": "1.0",
+              "code": "lokales Verfahren",
+              "display": "Lokales Verfahren"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+              "version": "1.0",
+              "code": "anderes Verfahren",
+              "display": "anderes Verfahren"
+          },
+          {
+              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+              "version": "1.0",
+              "code": "keine Therapie / Best Supportive Care",
+              "display": "keine Therapie / Best Supportive Care"
+          }
+      ]
   }
 }

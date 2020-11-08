@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-sonstige-therapie",
+  "version": "1.0",
+  "title": "nNGM: CodeSystem Intention-Sonstige-Therapie",
+  "name": "nNGM_CodeSystem_Intention-Sosntige-Therapie",
+  "status": "active",
+  "experimental": false,
+  "date": "2018-10-31",
+  "publisher": "Uniklinik Köln",
+  "description": "Intention der sonstigen Therapien",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "alternative-methoden",
+      "display": "Alternative Methoden"
+    }
+  ]
+}

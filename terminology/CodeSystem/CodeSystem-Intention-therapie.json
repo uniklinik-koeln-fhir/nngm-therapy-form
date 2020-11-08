@@ -18,27 +18,26 @@
   "caseSensitive": true,
   "compositional": false,
   "content": "complete",
-  "count": 5,
   "concept": [
     {
-      "code": "palliativ",
-      "display": "palliativ"
+      "code": "Palliativ",
+      "display": "Palliativ"
     },
     {
-      "code": "kurativ",
-      "display": "kurativ"
+      "code": "Kurativ",
+      "display": "Kurativ"
     },
     {
-      "code": "adjuvant",
-      "display": "adjuvant"
+      "code": "Adjuvant",
+      "display": "Adjuvant"
     },
     {
-      "code": "neoadjuvant",
-      "display": "neoadjuvant"
+      "code": "Neoadjuvant",
+      "display": "Neoadjuvant"
     },
     {
-      "code": "definitiv mit Strahlentherapie",
-      "display": "definitiv mit Strahlentherapie"
+      "code": "Definitiv mit Strahlentherapie",
+      "display": "Definitiv mit Strahlentherapie"
     },
     {
       "code": "Prophylaktisch",

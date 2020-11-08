@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/resektion" />
-  <name value="Resektion" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/methode-sonstige-therapie" />
+  <name value="MethodeSonstigeTherapie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -33,16 +33,15 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:resektionsart">
+    <element id="Extension.extension:methode">
       <path value="Extension.extension" />
-      <sliceName value="resektionsart" />
-      <min value="1" />
+      <sliceName value="methode" />
     </element>
-    <element id="Extension.extension:resektionsart.url">
+    <element id="Extension.extension:methode.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="resektionsart" />
+      <fixedUri value="methode" />
     </element>
-    <element id="Extension.extension:resektionsart.value[x]">
+    <element id="Extension.extension:methode.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
@@ -50,66 +49,38 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieMethodeUNK" />
       </binding>
     </element>
-    <element id="Extension.extension:resektionsart.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:resektionsart.value[x].coding.display">
+    <element id="Extension.extension:methode.value[x].coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Extension.extension.value[x].coding.display" />
     </element>
-    <element id="Extension.extension:resektionsart.value[x].text">
+    <element id="Extension.extension:methode.value[x].text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Extension.extension.value[x].text" />
     </element>
-    <element id="Extension.extension:resektionsstatus">
+    <element id="Extension.extension:sonstigeMethode">
       <path value="Extension.extension" />
-      <sliceName value="resektionsstatus" />
-      <max value="1" />
+      <sliceName value="sonstigeMethode" />
     </element>
-    <element id="Extension.extension:resektionsstatus.url">
+    <element id="Extension.extension:sonstigeMethode.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="resektionsstatus" />
+      <fixedUri value="sonstigeMethode" />
     </element>
-    <element id="Extension.extension:resektionsstatus.value[x]">
+    <element id="Extension.extension:sonstigeMethode.value[x]">
       <path value="Extension.extension.value[x]" />
-      <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="string" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/resektionsstatus" />
-      </binding>
-    </element>
-    <element id="Extension.extension:resektionsstatus.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Extension.extension:resektionsstatus.value[x].coding.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].coding.display" />
-    </element>
-    <element id="Extension.extension:resektionsstatus.value[x].text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Extension.extension.value[x].text" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/resektion" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/methode-sonstige-therapie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

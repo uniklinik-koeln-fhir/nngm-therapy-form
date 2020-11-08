@@ -1,0 +1,399 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/MedicationAdministration",
+  "version": "0.2",
+  "name": "MedicationAdministrationNngm",
+  "title": "nNGM Systemische Therapie",
+  "status": "draft",
+  "experimental": true,
+  "date": "2019-10-18",
+  "publisher": "Universitätsklinikum Köln",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.extension",
+        "path": "MedicationAdministration.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.extension:studientherapie",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "studientherapie",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:studientherapie.extension",
+        "path": "MedicationAdministration.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.extension:studientherapie.extension:teilnahme",
+        "path": "MedicationAdministration.extension.extension",
+        "sliceName": "teilnahme",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:studientherapie.extension:studie",
+        "path": "MedicationAdministration.extension.extension",
+        "sliceName": "studie",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:studientherapie.url",
+        "path": "MedicationAdministration.extension.url",
+        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
+      },
+      {
+        "id": "MedicationAdministration.extension:offLabelTherapie",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "offLabelTherapie",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OffLabelTherapie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:Erhaltungstherapie",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "Erhaltungstherapie",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension",
+        "path": "MedicationAdministration.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension:option",
+        "path": "MedicationAdministration.extension.extension",
+        "sliceName": "option",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension:medikament",
+        "path": "MedicationAdministration.extension.extension",
+        "sliceName": "medikament",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.extension:Erhaltungstherapie.url",
+        "path": "MedicationAdministration.extension.url",
+        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie"
+      },
+      {
+        "id": "MedicationAdministration.extension:nebenwirkung",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "nebenwirkung",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/Nebenwirkung"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.statusReason",
+        "path": "MedicationAdministration.statusReason",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeStatusReason"
+        }
+      },
+      {
+        "id": "MedicationAdministration.statusReason.coding",
+        "path": "MedicationAdministration.statusReason.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.statusReason.text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.statusReason.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.category",
+        "path": "MedicationAdministration.category",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.category.coding",
+        "path": "MedicationAdministration.category.coding",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/medicationAdministrationCategory"
+        }
+      },
+      {
+        "id": "MedicationAdministration.category.coding.system",
+        "path": "MedicationAdministration.category.coding.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.category.coding.code",
+        "path": "MedicationAdministration.category.coding.code",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation"
+        }
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding.system",
+        "path": "MedicationAdministration.medication[x].coding.system",
+        "fixedUri": "http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation"
+      },
+      {
+        "id": "MedicationAdministration.medication[x].text",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.medication[x].text",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM/patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject.reference",
+        "path": "MedicationAdministration.subject.reference",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.context.identifier",
+        "path": "MedicationAdministration.context.identifier",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.context.identifier.system",
+        "path": "MedicationAdministration.context.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.context.identifier.value",
+        "path": "MedicationAdministration.context.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.supportingInformation",
+        "path": "MedicationAdministration.supportingInformation",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.supportingInformation.extension",
+        "path": "MedicationAdministration.supportingInformation.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.supportingInformation.extension:therapieInformationen",
+        "path": "MedicationAdministration.supportingInformation.extension",
+        "sliceName": "therapieInformationen",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x].start",
+        "path": "MedicationAdministration.effective[x].start",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x].end",
+        "path": "MedicationAdministration.effective[x].end",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.performer",
+        "path": "MedicationAdministration.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.performer.actor.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "MedicationAdministration.performer.actor.display",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp"
+        }
+      },
+      {
+        "id": "MedicationAdministration.reasonCode",
+        "path": "MedicationAdministration.reasonCode",
+        "mustSupport": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationAdministrationReason"
+            }
+          ],
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-systemisch"
+        }
+      },
+      {
+        "id": "MedicationAdministration.note",
+        "path": "MedicationAdministration.note",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x].value",
+        "path": "MedicationAdministration.dosage.rate[x].value",
+        "min": 1
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x].system",
+        "path": "MedicationAdministration.dosage.rate[x].system",
+        "min": 1,
+        "fixedUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x].code",
+        "path": "MedicationAdministration.dosage.rate[x].code",
+        "min": 1,
+        "fixedCode": "1"
+      }
+    ]
+  }
+}
