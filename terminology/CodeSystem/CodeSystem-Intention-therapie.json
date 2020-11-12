@@ -20,43 +20,43 @@
   "content": "complete",
   "concept": [
     {
-      "code": "Palliativ",
+      "code": "palliativ",
       "display": "Palliativ"
     },
     {
-      "code": "Kurativ",
+      "code": "kurativ",
       "display": "Kurativ"
     },
     {
-      "code": "Adjuvant",
+      "code": "adjuvant",
       "display": "Adjuvant"
     },
     {
-      "code": "Neoadjuvant",
+      "code": "neoadjuvant",
       "display": "Neoadjuvant"
     },
     {
-      "code": "Definitiv mit Strahlentherapie",
+      "code": "definitiv mit Strahlentherapie",
       "display": "Definitiv mit Strahlentherapie"
     },
     {
-      "code": "Prophylaktisch",
+      "code": "prophylaktisch",
       "display": "Prophylaktisch"
     },
     {
-      "code": "Definitiv mit Chemotherapie",
+      "code": "definitiv mit Chemotherapie",
       "display": "Definitiv mit Chemotherapie"
     },
     {
-      "code": "Sonstiges",
+      "code": "sonstiges",
       "display": "Sonstiges"
     },
     {
-      "code": "Revision/Komplikation",
+      "code": "revision/Komplikation",
       "display": "Revision/Komplikation"
     },
     {
-      "code": "Diagnostisch",
+      "code": "diagnostisch",
       "display": "Diagnostisch"
     }
   ]
