@@ -217,7 +217,7 @@
       {
         "id": "MedicationAdministration.medication[x].coding.system",
         "path": "MedicationAdministration.medication[x].coding.system",
-        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/SystemischeTherapieMedikation"
+        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation"
       },
       {
         "id": "MedicationAdministration.medication[x].text",
