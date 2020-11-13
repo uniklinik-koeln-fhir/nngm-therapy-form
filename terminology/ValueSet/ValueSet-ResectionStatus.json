@@ -12,8 +12,20 @@
   "compose": {
     "include": [
       {
-        "valueSet": [
-          "http://loinc.org/vs/LL4078-3"
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA26542-3",
+            "display": "R0"
+          },
+          {
+            "code": "LA26543-1",
+            "display": "R1"
+          },
+          {
+            "code": "LA26544-9",
+            "display": "R2"
+          }
         ]
       },
       {
@@ -24,6 +36,34 @@
             "display": "Unknown"
           }
         ]
+      }
+    ]
+  },
+  "expansion": {
+    "identifier": "c3d676c4-d9f6-4933-b741-477b1af9f305",
+    "timestamp": "2020-11-13T13:29:38+00:00",
+    "total": 4,
+    "contains": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "version": "4.0.1",
+        "code": "unknown",
+        "display": "Unknown"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA26542-3",
+        "display": "R0"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA26543-1",
+        "display": "R1"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "LA26544-9",
+        "display": "R2"
       }
     ]
   }

@@ -48,5 +48,60 @@
         ]
       }
     ]
+  },
+  "expansion": {
+    "identifier": "af187817-6331-4806-b489-f3a0828ebdbd",
+    "timestamp": "2020-11-13T13:32:56+00:00",
+    "total": 8,
+    "contains": [
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Aktuelle Medikamente",
+        "display": "Aktuelle Medikamente"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Anderes",
+        "display": "Anderes"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Begleiterkrankungen/Allgemeinzustand des Patienten",
+        "display": "Begleiterkrankungen/Allgemeinzustand des Patienten"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Logistischer Aufwand",
+        "display": "Logistischer Aufwand"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Mangelnde Compliance vom Patienten",
+        "display": "Mangelnde Compliance vom Patienten"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Versicherungsstatus",
+        "display": "Versicherungsstatus"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Vortherapien",
+        "display": "Vortherapien"
+      },
+      {
+        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
+        "version": "1.0",
+        "code": "Ablehnung durch den Patienten",
+        "display": "Ablehnung durch den Patienten"
+      }
+    ]
   }
 }

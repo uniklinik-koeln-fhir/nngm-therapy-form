@@ -9,7 +9,7 @@
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",
     "description": "Intention von Operationen und anderen Eingriffen",
-  "compose": {
+    "compose": {
       "include": [
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
