@@ -17,7 +17,6 @@
       <code value="442132006"/>
       <display value="Chemoembolization of hepatic artery (procedure)"/>
     </coding>
-    <text value=""/>
   </code>
   <subject>
     <reference value="Patient/example"/>
