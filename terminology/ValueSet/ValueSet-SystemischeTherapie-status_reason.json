@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason",
+    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeStatusReason",
     "version": "1.0",
     "title": "nNGM: ValueSet Statusreason Systemische Therapie",
     "name": "nNGM_ValueSet_Statusreason_Sytemische_Therapie",
