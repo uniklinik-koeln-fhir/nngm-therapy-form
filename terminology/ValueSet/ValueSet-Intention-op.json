@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-op",
+    "url": "http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op",
     "version": "1.0",
     "title": "nNGM: ValueSet Operation Intention des Eingriffs",
     "name": "nNGM_ValueSet_Operation_IntentionDesEingriffs",
