@@ -35,6 +35,35 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.identifier:FallIdentifier">
+      <path value="Composition.identifier" />
+      <sliceName value="FallIdentifier" />
+      <min value="1" />
+      <fixedIdentifier>
+        <system value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      </fixedIdentifier>
+    </element>
+    <element id="Composition.identifier:FallIdentifier.system">
+      <path value="Composition.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier:FallIdentifier.value">
+      <path value="Composition.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <fixedCode value="final" />
@@ -84,9 +113,6 @@
       <fixedString value="Therapie" />
     </element>
     <element id="Composition.section">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
       <path value="Composition.section" />
       <slicing>
         <discriminator>
@@ -96,38 +122,208 @@
         <rules value="closed" />
       </slicing>
     </element>
-    <element id="Composition.section:therapie">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Section" />
-      </extension>
+    <element id="Composition.section:operation">
       <path value="Composition.section" />
-      <sliceName value="therapie" />
-      <min value="1" />
-      <max value="1" />
+      <sliceName value="operation" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:therapie.code">
+    <element id="Composition.section:operation.code">
       <path value="Composition.section.code" />
       <min value="1" />
-      <patternCodeableConcept>
-        <coding>
-          <system value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
-          <code value="therapie" />
-        </coding>
-      </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
-    <element id="Composition.section:therapie.entry">
+    <element id="Composition.section:operation.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+    </element>
+    <element id="Composition.section:operation.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <patternCode value="operation" />
+    </element>
+    <element id="Composition.section:operation.entry">
       <path value="Composition.section.entry" />
       <slicing>
         <discriminator>
           <type value="profile" />
           <path value="$this.resolve()" />
         </discriminator>
-        <rules value="open" />
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:procedure">
+      <path value="Composition.section.entry" />
+      <sliceName value="procedure" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/OP" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:procedure.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:systemischeTherapie">
+      <path value="Composition.section" />
+      <sliceName value="systemischeTherapie" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <patternCode value="systemischeTherapie" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="closed" />
       </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:therapie.entry:episodeOfCare">
+    <element id="Composition.section:systemischeTherapie.entry:medicationAdministration">
+      <path value="Composition.section.entry" />
+      <sliceName value="medicationAdministration" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/MedicationAdministration" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:medicationAdministration.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:bestResponse">
+      <path value="Composition.section.entry" />
+      <sliceName value="bestResponse" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/best-response" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:bestResponse.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:ecog">
+      <path value="Composition.section.entry" />
+      <sliceName value="ecog" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/ecog" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:ecog.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie">
+      <path value="Composition.section" />
+      <sliceName value="sonstigeTherapie" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <patternCode value="sonstigeTherapie" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:procedure">
+      <path value="Composition.section.entry" />
+      <sliceName value="procedure" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:procedure.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:strahlenTherapie">
+      <path value="Composition.section" />
+      <sliceName value="strahlenTherapie" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <patternCode value="strahlentherapie" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:procedure">
+      <path value="Composition.section.entry" />
+      <sliceName value="procedure" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:procedure.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:episodeOfCare">
       <path value="Composition.section.entry" />
       <sliceName value="episodeOfCare" />
       <min value="1" />
@@ -138,111 +334,7 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:therapie.entry:episodeOfCare.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:op">
-      <path value="Composition.section.entry" />
-      <sliceName value="op" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/OP" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:op.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:strahlentherapie">
-      <path value="Composition.section.entry" />
-      <sliceName value="strahlentherapie" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:strahlentherapie.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:systemischeTherapie">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Composition.section.entry" />
-      <sliceName value="systemischeTherapie" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/MedicationAdministration" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:systemischeTherapie.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:sonstigeTherapie">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Composition.section.entry" />
-      <sliceName value="sonstigeTherapie" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:sonstigeTherapie.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:ecog">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Composition.section.entry" />
-      <sliceName value="ecog" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/ecog" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:ecog.reference">
-      <path value="Composition.section.entry.reference" />
-      <min value="1" />
-    </element>
-    <element id="Composition.section:therapie.entry:best-response">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
-      <path value="Composition.section.entry" />
-      <sliceName value="best-response" />
-      <max value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/best-response" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:therapie.entry:best-response.reference">
+    <element id="Composition.section:strahlenTherapie.entry:episodeOfCare.reference">
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
