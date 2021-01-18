@@ -379,7 +379,7 @@
       <max value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM/patient" />
       </type>
       <mustSupport value="true" />
     </element>
