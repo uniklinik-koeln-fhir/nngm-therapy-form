@@ -338,5 +338,66 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
+    <element id="Composition.section:stammdaten">
+      <path value="Composition.section" />
+      <sliceName value="stammdaten" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:stammdaten.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+          <code value="stammdaten" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Composition.section:stammdaten.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+    </element>
+    <element id="Composition.section:stammdaten.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <patternCode value="stammdaten" />
+    </element>
+    <element id="Composition.section:stammdaten.entry">
+      <path value="Composition.section.entry" />
+      <slicing>
+        <discriminator>
+          <type value="profile" />
+          <path value="$this.resolve()" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:stammdaten.entry:patient">
+      <path value="Composition.section.entry" />
+      <sliceName value="patient" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:stammdaten.entry:patient.reference">
+      <path value="Composition.section.entry.reference" />
+    </element>
+    <element id="Composition.section:stammdaten.entry:coverage">
+      <path value="Composition.section.entry" />
+      <sliceName value="coverage" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Coverage/nNGM" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:stammdaten.entry:coverage.reference">
+      <path value="Composition.section.entry.reference" />
+    </element>
   </differential>
 </StructureDefinition>
