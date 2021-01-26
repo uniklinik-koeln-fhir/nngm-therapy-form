@@ -37,7 +37,6 @@
     <element id="Procedure.extension:episodeOfCare">
       <path value="Procedure.extension" />
       <sliceName value="episodeOfCare" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -67,7 +66,7 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/OpCategory" />
       </binding>
     </element>
@@ -80,9 +79,6 @@
       <path value="Procedure.code" />
       <min value="1" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-      </binding>
     </element>
     <element id="Procedure.code.extension">
       <path value="Procedure.code.extension" />
@@ -149,9 +145,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performer.actor.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
       <binding>
@@ -164,9 +157,6 @@
       <max value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureReason" />
-        </extension>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op" />
       </binding>
@@ -179,9 +169,6 @@
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite" />
-        </extension>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation" />
       </binding>
@@ -221,17 +208,8 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.outcome">
-      <path value="Procedure.outcome" />
-      <binding>
-        <strength value="example" />
-      </binding>
     </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />
