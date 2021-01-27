@@ -15,8 +15,8 @@
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "concept": [
                   {
-                      "code": "palliativ",
-                      "display": "palliativ"
+                      "code": "Palliativ",
+                      "display": "Palliativ"
                   },
                   {
                       "code": "kurativ",
@@ -55,14 +55,14 @@
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "palliativ",
-              "display": "palliativ"
+              "code": "Palliativ",
+              "display": "Palliativ"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "kurativ",
-              "display": "kurativ"
+              "code": "Kurativ",
+              "display": "Kurativ"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
