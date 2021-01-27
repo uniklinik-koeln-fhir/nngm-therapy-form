@@ -20,8 +20,12 @@
   "content": "complete",
   "concept": [
     {
-      "code": "nebenwirkungen",
-      "display": "Nebenwirkungen"
+      "code": "nebenwirkungenab",
+      "display": "Abbruch wegen Nebenwirkungen"
+    },
+    {
+      "code": "nebenwirkungenpa",
+      "display": "Pauze wegen Nebenwirkungen"
     },
     {
       "code": "ablehnungPatient",
