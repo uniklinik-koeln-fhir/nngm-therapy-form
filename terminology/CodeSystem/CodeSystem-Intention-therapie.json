@@ -52,11 +52,11 @@
       "display": "Sonstiges"
     },
     {
-      "code": "revision/Komplikation",
+      "code": "Revision/Komplikation",
       "display": "Revision/Komplikation"
     },
     {
-      "code": "diagnostisch",
+      "code": "Diagnostisch",
       "display": "Diagnostisch"
     }
   ]
