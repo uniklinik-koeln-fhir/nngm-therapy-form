@@ -36,7 +36,6 @@
     <element id="Extension.extension:option">
       <path value="Extension.extension" />
       <sliceName value="option" />
-      <min value="1" />
       <max value="1" />
     </element>
     <element id="Extension.extension:option.url">
