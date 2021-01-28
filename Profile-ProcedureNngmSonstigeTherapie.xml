@@ -177,7 +177,6 @@
     </element>
     <element id="Procedure.reasonCode.coding">
       <path value="Procedure.reasonCode.coding" />
-      <min value="1" />
     </element>
     <element id="Procedure.reasonCode.coding.system">
       <path value="Procedure.reasonCode.coding.system" />
