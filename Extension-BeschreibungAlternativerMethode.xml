@@ -29,10 +29,6 @@
       <type>
         <code value="string" />
       </type>
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

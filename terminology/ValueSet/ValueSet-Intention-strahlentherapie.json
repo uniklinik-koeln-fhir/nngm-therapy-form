@@ -15,19 +15,19 @@
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
                 "concept": [
                     {
-                        "code": "kurativ",
-                        "display": "kurativ"
+                        "code": "Kurativ",
+                        "display": "Kurativ"
                     },
                     {
-                        "code": "palliativ",
-                        "display": "palliativ"
+                        "code": "Palliativ",
+                        "display": "Palliativ"
                     },
                     {
-                        "code": "adjuvant",
-                        "display": "adjuvant"
+                        "code": "Adjuvant",
+                        "display": "Adjuvant"
                     },
                     {
-                        "code": "neoadjuvant",
+                        "code": "Neoadjuvant",
                         "display": "neoadjuvant"
                     },
                     {
@@ -63,26 +63,26 @@
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
                 "version": "1.0",
-                "code": "palliativ",
-                "display": "palliativ"
+                "code": "Palliativ",
+                "display": "Palliativ"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
                 "version": "1.0",
-                "code": "kurativ",
-                "display": "kurativ"
+                "code": "Kurativ",
+                "display": "Kurativ"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
                 "version": "1.0",
-                "code": "adjuvant",
-                "display": "adjuvant"
+                "code": "Adjuvant",
+                "display": "Adjuvant"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
                 "version": "1.0",
-                "code": "neoadjuvant",
-                "display": "neoadjuvant"
+                "code": "Neoadjuvant",
+                "display": "Neoadjuvant"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",

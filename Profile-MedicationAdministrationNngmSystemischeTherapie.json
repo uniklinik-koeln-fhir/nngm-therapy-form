@@ -156,7 +156,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeStatusReason"
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason"
         }
       },
       {
