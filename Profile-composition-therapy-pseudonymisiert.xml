@@ -49,9 +49,6 @@
       <path value="Composition.identifier" />
       <sliceName value="FallIdentifier" />
       <min value="1" />
-      <fixedIdentifier>
-        <system value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
-      </fixedIdentifier>
     </element>
     <element id="Composition.identifier:FallIdentifier.system">
       <path value="Composition.identifier.system" />
