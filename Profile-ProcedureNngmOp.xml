@@ -63,12 +63,7 @@
     </element>
     <element id="Procedure.category">
       <path value="Procedure.category" />
-      <min value="1" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://www.uk-koeln.de/fhir/ValueSet/OpCategory" />
-      </binding>
     </element>
     <element id="Procedure.category.coding">
       <path value="Procedure.category.coding" />
