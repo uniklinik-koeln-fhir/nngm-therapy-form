@@ -69,11 +69,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.extension:studientherapie.url",
-        "path": "MedicationAdministration.extension.url",
-        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
-      },
-      {
         "id": "MedicationAdministration.extension:offLabelTherapie",
         "path": "MedicationAdministration.extension",
         "sliceName": "offLabelTherapie",
@@ -127,11 +122,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.extension:Erhaltungstherapie.url",
-        "path": "MedicationAdministration.extension.url",
-        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie"
-      },
-      {
         "id": "MedicationAdministration.extension:nebenwirkung",
         "path": "MedicationAdministration.extension",
         "sliceName": "nebenwirkung",
@@ -153,11 +143,7 @@
       {
         "id": "MedicationAdministration.statusReason",
         "path": "MedicationAdministration.statusReason",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason"
-        }
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.statusReason.coding",
@@ -165,13 +151,12 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.statusReason.coding.system",
+        "path": "MedicationAdministration.statusReason.coding.system",
+        "fixedUri": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"
+      },
+      {
         "id": "MedicationAdministration.statusReason.text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "MedicationAdministration.statusReason.text",
         "mustSupport": true
       },
@@ -221,12 +206,6 @@
       },
       {
         "id": "MedicationAdministration.medication[x].text",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "MedicationAdministration.medication[x].text",
         "min": 1
       },
@@ -329,12 +308,6 @@
       },
       {
         "id": "MedicationAdministration.performer.actor.display",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
-            "valueBoolean": true
-          }
-        ],
         "path": "MedicationAdministration.performer.actor.display",
         "mustSupport": true,
         "binding": {
@@ -347,12 +320,6 @@
         "path": "MedicationAdministration.reasonCode",
         "mustSupport": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "MedicationAdministrationReason"
-            }
-          ],
           "strength": "required",
           "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-systemisch"
         }
