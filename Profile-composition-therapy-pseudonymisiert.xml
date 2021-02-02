@@ -35,32 +35,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Composition.identifier">
-      <path value="Composition.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Composition.identifier:FallIdentifier">
-      <path value="Composition.identifier" />
-      <sliceName value="FallIdentifier" />
-      <min value="1" />
-    </element>
-    <element id="Composition.identifier:FallIdentifier.system">
-      <path value="Composition.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.identifier:FallIdentifier.value">
-      <path value="Composition.identifier.value" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <fixedCode value="final" />
@@ -135,7 +109,7 @@
     </element>
     <element id="Composition.section:operation.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="operation" />
+      <fixedCode value="operation" />
     </element>
     <element id="Composition.section:operation.entry">
       <path value="Composition.section.entry" />
@@ -204,7 +178,7 @@
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="systemischeTherapie" />
+      <fixedCode value="systemischeTherapie" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -303,7 +277,7 @@
     </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="sonstigeTherapie" />
+      <fixedCode value="sonstigeTherapie" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -373,7 +347,7 @@
     </element>
     <element id="Composition.section:strahlenTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="strahlentherapie" />
+      <fixedCode value="strahlentherapie" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry">
       <path value="Composition.section.entry" />
@@ -464,7 +438,7 @@
     </element>
     <element id="Composition.section:stammdaten.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="stammdaten" />
+      <fixedCode value="stammdaten" />
     </element>
     <element id="Composition.section:stammdaten.entry">
       <path value="Composition.section.entry" />
