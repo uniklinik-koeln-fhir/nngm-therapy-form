@@ -183,6 +183,13 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.bodySite.coding">
+      <path value="Procedure.bodySite.coding" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK" />
+      </binding>
+    </element>
     <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
       <min value="1" />
