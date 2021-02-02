@@ -163,10 +163,6 @@
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation" />
-      </binding>
     </element>
     <element id="Procedure.bodySite.extension">
       <path value="Procedure.bodySite.extension" />
@@ -191,15 +187,18 @@
       <path value="Procedure.bodySite.coding" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK" />
       </binding>
     </element>
     <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite.coding.code">
       <path value="Procedure.bodySite.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite.text">
