@@ -87,8 +87,8 @@
       <path value="Composition.section" />
       <slicing>
         <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+          <type value="value" />
+          <path value="code.coding.code" />
         </discriminator>
         <rules value="closed" />
       </slicing>
@@ -105,11 +105,15 @@
     </element>
     <element id="Composition.section:operation.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.code.coding.code">
       <path value="Composition.section.code.coding.code" />
+      <min value="1" />
       <fixedCode value="operation" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry">
       <path value="Composition.section.entry" />
@@ -171,14 +175,19 @@
     <element id="Composition.section:systemischeTherapie.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
+      <min value="1" />
       <fixedCode value="systemischeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -270,14 +279,19 @@
     <element id="Composition.section:sonstigeTherapie.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
+      <min value="1" />
       <fixedCode value="sonstigeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -340,14 +354,19 @@
     <element id="Composition.section:strahlenTherapie.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
+      <min value="1" />
       <fixedCode value="strahlentherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry">
       <path value="Composition.section.entry" />
@@ -431,14 +450,19 @@
           <code value="stammdaten" />
         </coding>
       </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.code.coding.code">
       <path value="Composition.section.code.coding.code" />
+      <min value="1" />
       <fixedCode value="stammdaten" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.entry">
       <path value="Composition.section.entry" />
