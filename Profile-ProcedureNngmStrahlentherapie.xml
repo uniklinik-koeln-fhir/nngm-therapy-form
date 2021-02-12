@@ -152,7 +152,7 @@
       <path value="Procedure.statusReason" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
       </binding>
     </element>

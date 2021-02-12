@@ -44,8 +44,8 @@
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
               "version": "1.0",
-              "code": "sonstige stereotaktische Bestrahlung",
-              "display": "sonstige stereotaktische Bestrahlung"
+              "code": "Sonstige stereotaktische Bestrahlung",
+              "display": "Sonstige stereotaktische Bestrahlung"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
