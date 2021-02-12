@@ -186,14 +186,14 @@
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
-      </binding>
     </element>
     <element id="Procedure.bodySite.coding">
       <path value="Procedure.bodySite.coding" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
+      </binding>
     </element>
     <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
