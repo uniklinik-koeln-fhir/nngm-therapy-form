@@ -153,7 +153,7 @@
       {
         "id": "MedicationAdministration.statusReason.coding.system",
         "path": "MedicationAdministration.statusReason.coding.system",
-        "fixedUri": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"
+        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie"
       },
       {
         "id": "MedicationAdministration.statusReason.text",
