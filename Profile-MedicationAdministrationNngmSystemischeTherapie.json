@@ -152,8 +152,7 @@
       },
       {
         "id": "MedicationAdministration.statusReason.coding.system",
-        "path": "MedicationAdministration.statusReason.coding.system",
-        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie"
+        "path": "MedicationAdministration.statusReason.coding.system"
       },
       {
         "id": "MedicationAdministration.statusReason.text",
