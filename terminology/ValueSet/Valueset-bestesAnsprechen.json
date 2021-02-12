@@ -35,13 +35,22 @@
                         "display": "Stable Disease"
                     }
                 ]
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "concept": [
+                    {
+                        "code": "not-applicable",
+                        "display": "Not Applicable"
+                    }
+                ]
             }
         ]
     },
     "expansion": {
         "identifier": "ff5d3d23-09b6-4703-af73-c1afd23d9c28",
         "timestamp": "2020-10-13T10:41:19+00:00",
-        "total": 5,
+        "total": 6,
         "contains": [
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieDivergentesGeschehen",
@@ -72,6 +81,12 @@
                 "version": "1.0",
                 "code": "SD",
                 "display": "Stable Disease"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "version": "4.0.1",
+                "code": "not-applicable",
+                "display": "Not Applicable"
             }
         ]
     }
