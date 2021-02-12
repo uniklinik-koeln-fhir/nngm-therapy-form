@@ -47,8 +47,8 @@
             "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
             "concept": [
                 {
-                    "code": "unknown",
-                    "display": "Unknown"
+                    "code": "not-applicable",
+                    "display": "Not Applicable"
                 }
             ]
         }
@@ -57,13 +57,19 @@
 "expansion": {
     "identifier": "ecf44d4b-5f6d-4ef2-a279-a87a459b5bac",
     "timestamp": "2020-11-13T13:23:07+00:00",
-    "total": 7,
+    "total": 8,
     "contains": [
         {
             "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
             "version": "1.0",
             "code": "Brustwand rechts",
             "display": "Brustwand rechts"
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
+            "code": "Brustwand links",
+            "display": "Brustwand links"
         },
         {
             "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
@@ -98,8 +104,8 @@
         {
             "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
             "version": "4.0.1",
-            "code": "unknown",
-            "display": "Unknown"
+            "code": "not-applicable",
+            "display": "Not Applicable"
         }
     ]
 }
