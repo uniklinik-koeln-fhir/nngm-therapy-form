@@ -35,6 +35,35 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
+      <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.identifier:FallIdentifier">
+      <path value="Composition.identifier" />
+      <sliceName value="FallIdentifier" />
+      <min value="1" />
+      <fixedIdentifier>
+        <system value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      </fixedIdentifier>
+    </element>
+    <element id="Composition.identifier:FallIdentifier.system">
+      <path value="Composition.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier:FallIdentifier.value">
+      <path value="Composition.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <fixedCode value="final" />
@@ -73,6 +102,39 @@
         <code value="Reference" />
         <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM/pseudonymisiert" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.identifier">
+      <path value="Composition.subject.identifier" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.identifier:Patientenliste-Pseudonym">
+      <path value="Composition.subject.identifier" />
+      <sliceName value="Patientenliste-Pseudonym" />
+      <min value="1" />
+    </element>
+    <element id="Composition.subject.identifier:Patientenliste-Pseudonym.system">
+      <path value="Composition.subject.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/fhir/NamingSystem/nNGM/patient-identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.identifier:Patientenliste-Pseudonym.value">
+      <path value="Composition.subject.identifier.value" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.date">

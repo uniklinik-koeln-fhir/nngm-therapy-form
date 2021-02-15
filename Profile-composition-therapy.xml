@@ -115,9 +115,9 @@
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
-        <discriminator>
-          <type value="pattern" />
-          <path value="code" />
+        <discriminator>          
+        <type value="value" />
+          <path value="code.coding.code" />
         </discriminator>
         <rules value="closed" />
       </slicing>
@@ -133,12 +133,16 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
+      <path value="Composition.section.code.coding.system" />      
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="operation" />
+      <min value="1" />
+      <fixedCode value="operation" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry">
       <path value="Composition.section.entry" />
@@ -147,15 +151,19 @@
           <type value="profile" />
           <path value="$this.resolve()" />
         </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="display" />
+        </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
-      <max value="1" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry:procedure">
       <path value="Composition.section.entry" />
       <sliceName value="procedure" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -167,21 +175,49 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
+        <element id="Composition.section:operation.entry:formularId">
+      <path value="Composition.section.entry" />
+      <sliceName value="formularId" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:formularId.identifier.system">
+      <path value="Composition.section.entry.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:formularId.identifier.value">
+      <path value="Composition.section.entry.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:formularId.display">
+      <path value="Composition.section.entry.display" />
+      <fixedString value="operation" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:systemischeTherapie">
       <path value="Composition.section" />
       <sliceName value="systemischeTherapie" />
     </element>
     <element id="Composition.section:systemischeTherapie.code">
       <path value="Composition.section.code" />
-      <min value="1" />
+      <min value="1" />      
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="systemischeTherapie" />
+      <min value="1" />
+      <fixedCode value="systemischeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -190,8 +226,13 @@
           <type value="profile" />
           <path value="$this.resolve()" />
         </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="display" />
+        </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="4" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry:medicationAdministration">
@@ -239,6 +280,29 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
+        <element id="Composition.section:systemischeTherapie.entry:formularId">
+      <path value="Composition.section.entry" />
+      <sliceName value="formularId" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:formularId.identifier.system">
+      <path value="Composition.section.entry.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:formularId.identifier.value">
+      <path value="Composition.section.entry.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:formularId.display">
+      <path value="Composition.section.entry.display" />
+      <fixedString value="systemischeTherapie" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:sonstigeTherapie">
       <path value="Composition.section" />
       <sliceName value="sonstigeTherapie" />
@@ -246,14 +310,19 @@
     <element id="Composition.section:sonstigeTherapie.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="sonstigeTherapie" />
+      <min value="1" />
+      <fixedCode value="sonstigeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry">
       <path value="Composition.section.entry" />
@@ -262,8 +331,13 @@
           <type value="profile" />
           <path value="$this.resolve()" />
         </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="display" />
+        </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry:procedure">
@@ -281,6 +355,29 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
+    <element id="Composition.section:sonstigeTherapie.entry:formularId">
+      <path value="Composition.section.entry" />
+      <sliceName value="formularId" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:formularId.identifier.system">
+      <path value="Composition.section.entry.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:formularId.identifier.value">
+      <path value="Composition.section.entry.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:formularId.display">
+      <path value="Composition.section.entry.display" />
+      <fixedString value="sonstigeTherapie" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:strahlenTherapie">
       <path value="Composition.section" />
       <sliceName value="strahlenTherapie" />
@@ -289,14 +386,19 @@
     <element id="Composition.section:strahlenTherapie.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="strahlentherapie" />
+      <min value="1" />
+      <fixedCode value="strahlentherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry">
       <path value="Composition.section.entry" />
@@ -305,8 +407,13 @@
           <type value="profile" />
           <path value="$this.resolve()" />
         </discriminator>
+        <discriminator>
+          <type value="value" />
+          <path value="display" />
+        </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="3" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:procedure">
       <path value="Composition.section.entry" />
@@ -338,9 +445,33 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
+    <element id="Composition.section:strahlenTherapie.entry:formularId">
+      <path value="Composition.section.entry" />
+      <sliceName value="formularId" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:formularId.identifier.system">
+      <path value="Composition.section.entry.identifier.system" />
+      <min value="1" />
+      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:formularId.identifier.value">
+      <path value="Composition.section.entry.identifier.value" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:formularId.display">
+      <path value="Composition.section.entry.display" />
+      <fixedString value="strahlentherapie" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:stammdaten">
       <path value="Composition.section" />
       <sliceName value="stammdaten" />
+      <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
@@ -353,14 +484,19 @@
           <code value="stammdaten" />
         </coding>
       </patternCodeableConcept>
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.code.coding.system">
       <path value="Composition.section.code.coding.system" />
+      <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.code.coding.code">
       <path value="Composition.section.code.coding.code" />
-      <patternCode value="stammdaten" />
+      <min value="1" />
+      <fixedCode value="stammdaten" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.entry">
       <path value="Composition.section.entry" />
@@ -371,11 +507,13 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <max value="2" />
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:stammdaten.entry:patient">
+        <element id="Composition.section:stammdaten.entry:patient">
       <path value="Composition.section.entry" />
       <sliceName value="patient" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -383,21 +521,16 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Composition.section:stammdaten.entry:patient.reference">
-      <path value="Composition.section.entry.reference" />
-    </element>
     <element id="Composition.section:stammdaten.entry:coverage">
       <path value="Composition.section.entry" />
       <sliceName value="coverage" />
+      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Coverage/nNGM" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Composition.section:stammdaten.entry:coverage.reference">
-      <path value="Composition.section.entry.reference" />
     </element>
   </differential>
 </StructureDefinition>
