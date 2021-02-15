@@ -121,6 +121,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <min value="1" />
     </element>
     <element id="Composition.section:operation">
       <path value="Composition.section" />
