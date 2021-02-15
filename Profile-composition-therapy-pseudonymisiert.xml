@@ -128,6 +128,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry:procedure">
@@ -202,6 +203,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="4" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry:medicationAdministration">
@@ -306,6 +308,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry:procedure">
@@ -381,6 +384,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
+      <max value="3" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:procedure">
       <path value="Composition.section.entry" />
@@ -473,6 +477,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.entry:patient">
