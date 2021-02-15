@@ -108,15 +108,30 @@
       <path value="Composition.date" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Practitioner/clinical-site" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Therapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section">
       <path value="Composition.section" />
       <slicing>
-        <discriminator>          
-        <type value="value" />
+        <discriminator>
+          <type value="value" />
           <path value="code.coding.code" />
         </discriminator>
         <rules value="closed" />
@@ -134,7 +149,7 @@
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.code.coding.system">
-      <path value="Composition.section.code.coding.system" />      
+      <path value="Composition.section.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nngm/sections" />
       <mustSupport value="true" />
@@ -176,7 +191,7 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
-        <element id="Composition.section:operation.entry:formularId">
+    <element id="Composition.section:operation.entry:formularId">
       <path value="Composition.section.entry" />
       <sliceName value="formularId" />
       <min value="1" />
@@ -202,10 +217,11 @@
     <element id="Composition.section:systemischeTherapie">
       <path value="Composition.section" />
       <sliceName value="systemischeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code">
       <path value="Composition.section.code" />
-      <min value="1" />      
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code.coding.system">
@@ -281,7 +297,7 @@
       <path value="Composition.section.entry.reference" />
       <min value="1" />
     </element>
-        <element id="Composition.section:systemischeTherapie.entry:formularId">
+    <element id="Composition.section:systemischeTherapie.entry:formularId">
       <path value="Composition.section.entry" />
       <sliceName value="formularId" />
       <min value="1" />
@@ -307,6 +323,7 @@
     <element id="Composition.section:sonstigeTherapie">
       <path value="Composition.section" />
       <sliceName value="sonstigeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code">
       <path value="Composition.section.code" />
@@ -511,7 +528,7 @@
       <max value="2" />
       <mustSupport value="true" />
     </element>
-        <element id="Composition.section:stammdaten.entry:patient">
+    <element id="Composition.section:stammdaten.entry:patient">
       <path value="Composition.section.entry" />
       <sliceName value="patient" />
       <min value="1" />

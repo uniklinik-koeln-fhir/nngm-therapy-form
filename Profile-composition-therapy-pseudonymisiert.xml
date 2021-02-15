@@ -35,7 +35,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
-      <element id="Composition.identifier">
+    <element id="Composition.identifier">
       <path value="Composition.identifier" />
       <slicing>
         <discriminator>
@@ -141,9 +141,24 @@
       <path value="Composition.date" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Practitioner/clinical-site" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.title">
       <path value="Composition.title" />
       <fixedString value="Therapie pseudonymisiert" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section">
       <path value="Composition.section" />
@@ -234,6 +249,7 @@
     <element id="Composition.section:systemischeTherapie">
       <path value="Composition.section" />
       <sliceName value="systemischeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.code">
       <path value="Composition.section.code" />
@@ -339,6 +355,7 @@
     <element id="Composition.section:sonstigeTherapie">
       <path value="Composition.section" />
       <sliceName value="sonstigeTherapie" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.code">
       <path value="Composition.section.code" />
