@@ -69,6 +69,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.extension:studientherapie.url",
+        "path": "MedicationAdministration.extension.url",
+        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
+      },
+      {
         "id": "MedicationAdministration.extension:offLabelTherapie",
         "path": "MedicationAdministration.extension",
         "sliceName": "offLabelTherapie",
@@ -136,9 +141,51 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.extension:aenderungDesSchemas",
+        "path": "MedicationAdministration.extension",
+        "sliceName": "aenderungDesSchemas",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/DatumAenderung"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.status",
         "path": "MedicationAdministration.status",
         "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.status.extension",
+        "path": "MedicationAdministration.status.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationAdministration.status.extension:multipleStatus",
+        "path": "MedicationAdministration.status.extension",
+        "sliceName": "multipleStatus",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/statusStrahlentherapie"
+            ]
+          }
+        ]
       },
       {
         "id": "MedicationAdministration.statusReason",
@@ -149,10 +196,6 @@
         "id": "MedicationAdministration.statusReason.coding",
         "path": "MedicationAdministration.statusReason.coding",
         "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.statusReason.coding.system",
-        "path": "MedicationAdministration.statusReason.coding.system"
       },
       {
         "id": "MedicationAdministration.statusReason.text",
@@ -199,14 +242,59 @@
         }
       },
       {
-        "id": "MedicationAdministration.medication[x].coding.system",
-        "path": "MedicationAdministration.medication[x].coding.system",
-        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation"
+        "id": "MedicationAdministration.medication[x].extension",
+        "path": "MedicationAdministration.medication[x].extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
-        "id": "MedicationAdministration.medication[x].text",
-        "path": "MedicationAdministration.medication[x].text",
-        "min": 1
+        "id": "MedicationAdministration.medication[x].extension:neuesTherapieschema",
+        "path": "MedicationAdministration.medication[x].extension",
+        "sliceName": "neuesTherapieschema",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/NeuesTherapieschema"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].extension:neuesTherapieschema.value[x]",
+        "path": "MedicationAdministration.medication[x].extension.value[x]",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding",
+        "path": "MedicationAdministration.medication[x].coding",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding.system",
+        "path": "MedicationAdministration.medication[x].coding.system",
+        "min": 1,
+        "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x].coding.code",
+        "path": "MedicationAdministration.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.subject",
