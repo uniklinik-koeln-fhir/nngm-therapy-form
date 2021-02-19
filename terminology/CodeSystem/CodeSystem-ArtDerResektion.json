@@ -29,8 +29,8 @@
       "display": "Resektion von Metastasen"
     },
     {
-      "code": "Lymphknotenresektion (anders als Lymphadenektomie)",
-      "display": "Lymphknotenresektion (anders als Lymphadenektomie)"
+      "code": "Lympfknotenresektion (anders als Lymphadenektomie)",
+      "display": "Lympfknotenresektion (anders als Lymphadenektomie)"
     },
     {
       "code": "Resektion eines lokoregionären Rezidivs",
@@ -41,8 +41,8 @@
       "display": "Nachresektion"
     },
     {
-      "code": "Revisions-OP wegen Komplikationen",
-      "display": "Revisions-OP wegen Komplikationen"
+      "code": "Revisions-OP wg. Komplikationen",
+      "display": "Revisions-OP wg. Komplikationen"
     }
   ]
 }

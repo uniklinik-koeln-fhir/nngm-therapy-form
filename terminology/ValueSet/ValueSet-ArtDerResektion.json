@@ -44,8 +44,8 @@
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
                 "version": "1.0",
-                "code": "Lymphknotenresektion (anders als Lymphadenektomie)",
-                "display": "Lymphknotenresektion (anders als Lymphadenektomie)"
+                "code": "Lympfknotenresektion (anders als Lymphadenektomie)",
+                "display": "Lympfknotenresektion (anders als Lymphadenektomie)"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
@@ -62,8 +62,8 @@
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
                 "version": "1.0",
-                "code": "Revisions-OP wegen Komplikationen",
-                "display": "Revisions-OP wegen Komplikationen"
+                "code": "Revisions-OP wg. Komplikationen",
+                "display": "Revisions-OP wg. Komplikationen"
             },
             {
                 "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",

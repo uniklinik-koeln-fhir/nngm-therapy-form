@@ -69,6 +69,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.extension:studientherapie.url",
+        "path": "MedicationAdministration.extension.url",
+        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
+      },
+      {
         "id": "MedicationAdministration.extension:offLabelTherapie",
         "path": "MedicationAdministration.extension",
         "sliceName": "offLabelTherapie",
@@ -151,10 +156,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.statusReason.coding.system",
-        "path": "MedicationAdministration.statusReason.coding.system"
-      },
-      {
         "id": "MedicationAdministration.statusReason.text",
         "path": "MedicationAdministration.statusReason.text",
         "mustSupport": true
@@ -202,11 +203,6 @@
         "id": "MedicationAdministration.medication[x].coding.system",
         "path": "MedicationAdministration.medication[x].coding.system",
         "fixedUri": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation"
-      },
-      {
-        "id": "MedicationAdministration.medication[x].text",
-        "path": "MedicationAdministration.medication[x].text",
-        "min": 1
       },
       {
         "id": "MedicationAdministration.subject",
