@@ -35,35 +35,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
   <derivation value="constraint" />
   <differential>
-    <element id="Composition.identifier">
-      <path value="Composition.identifier" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Composition.identifier:FallIdentifier">
-      <path value="Composition.identifier" />
-      <sliceName value="FallIdentifier" />
-      <min value="1" />
-      <fixedIdentifier>
-        <system value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
-      </fixedIdentifier>
-    </element>
-    <element id="Composition.identifier:FallIdentifier.system">
-      <path value="Composition.identifier.system" />
-      <min value="1" />
-      <fixedUri value="http://uk-koeln.de/NamingSystem/nNGM/formularId" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Composition.identifier:FallIdentifier.value">
-      <path value="Composition.identifier.value" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Composition.status">
       <path value="Composition.status" />
       <fixedCode value="final" />
@@ -148,6 +119,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:operation.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:operation.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
@@ -173,7 +150,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <max value="2" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry:procedure">
@@ -224,6 +201,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:systemischeTherapie.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:systemischeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
@@ -249,7 +232,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <max value="4" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry:medicationAdministration">
@@ -330,6 +313,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:sonstigeTherapie.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:sonstigeTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
@@ -355,7 +344,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <max value="2" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry:procedure">
@@ -406,6 +395,12 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:strahlenTherapie.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:strahlenTherapie.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
@@ -431,7 +426,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <max value="3" />
+      <min value="1" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:procedure">
       <path value="Composition.section.entry" />
@@ -504,6 +499,12 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:stammdaten.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:stammdaten.code.coding.system">
       <path value="Composition.section.code.coding.system" />
       <min value="1" />
@@ -525,7 +526,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <max value="2" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.entry:patient">
