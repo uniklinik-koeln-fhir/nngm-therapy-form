@@ -17,8 +17,8 @@
               "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
               "concept": [
                   {
-                      "code": "unknown",
-                      "display": "Unknown"
+                      "code": "not-applicable",
+                      "display": "Not Applicable"
                   }
               ]
           }
