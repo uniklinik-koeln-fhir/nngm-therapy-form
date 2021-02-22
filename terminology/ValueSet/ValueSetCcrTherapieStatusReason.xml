@@ -14,11 +14,14 @@
          <include>
              <system value="https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund" />
          </include>
+         <include>
+             <system value="http://terminology.hl7.org/CodeSystem/data-absent-reason" />
+         </include>
      </compose>
 	 <expansion>
         <identifier value="004b7ab1-9d30-44dd-a1c9-ac4eec8ff5ea"/>
         <timestamp value="2020-12-08T09:51:12+00:00"/>
-        <total value="9"/>
+        <total value="8"/>
         <offset value="0"/>
         <parameter>
             <name value="offset"/>
@@ -67,11 +70,6 @@
             <system value="https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"/>
             <code value="Sonstiges"/>
             <display value="Sonstiges"/>
-        </contains>
-        <contains>
-            <system value="https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"/>
-            <code value="N/A"/>
-            <display value="N/A"/>
         </contains>
     </expansion>
 </ValueSet>
