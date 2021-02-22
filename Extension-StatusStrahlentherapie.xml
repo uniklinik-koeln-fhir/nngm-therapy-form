@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/statusStrahlentherapie" />
+  <name value="StatusStrahlentherapie" />
+  <title value="Status Strahlentherapie extension" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationAdministration.status" />
+  </context>
+  <context>
+    <type value="element" />
+    <expression value="Procedure.status" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/statusStrahlentherapie" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
+      </binding>
+    </element>
+    <element id="Extension.value[x].coding.system">
+      <path value="Extension.value[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Extension.value[x].coding.code">
+      <path value="Extension.value[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
