@@ -23,7 +23,7 @@
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="dateTime" />
+        <code value="date" />
       </type>
       <mustSupport value="true" />
     </element>
