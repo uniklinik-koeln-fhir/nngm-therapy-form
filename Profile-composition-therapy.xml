@@ -427,6 +427,7 @@
         <rules value="closed" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:procedure">
       <path value="Composition.section.entry" />
