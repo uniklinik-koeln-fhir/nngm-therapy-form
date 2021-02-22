@@ -162,39 +162,32 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.status.extension",
-        "path": "MedicationAdministration.status.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "MedicationAdministration.status.extension:multipleStatus",
-        "path": "MedicationAdministration.status.extension",
-        "sliceName": "multipleStatus",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/statusStrahlentherapie"
-            ]
-          }
-        ]
-      },
-      {
         "id": "MedicationAdministration.statusReason",
         "path": "MedicationAdministration.statusReason",
+        "min": 1,
+        "max": "1",
         "mustSupport": true
       },
       {
         "id": "MedicationAdministration.statusReason.coding",
         "path": "MedicationAdministration.statusReason.coding",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason"
+        }
+      },
+      {
+        "id": "MedicationAdministration.statusReason.coding.system",
+        "path": "MedicationAdministration.statusReason.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.statusReason.coding.code",
+        "path": "MedicationAdministration.statusReason.coding.code",
+        "min": 1,
         "mustSupport": true
       },
       {

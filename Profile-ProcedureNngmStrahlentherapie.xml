@@ -148,39 +148,29 @@
       <path value="Procedure.status" />
       <mustSupport value="true" />
     </element>
-     <element id="Procedure.status.extension">
-      <path value="Procedure.status.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.status.extension:multipleStatus">
-      <path value="Procedure.status.extension" />
-      <sliceName value="multipleStatus" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/statusStrahlentherapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Procedure.statusReason">
       <path value="Procedure.statusReason" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
-      </binding>
     </element>
     <element id="Procedure.statusReason.coding">
       <path value="Procedure.statusReason.coding" />
       <min value="1" />
       <max value="*" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
+      </binding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.statusReason.coding.system">
+      <path value="Procedure.statusReason.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.statusReason.coding.code">
+      <path value="Procedure.statusReason.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.statusReason.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
