@@ -29,10 +29,12 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
-      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.value[x].coding">
+      <path value="Extension.value[x].coding" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/OperationSeitenlokalisation" />

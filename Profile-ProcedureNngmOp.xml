@@ -34,6 +34,10 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:lymphadenektomie.value[x]">
+      <path value="Procedure.extension.value[x]" />
+      <min value="0" />
+    </element>
     <element id="Procedure.extension:episodeOfCare">
       <path value="Procedure.extension" />
       <sliceName value="episodeOfCare" />
