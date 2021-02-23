@@ -182,7 +182,8 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry:procedure">
@@ -205,6 +206,11 @@
       <sliceName value="formularId" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:operation.entry:formularId.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:operation.entry:formularId.identifier.system">
@@ -264,7 +270,8 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
+      <max value="5" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:systemischeTherapie.entry:medicationAdministration">
@@ -285,7 +292,6 @@
     <element id="Composition.section:systemischeTherapie.entry:bestResponse">
       <path value="Composition.section.entry" />
       <sliceName value="bestResponse" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -300,7 +306,6 @@
     <element id="Composition.section:systemischeTherapie.entry:ecog">
       <path value="Composition.section.entry" />
       <sliceName value="ecog" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -319,6 +324,11 @@
       <max value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Composition.section:systemischeTherapie.entry:formularId.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Composition.section:systemischeTherapie.entry:formularId.identifier.system">
       <path value="Composition.section.entry.identifier.system" />
       <min value="1" />
@@ -334,6 +344,21 @@
       <path value="Composition.section.entry.display" />
       <fixedString value="systemischeTherapie" />
       <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:episodeOfCare">
+      <path value="Composition.section.entry" />
+      <sliceName value="episodeOfCare" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
+        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/EpisodeOfCare/nNGM" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:systemischeTherapie.entry:episodeOfCare.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
     </element>
     <element id="Composition.section:sonstigeTherapie">
       <path value="Composition.section" />
@@ -376,7 +401,8 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
+      <max value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry:procedure">
@@ -399,6 +425,11 @@
       <sliceName value="formularId" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:sonstigeTherapie.entry:formularId.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sonstigeTherapie.entry:formularId.identifier.system">
@@ -458,7 +489,8 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
+      <max value="3" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:procedure">
       <path value="Composition.section.entry" />
@@ -478,7 +510,6 @@
     <element id="Composition.section:strahlenTherapie.entry:episodeOfCare">
       <path value="Composition.section.entry" />
       <sliceName value="episodeOfCare" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Reference" />
@@ -495,6 +526,11 @@
       <sliceName value="formularId" />
       <min value="1" />
       <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:strahlenTherapie.entry:formularId.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:strahlenTherapie.entry:formularId.identifier.system">
@@ -557,7 +593,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="1" />
+      <min value="2" />
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:stammdaten.entry:patient">
