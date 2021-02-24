@@ -4,8 +4,8 @@
   "version": "0.2",
   "name": "MedicationAdministrationNngm",
   "title": "nNGM Systemische Therapie",
-  "status": "draft",
-  "experimental": true,
+  "status": "active",
+  "experimental": false,
   "date": "2019-10-18",
   "publisher": "Universitätsklinikum Köln",
   "fhirVersion": "4.0.1",
@@ -67,11 +67,6 @@
         "path": "MedicationAdministration.extension.extension",
         "sliceName": "studie",
         "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.extension:studientherapie.url",
-        "path": "MedicationAdministration.extension.url",
-        "fixedUri": "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
       },
       {
         "id": "MedicationAdministration.extension:offLabelTherapie",
@@ -183,7 +178,6 @@
         "id": "MedicationAdministration.statusReason.extension:grundAenderungdesTherapieschemas",
         "path": "MedicationAdministration.statusReason.extension",
         "sliceName": "grundAenderungdesTherapieschemas",
-        "min": 0,
         "max": "1",
         "type": [
           {

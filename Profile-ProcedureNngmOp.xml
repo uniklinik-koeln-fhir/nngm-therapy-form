@@ -4,8 +4,8 @@
   <version value="0.2" />
   <name value="ProcedureNngmOp" />
   <title value="nNGM Operation" />
-  <status value="draft" />
-  <experimental value="true" />
+  <status value="active" />
+  <experimental value="false" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
   <fhirVersion value="4.0.1" />
@@ -33,10 +33,6 @@
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/lymphadenektomie" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.extension:lymphadenektomie.value[x]">
-      <path value="Procedure.extension.value[x]" />
-      <min value="0" />
     </element>
     <element id="Procedure.extension:episodeOfCare">
       <path value="Procedure.extension" />
