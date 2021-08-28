@@ -9,30 +9,30 @@
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",
     "description": "Intention von Operationen und anderen Eingriffen",
-  "compose": {
+    "compose": {
       "include": [
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "concept": [
                   {
-                      "code": "palliativ",
-                      "display": "palliativ"
+                      "code": "Palliativ",
+                      "display": "Palliativ"
                   },
                   {
-                      "code": "kurativ",
-                      "display": "kurativ"
+                      "code": "Kurativ",
+                      "display": "Kurativ"
                   },
                   {
-                      "code": "adjuvant",
-                      "display": "adjuvant"
+                      "code": "Adjuvant",
+                      "display": "Adjuvant"
                   },
                   {
-                      "code": "neoadjuvant",
-                      "display": "neoadjuvant"
+                      "code": "Neoadjuvant",
+                      "display": "Neoadjuvant"
                   },
                   {
-                      "code": "definitiv mit Strahlentherapie",
-                      "display": "definitiv mit Strahlentherapie"
+                      "code": "Definitiv mit Strahlentherapie",
+                      "display": "Definitiv mit Strahlentherapie"
                   }
               ]
           },
@@ -55,32 +55,32 @@
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "palliativ",
-              "display": "palliativ"
+              "code": "Palliativ",
+              "display": "Palliativ"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "kurativ",
-              "display": "kurativ"
+              "code": "Kurativ",
+              "display": "Kurativ"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "adjuvant",
-              "display": "adjuvant"
+              "code": "Adjuvant",
+              "display": "Adjuvant"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "neoadjuvant",
-              "display": "neoadjuvant"
+              "code": "Neoadjuvant",
+              "display": "Neoadjuvant"
           },
           {
               "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
               "version": "1.0",
-              "code": "definitiv mit Strahlentherapie",
-              "display": "definitiv mit Strahlentherapie"
+              "code": "Definitiv mit Strahlentherapie",
+              "display": "Definitiv mit Strahlentherapie"
           },
           {
               "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",

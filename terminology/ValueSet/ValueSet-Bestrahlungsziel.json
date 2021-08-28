@@ -10,48 +10,103 @@
   "description": "Bestrahlungsziel",
   "compose": {
     "include": [
-      {
-        "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
-        "concept": [
-          {
-            "code": "Primärtumorregion",
-            "display": "Primärtumorregion"
-          },
-          {
-            "code": "Regionäre Lymphabflusswege",
-            "display": "Regionäre Lymphabflusswege"
-          },
-          {
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "concept": [
+                {
+                    "code": "Primärtumorregion",
+                    "display": "Primärtumorregion"
+                },
+                {
+                    "code": "Regionäre Lymphabflusswege",
+                    "display": "Regionäre Lymphabflusswege"
+                },
+                {
+                    "code": "Brustwand rechts",
+                    "display": "Brustwand rechts"
+                },
+                {
+                    "code": "Brustwand links",
+                    "display": "Brustwand links"
+                },
+                {
+                    "code": "Knochen",
+                    "display": "Knochen"
+                },
+                {
+                    "code": "Gehirn",
+                    "display": "Gehirn"
+                },
+                {
+                    "code": "Mediastinum",
+                    "display": "Mediastinum"
+                }
+            ]
+        },
+        {
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "concept": [
+                {
+                    "code": "not-applicable",
+                    "display": "Not Applicable"
+                }
+            ]
+        }
+    ]
+},
+"expansion": {
+    "identifier": "ecf44d4b-5f6d-4ef2-a279-a87a459b5bac",
+    "timestamp": "2020-11-13T13:23:07+00:00",
+    "total": 8,
+    "contains": [
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
             "code": "Brustwand rechts",
             "display": "Brustwand rechts"
-          },
-          {
-            "code": "Brustwand rechts",
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
+            "code": "Brustwand links",
             "display": "Brustwand links"
-          },
-          {
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
+            "code": "Primärtumorregion",
+            "display": "Primärtumorregion"
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
+            "code": "Regionäre Lymphabflusswege",
+            "display": "Regionäre Lymphabflusswege"
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
             "code": "Knochen",
             "display": "Knochen"
-          },
-          {
-            "code": "Gehirn",
-            "display": "Gehirn"
-          },
-          {
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
             "code": "Mediastinum",
             "display": "Mediastinum"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-        "concept": [
-          {
-            "code": "unknown",
-            "display": "Unknown"
-          }
-        ]
-      }
+        },
+        {
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "version": "1.0",
+            "code": "Gehirn",
+            "display": "Gehirn"
+        },
+        {
+            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "version": "4.0.1",
+            "code": "not-applicable",
+            "display": "Not Applicable"
+        }
     ]
-  }
+}
 }

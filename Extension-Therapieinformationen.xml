@@ -54,7 +54,6 @@
     </element>
     <element id="Extension.extension:hilfreich.value[x]">
       <path value="Extension.extension.value[x]" />
-      <min value="1" />
       <type>
         <code value="boolean" />
       </type>
@@ -70,7 +69,6 @@
     </element>
     <element id="Extension.extension:umgesetzt.value[x]">
       <path value="Extension.extension.value[x]" />
-      <min value="1" />
       <type>
         <code value="boolean" />
       </type>

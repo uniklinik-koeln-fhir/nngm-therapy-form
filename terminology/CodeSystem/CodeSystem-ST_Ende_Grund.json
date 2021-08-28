@@ -6,7 +6,7 @@
     "hierarchyMeaning": "classified-with",
     "compositional": false,
     "content": "complete",
-    "count": 9,
+    "count": 8,
     "concept":  [
         {
             "code": "Reguläres Ende",
@@ -49,11 +49,6 @@
             "code": "Sonstiges",
             "display": "Sonstiges",
             "definition": "Sonstiges"
-        },
-        {
-            "code": "N/A",
-            "display": "N/A",
-            "definition": "N/A"
         }
     ]
 }

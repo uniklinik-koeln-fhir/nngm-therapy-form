@@ -90,9 +90,6 @@
       <fixedCode value="C15645" />
     </element>
     <element id="Procedure.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Procedure.code.text" />
       <mustSupport value="true" />
     </element>
@@ -128,9 +125,6 @@
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performer.actor.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
       <binding>
@@ -141,10 +135,6 @@
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
-      </binding>
     </element>
     <element id="Procedure.reasonCode.extension">
       <path value="Procedure.reasonCode.extension" />
@@ -177,27 +167,33 @@
     </element>
     <element id="Procedure.reasonCode.coding">
       <path value="Procedure.reasonCode.coding" />
-      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
+      </binding>
     </element>
     <element id="Procedure.reasonCode.coding.system">
       <path value="Procedure.reasonCode.coding.system" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.reasonCode.coding.code">
       <path value="Procedure.reasonCode.coding.code" />
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite.coding">
+      <path value="Procedure.bodySite.coding" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
       </binding>
-    </element>
-    <element id="Procedure.bodySite.coding">
-      <path value="Procedure.bodySite.coding" />
-      <mustSupport value="true" />
     </element>
     <element id="Procedure.bodySite.coding.system">
       <path value="Procedure.bodySite.coding.system" />
@@ -208,9 +204,6 @@
       <min value="1" />
     </element>
     <element id="Procedure.bodySite.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
       <path value="Procedure.bodySite.text" />
       <mustSupport value="true" />
     </element>

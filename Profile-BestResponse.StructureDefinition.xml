@@ -40,9 +40,6 @@
       <min value="1" />
     </element>
     <element id="Observation.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
-        <valueString value="default: final" />
-      </extension>
       <path value="Observation.status" />
       <mustSupport value="true" />
     </element>
@@ -86,6 +83,9 @@
         <code value="CodeableConcept" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x].coding">
+      <path value="Observation.value[x].coding" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/bestesAnsprechen" />
@@ -96,9 +96,6 @@
       <min value="1" />
       <mustSupport value="true" />
       <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationMethod" />
-        </extension>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach" />
       </binding>
