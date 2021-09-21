@@ -34,6 +34,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.DurchfuehrendeEinrichtung">
       <path value="Therapie.Operation.DurchfuehrendeEinrichtung" />
@@ -58,6 +59,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.Operationsmerkmale.ArtDesEingriffs">
       <path value="Therapie.Operation.Operationsmerkmale.ArtDesEingriffs" />
@@ -66,6 +68,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.Lokalisation">
       <path value="Therapie.Operation.Lokalisation" />
@@ -74,6 +77,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.Seitenlokalisation">
       <path value="Therapie.Operation.Seitenlokalisation" />
@@ -82,6 +86,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.Resektion">
       <path value="Therapie.Operation.Resektion" />
@@ -146,6 +151,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Durchfuehrung.Therapieende">
       <path value="Therapie.Strahlentherapie.Durchfuehrung.Therapieende" />
@@ -154,6 +160,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Durchfuehrung.DurchfuehrendeEinrichtung">
       <path value="Therapie.Strahlentherapie.Durchfuehrung.DurchfuehrendeEinrichtung" />
@@ -178,6 +185,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Therapiemerkmale.TherapeutischeIntention">
       <path value="Therapie.Strahlentherapie.Therapiemerkmale.TherapeutischeIntention" />
@@ -186,6 +194,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Therapiemerkmale.ArtDerBestrahlung">
       <path value="Therapie.Strahlentherapie.Therapiemerkmale.ArtDerBestrahlung" />
@@ -234,6 +243,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Dosis.Boost.BoostDosis">
       <path value="Therapie.Strahlentherapie.Dosis.Boost.BoostDosis" />
@@ -258,6 +268,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Bemerkungen">
       <path value="Therapie.Strahlentherapie.Bemerkungen" />
@@ -282,6 +293,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.TherapieInformation.Beschreibung">
       <path value="Therapie.SystemischeTherapie.TherapieInformation.Beschreibung" />
@@ -330,6 +342,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Therapiemerkmale.Therapieende">
       <path value="Therapie.SystemischeTherapie.Therapiemerkmale.Therapieende" />
@@ -338,6 +351,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Therapiemerkmale.ArtDesTherapieendes">
       <path value="Therapie.SystemischeTherapie.Therapiemerkmale.ArtDesTherapieendes" />
@@ -362,6 +376,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Therapiemerkmale.OffLabelBehandlung">
       <path value="Therapie.SystemischeTherapie.Therapiemerkmale.OffLabelBehandlung" />
@@ -378,6 +393,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Nebenwirkungen">
       <path value="Therapie.SystemischeTherapie.Nebenwirkungen" />
@@ -458,6 +474,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie">
       <path value="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie" />
@@ -466,6 +483,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Response">
       <path value="Therapie.SystemischeTherapie.Response" />
@@ -482,6 +500,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Response.BeurteilungNach">
       <path value="Therapie.SystemischeTherapie.Response.BeurteilungNach" />
@@ -490,6 +509,16 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Therapie.SystemischeTherapie.ArtDesTherapieendes">
+      <path value="Therapie.SystemischeTherapie.ArtDesTherapieendes" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Bemerkungen">
       <path value="Therapie.SystemischeTherapie.Bemerkungen" />
@@ -514,6 +543,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale" />
@@ -522,6 +552,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn" />
@@ -530,6 +561,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende" />
@@ -538,6 +570,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund" />
@@ -546,6 +579,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung" />
@@ -594,6 +628,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen" />
