@@ -371,238 +371,237 @@
         <code value="string" />
       </type>
     </element>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapiemerkmale.Studienname">
-    <path value="Therapie.SystemischeTherapie.Therapiemerkmale.Studienname" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Nebenwirkungen">
-    <path value="Therapie.SystemischeTherapie.Nebenwirkungen" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema">
-    <path value="Therapie.SystemischeTherapie.Therapieschema" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.Beschreibung">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.Beschreibung" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.AnzahlDerZyklen">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.AnzahlDerZyklen" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.AenderungDesSchemas">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.AenderungDesSchemas" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.GrundFuerDieAenderung">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.GrundFuerDieAenderung" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.NameNeuesTherapieschema">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.NameNeuesTherapieschema" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Therapieschema.DatumDerAenderung">
-    <path value="Therapie.SystemischeTherapie.Therapieschema.DatumDerAenderung" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Erhaltungstherapie">
-    <path value="Therapie.SystemischeTherapie.Erhaltungstherapie" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption">
-    <path value="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie">
-    <path value="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Response">
-    <path value="Therapie.SystemischeTherapie.Response" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Response.BestesAnsprechen">
-    <path value="Therapie.SystemischeTherapie.Response.BestesAnsprechen" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Response.BeurteilungNach">
-    <path value="Therapie.SystemischeTherapie.Response.BeurteilungNach" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SystemischeTherapie.Bemerkungen">
-    <path value="Therapie.SystemischeTherapie.Bemerkungen" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie">
-    <path value="Therapie.SonstigeTherapie" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.ArtDerTherapie">
-    <path value="Therapie.SonstigeTherapie.ArtDerTherapie" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="BackboneElement" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Lokalisation">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Lokalisation" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Methode">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Methode" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapeutischeIntention">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapeutischeIntention" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Bezeichnung">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Bezeichnung" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.GrundFuerKeineTherapie">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.GrundFuerKeineTherapie" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-  <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen">
-    <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen" />
-    <min value="0" />
-    <max value="*" />
-    <type>
-      <code value="string" />
-    </type>
-  </element>
-</differential>
+    <element id="Therapie.SystemischeTherapie.Therapiemerkmale.Studienname">
+      <path value="Therapie.SystemischeTherapie.Therapiemerkmale.Studienname" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Nebenwirkungen">
+      <path value="Therapie.SystemischeTherapie.Nebenwirkungen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema">
+      <path value="Therapie.SystemischeTherapie.Therapieschema" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.Beschreibung">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.Beschreibung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.AnzahlDerZyklen">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.AnzahlDerZyklen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.AenderungDesSchemas">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.AenderungDesSchemas" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.GrundFuerDieAenderung">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.GrundFuerDieAenderung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.NameNeuesTherapieschema">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.NameNeuesTherapieschema" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Therapieschema.DatumDerAenderung">
+      <path value="Therapie.SystemischeTherapie.Therapieschema.DatumDerAenderung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Erhaltungstherapie">
+      <path value="Therapie.SystemischeTherapie.Erhaltungstherapie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption">
+      <path value="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie">
+      <path value="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Response">
+      <path value="Therapie.SystemischeTherapie.Response" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Response.BestesAnsprechen">
+      <path value="Therapie.SystemischeTherapie.Response.BestesAnsprechen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Response.BeurteilungNach">
+      <path value="Therapie.SystemischeTherapie.Response.BeurteilungNach" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SystemischeTherapie.Bemerkungen">
+      <path value="Therapie.SystemischeTherapie.Bemerkungen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie">
+      <path value="Therapie.SonstigeTherapie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.ArtDerTherapie">
+      <path value="Therapie.SonstigeTherapie.ArtDerTherapie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapiebeginn" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Therapieende" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Lokalisation">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Lokalisation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Methode">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Methode" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapeutischeIntention">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapeutischeIntention" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Bezeichnung">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Bezeichnung" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.GrundFuerKeineTherapie">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.GrundFuerKeineTherapie" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen">
+      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.Bemerkungen" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+  </differential>
 </StructureDefinition>
