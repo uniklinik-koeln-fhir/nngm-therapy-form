@@ -52,6 +52,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Operation.Operationsmerkmale.OperativeIntention">
       <path value="Therapie.Operation.Operationsmerkmale.OperativeIntention" />
@@ -145,6 +146,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Durchfuehrung.Therapiebeginn">
       <path value="Therapie.Strahlentherapie.Durchfuehrung.Therapiebeginn" />
@@ -179,6 +181,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Therapiemerkmale.Bestrahlungsziel">
       <path value="Therapie.Strahlentherapie.Therapiemerkmale.Bestrahlungsziel" />
@@ -213,6 +216,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Dosis.Einzeldosis">
       <path value="Therapie.Strahlentherapie.Dosis.Einzeldosis" />
@@ -237,6 +241,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.Strahlentherapie.Dosis.Boost.BoostDurchgefuehrt">
       <path value="Therapie.Strahlentherapie.Dosis.Boost.BoostDurchgefuehrt" />
@@ -337,6 +342,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Therapiemerkmale.Therapiebeginn">
       <path value="Therapie.SystemischeTherapie.Therapiemerkmale.Therapiebeginn" />
@@ -419,7 +425,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="BackboneElement" />
+        <code value="string" />
       </type>
     </element>
     <element id="Therapie.SystemischeTherapie.Therapieschema.AnzahlDerZyklen">
@@ -427,7 +433,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="BackboneElement" />
+        <code value="string" />
       </type>
     </element>
     <element id="Therapie.SystemischeTherapie.Therapieschema.AenderungDesSchemas">
@@ -435,7 +441,7 @@
       <min value="0" />
       <max value="*" />
       <type>
-        <code value="BackboneElement" />
+        <code value="string" />
       </type>
     </element>
     <element id="Therapie.SystemischeTherapie.Therapieschema.GrundFuerDieAenderung">
@@ -469,6 +475,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption">
       <path value="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption" />
@@ -495,6 +502,7 @@
       <type>
         <code value="BackboneElement" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Therapie.SystemischeTherapie.Response.BestesAnsprechen">
       <path value="Therapie.SystemischeTherapie.Response.BestesAnsprechen" />
