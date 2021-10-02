@@ -1,23 +1,14 @@
 {
   "resourceType": "CodeSystem",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-therapie",
-  "version": "1.0",
-  "title": "nNGM: CodeSystem Intention-Therapie",
-  "name": "nNGM_CodeSystem_Intention-Therapie",
-  "status": "draft",
-  "experimental": false,
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "Intention von systemischen und Strahlentherapien",
-  "caseSensitive": true,
-  "compositional": false,
+  "id": "CodeSystem-nNGM-IntentionTherapie",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/IntentionTherapie",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Intention Therapie",
+  "name": "CodeSystem_nNGM_IntentionTherapie",
+  "status": "active",
   "content": "complete",
+  "count": "10",
   "concept": [
     {
       "code": "Palliativ",

@@ -154,10 +154,6 @@
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op" />
       </binding>
     </element>
-    <element id="Procedure.reasonCode.coding">
-      <path value="Procedure.reasonCode.coding" />
-      <min value="1" />
-    </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
