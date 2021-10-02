@@ -109,8 +109,8 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Procedure.code.extension:seitenlokalisation">
-      <path value="Procedure.code.extension" />
+    <element id="Procedure.code.coding.extension:seitenlokalisation">
+      <path value="Procedure.code.coding.extension" />
       <sliceName value="seitenlokalisation" />
       <type>
         <code value="Extension" />
