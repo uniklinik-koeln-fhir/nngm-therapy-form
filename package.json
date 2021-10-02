@@ -1,0 +1,14 @@
+{
+  "name": "de.uk-koeln.nngm.therapyform",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "author": null,
+  "dependencies": {
+    "de.basisprofil.r4": "1.0.0"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "devDependencies": null,
+  "canonicals": null
+}
