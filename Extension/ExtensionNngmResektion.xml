@@ -46,6 +46,7 @@
     </element>
     <element id="Extension.extension:resektionsart.value[x]">
       <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
