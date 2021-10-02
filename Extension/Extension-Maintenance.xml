@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
-  <name value="BeschreibungAlternativerMethode" />
-  <status value="active" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
+  <name value="Maintenance" />
+  <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -13,21 +13,25 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Procedure.reasonCode" />
+    <expression value="Procedure" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="string" />
+        <code value="boolean" />
       </type>
     </element>
   </differential>

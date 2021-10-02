@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
-  <name value="ArtDerBestrahlung" />
-  <status value="active" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/seitenlokalisation" />
+  <name value="Seitenlokalisation" />
+  <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -13,15 +13,19 @@
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="Procedure.code" />
+    <expression value="Procedure.bodySite" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
+    </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/seitenlokalisation" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
@@ -33,7 +37,7 @@
       <path value="Extension.value[x].coding" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/StrahlentherapieArtDerBestrahlung" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/OperationSeitenlokalisation" />
       </binding>
     </element>
   </differential>
