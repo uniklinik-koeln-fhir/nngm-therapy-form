@@ -148,9 +148,10 @@
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
+      <max value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/intention-op" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/IntentionOperation" />
       </binding>
     </element>
     <element id="Procedure.bodySite">

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs" />
-  <name value="ArtDesEingriffs" />
-  <status value="draft" />
+  <id value="Extension-nNGM-ArtDesEingriffs" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/ArtDesEingriffs" />
+  <name value="Extension-nNGM-ArtDesEingriffs" />
+  <title value="Extension - nNGM - Art des Eingriffs" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -21,16 +23,24 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-des-eingriffs" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/ArtDesEingriffs" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
       <type>
         <code value="CodeableConcept" />
       </type>
+    </element>
+    <element id="Extension.value[x]:valueCodeableConcept">
+      <path value="Extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDesEingriffsUNK" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/ArtDesEingriffs" />
       </binding>
     </element>
   </differential>

@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-nNGM-ArtDesEingriffs",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/ArtDesEingriffs",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/artDesEingriffs",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Art des Eingriffs",
+  "name": "CodeSystem_nNGM_ArtDesEingriffs",
+  "status": "active",
+  "content": "complete",
+  "count": 8,
+  "concept": [
+    {
+      "code": "Bilobektomie",
+      "display": "Bilobektomie"
+    },
+    {
+      "code": "Pneumektomie",
+      "display": "Pneumektomie"
+    },
+    {
+      "code": "Lobektomie",
+      "display": "Lobektomie"
+    },
+    {
+      "code": "Thorakoskopie mit Pleurodese",
+      "display": "Thorakoskopie mit Pleurodese"
+    },
+    {
+      "code": "Keilresektion/Lasernukleation",
+      "display": "Keilresektion/Lasernukleation"
+    },
+    {
+      "code": "Segmentresektion",
+      "display": "Segmentresektion"
+    },
+    {
+      "code": "Metastasenresektion",
+      "display": "Metastasenresektion"
+    },
+    {
+      "code": "Pleurektomie (Dekortikation)",
+      "display": "Pleurektomie (Dekortikation)"
+    }
+  ]
+}
