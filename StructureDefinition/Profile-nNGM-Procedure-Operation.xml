@@ -82,15 +82,41 @@
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <min value="1" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.code.coding.system">
-      <path value="Procedure.code.coding.system" />
-      <fixedUri value="http://ncit.nci.nih.gov" />
+    <element id="Procedure.code.coding.extension">
+      <path value="Procedure.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="Procedure.code.coding.code">
+    <element id="Procedure.code.extension:seitenlokalisation">
+      <path value="Procedure.code.extension" />
+      <sliceName value="seitenlokalisation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/seitenlokalisation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding:ncit">
       <path value="Procedure.code.coding.code" />
-      <fixedCode value="C15329" />
+      <sliceName value="ncit" />
+      <patternCoding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+        <code value="C15329" />
+      </patternCoding>
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
