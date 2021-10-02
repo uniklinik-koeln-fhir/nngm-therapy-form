@@ -10,7 +10,7 @@
     "version": "1.0",
     "title": "nNGM: CodeSystem Operation ArtDesEingriffs",
     "name": "nNGM_CodeSystem_Operation_ArtDesEingriffs",
-    "status": "active",
+    "status": "draft",
     "experimental": false,
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",

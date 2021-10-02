@@ -10,7 +10,7 @@
   "version": "1.0",
   "name": "nNGM_CodeSystem_SystemischeTherapie_Medikation",
   "title": "nNGM: CodeSystem Systemsische Therapie Medikation",
-  "status": "active",
+  "status": "draft",
   "experimental": true,
   "date": "2019-02-08",
   "publisher": "Universitätsklinikum Köln",

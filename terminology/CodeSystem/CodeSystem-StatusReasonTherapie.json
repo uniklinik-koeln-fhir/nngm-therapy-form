@@ -10,7 +10,7 @@
   "version": "1.0",
   "title": "nNGM: CodeSystem Strahlentherapie Status Therapie",
   "name": "nNGM_CodeSystem_Strahlentherapie_StatusTherapie",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2019-02-08",
   "publisher": "Universitätsklinikum Köln",

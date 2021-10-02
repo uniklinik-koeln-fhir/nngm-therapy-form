@@ -10,7 +10,7 @@
   "version": "1.0",
   "title": "nNGM: CodeSystem Systemsiche Therapie RECIST",
   "name": "nNGM_CodeSystem_SystemischeTherapie_RECIST",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2019-02-08",
   "publisher": "Universitätsklinikum Köln",

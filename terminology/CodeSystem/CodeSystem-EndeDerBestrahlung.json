@@ -11,7 +11,7 @@
     "experimental": false,
     "title": "nNGM: CodeSystem Strahlentherapie Ende der Bestrahlung",
     "name": "nNGM_CodeSystem_Strahlentherapie_EndeDerBestrahlung",
-    "status": "active",
+    "status": "draft",
     "date": "2019-02-08",
     "publisher": "Universitätsklinikum Köln",
     "description": "Strahlentherapie Bestrahlungsziel",

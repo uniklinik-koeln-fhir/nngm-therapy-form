@@ -9,7 +9,7 @@
     "version": "1.0",
     "title": "nNGM CodeSystem Systemische Therapie Grund für die Änderung des Therapieschemas",
     "name": "nNGM_CodeSystem_ SystemischeTherapie_GrundAenderung",
-    "status": "active",
+    "status": "draft",
     "experimental": false,
     "date": "2021-02-15",
     "publisher": "Universitätsklinikum Köln",
