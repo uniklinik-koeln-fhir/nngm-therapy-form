@@ -38,7 +38,7 @@
     <element id="Extension.extension:resektionsart">
       <path value="Extension.extension" />
       <sliceName value="resektionsart" />
-      <min value="1" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:resektionsart.url">
       <path value="Extension.extension.url" />
