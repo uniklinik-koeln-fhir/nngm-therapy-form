@@ -142,7 +142,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/DurchfuehrendeEinrichtung" />
       </binding>
     </element>
     <element id="Procedure.reasonCode">
