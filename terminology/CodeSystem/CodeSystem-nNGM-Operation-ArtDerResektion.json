@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CodeSystem-nNGM-Operation-Resektion",
+  "id": "CodeSystem-nNGM-Operation-ArtDerResektion",
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
   "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationArtResektion",
   "version": "1.0.0",

@@ -1,14 +1,11 @@
 {
   "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/resektionsstatus",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Operation Resektionsstatus",
-  "name": "nNGM_ValueSet_Operation_Resektionsstatus",
-  "status": "draft",
-  "experimental": false,
-  "date": "2020-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "Resektionsstatus",
+  "id": "ValueSet-nNGM-Operation-Resektionstatus",
+  "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationResektionstatus",
+  "version": "1.0.0",
+  "title": "ValueSet - nNGM - Operation - Resektionsstatus",
+  "name": "ValueSet_nNGM_Operation_Resektionsstatus",
+  "status": "active",
   "compose": {
     "include": [
       {

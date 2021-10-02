@@ -88,7 +88,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/resektionsstatus" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationResektionstatus" />
       </binding>
     </element>
     <element id="Extension.url">
