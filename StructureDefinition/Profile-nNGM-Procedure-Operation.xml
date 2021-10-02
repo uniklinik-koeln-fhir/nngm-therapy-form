@@ -91,6 +91,14 @@
       </slicing>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.code.coding:ncit">
+      <path value="Procedure.code.coding.code" />
+      <sliceName value="ncit" />
+      <patternCoding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+        <code value="C15329" />
+      </patternCoding>
+    </element>
     <element id="Procedure.code.coding.extension">
       <path value="Procedure.code.coding.extension" />
       <slicing>
@@ -109,14 +117,6 @@
         <profile value="http://fhir.de/StructureDefinition/seitenlokalisation" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.code.coding:ncit">
-      <path value="Procedure.code.coding.code" />
-      <sliceName value="ncit" />
-      <patternCoding>
-        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
-        <code value="C15329" />
-      </patternCoding>
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
