@@ -147,7 +147,6 @@
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
-      <max value="1" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
