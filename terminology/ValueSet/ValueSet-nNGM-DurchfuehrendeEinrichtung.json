@@ -1,0 +1,113 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-nNGM-DurchfuehrendeEinrichtung",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/DurchfuehrendeEinrichtung",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Durchführende Einrichtung",
+    "name": "ValueSet_nNGM_Durchfuehrende_Einrichtung",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung"
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "866feed1-d731-4715-8139-693520510547",
+        "timestamp": "2020-10-13T08:55:30+00:00",
+        "total": 15,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "nNGM-Zentrum",
+                "display": "nNGM-Zentrum"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Universitäre Einrichtung",
+                "display": "Universitäre Einrichtung"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Anderes Krankenhaus - Lungenkrebszentrum",
+                "display": "Anderes Krankenhaus - Lungenkrebszentrum"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Anderes Krankenhaus - Pneumologie",
+                "display": "Anderes Krankenhaus - Pneumologie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Anderes Krankenhaus - Onkologie",
+                "display": "Anderes Krankenhaus - Onkologie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Anderes Krankenhaus - Chirurgie",
+                "display": "Anderes Krankenhaus - Chirurgie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Anderes Krankenhaus - Strahlentherapie",
+                "display": "Anderes Krankenhaus - Strahlentherapie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Pneumologie",
+                "display": "Niedergelassene Einrichtung - Pneumologie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Onkologie",
+                "display": "Niedergelassene Einrichtung - Onkologie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Beides",
+                "display": "Niedergelassene Einrichtung - Beides"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Strahlentherapie",
+                "display": "Niedergelassene Einrichtung - Strahlentherapie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Chirurgie",
+                "display": "Niedergelassene Einrichtung - Chirurgie"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Niedergelassene Einrichtung - Ausländische Einrichtung",
+                "display": "Niedergelassene Einrichtung - Ausländische Einrichtung"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Ausländische Einrichtung",
+                "display": "Ausländische Einrichtung"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+                "version": "1.0",
+                "code": "Andere",
+                "display": "Andere"
+            }
+        ]
+    }
+}

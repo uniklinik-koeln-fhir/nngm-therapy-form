@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "id":"CodeSystem-nNGM-DurchfuehrendeOrganisation",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/DurchfuehrendeEinrichtung",
+  "version": "1.0.0",
+  "name": "CodeSystem_nNGM_Durchfuehrende_Einrichtung",
+  "title": "CodeSystem - nNGM - Durchführende Einrichtung",
+  "status": "active",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/DurchfuehrendeEinrichtung",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "nNGM-Zentrum",
+      "display": "nNGM-Zentrum"
+    },
+    {
+      "code": "Universitäre Einrichtung",
+      "display": "Universitäre Einrichtung"
+    },
+    {
+      "code": "Anderes Krankenhaus - Lungenkrebszentrum",
+      "display": "Anderes Krankenhaus - Lungenkrebszentrum"
+    },
+    {
+      "code": "Anderes Krankenhaus - Pneumologie",
+      "display": "Anderes Krankenhaus - Pneumologie"
+    },
+    {
+      "code": "Anderes Krankenhaus - Onkologie",
+      "display": "Anderes Krankenhaus - Onkologie"
+    },
+    {
+      "code": "Anderes Krankenhaus - Chirurgie",
+      "display": "Anderes Krankenhaus - Chirurgie"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Pneumologie",
+      "display": "Niedergelassene Einrichtung - Pneumologie"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Onkologie",
+      "display": "Niedergelassene Einrichtung - Onkologie"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Beides",
+      "display": "Niedergelassene Einrichtung - Beides"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Strahlentherapie",
+      "display": "Niedergelassene Einrichtung - Strahlentherapie"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Chirurgie",
+      "display": "Niedergelassene Einrichtung - Chirurgie"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Ausländische Einrichtung",
+      "display": "Niedergelassene Einrichtung - Ausländische Einrichtung"
+    },
+    {
+      "code": "Niedergelassene Einrichtung - Andere",
+      "display": "Niedergelassene Einrichtung - Andere"
+    }
+  ]
+}
