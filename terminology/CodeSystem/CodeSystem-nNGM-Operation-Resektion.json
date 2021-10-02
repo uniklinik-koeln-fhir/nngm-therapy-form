@@ -1,22 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/OperationArtResektion",
-  "version": "1.0",
-  "title": "nNGM: CodeSystem Operation Art der Resektion",
-  "name": "nNGM_CodeSystem_Operation_ArtDerResektion",
-  "status": "draft",
-  "experimental": true,
-  "date": "2020-03-03",
-  "publisher": "Universitätsklinikum Köln",
-  "description": "OP-Kategorien",
-  "compositional": false,
-  "caseSensitive": true,
+  "id": "CodeSystem-nNGM-Operation-Resektion",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationArtResektion",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Operation - Art der Resektion",
+  "name": "CodeSystem_nNGM_Operation_ArtDerResektion",
+  "status": "active",
   "content": "complete",
   "count": 4,
   "concept": [

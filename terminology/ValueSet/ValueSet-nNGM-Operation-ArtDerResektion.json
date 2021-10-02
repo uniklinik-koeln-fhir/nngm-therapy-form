@@ -1,17 +1,15 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Operation ArtDerResektion",
-    "name": "nNGM_ValueSet_Operation_ArtDerResektion",
-    "status": "draft",
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "ArtDerResektion",
+    "id": "ValueSet-nNGM-Operation-ArtDerResektion",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationArtDerResektion",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Operation - Art der Resektion",
+    "name": "ValueSet_nNGM_Operation_ArtDerResektion",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion"
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion"
             },
             {
                 "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -30,38 +28,38 @@
         "total": 7,
         "contains": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Resektion des Primarius",
                 "display": "Resektion des Primarius"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Resektion von Metastasen",
                 "display": "Resektion von Metastasen"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Lympfknotenresektion (anders als Lymphadenektomie)",
                 "display": "Lympfknotenresektion (anders als Lymphadenektomie)"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Resektion eines lokoregionären Rezidivs",
                 "display": "Resektion eines lokoregionären Rezidivs"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Nachresektion",
                 "display": "Nachresektion"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/OperationArtResektion",
-                "version": "1.0",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                "version": "1.0.0",
                 "code": "Revisions-OP wg. Komplikationen",
                 "display": "Revisions-OP wg. Komplikationen"
             },
