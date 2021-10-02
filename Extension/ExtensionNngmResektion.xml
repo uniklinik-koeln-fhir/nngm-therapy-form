@@ -60,7 +60,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/OperationArtDerResektion" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationArtDerResektion" />
       </binding>
     </element>
     <element id="Extension.extension:resektionsstatus">
@@ -88,7 +88,7 @@
       <min value="1" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/resektionsstatus" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/resektionsstatus" />
       </binding>
     </element>
     <element id="Extension.url">
