@@ -1,13 +1,11 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisationUNK",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Operation Lokalisation",
-    "name": "nNGM_ValueSet_Operation_Lokalisation",
-    "status": "draft",
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "nNGM Operation Lokalisation",
+    "id": "ValueSet-nNGM-Operation-Lokalisation",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Operation - Lokalisation",
+    "name": "ValueSet_nNGM_Operation_Lokalisation",
+    "status": "active",
     "compose": {
         "include": [
             {
@@ -23,7 +21,7 @@
                 ]
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "concept": [
                     {
                         "code": "C17649",
@@ -69,7 +67,7 @@
                 "display": "Unknown"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "version": "20.02d",
                 "code": "C17649",
                 "display": "Other"
