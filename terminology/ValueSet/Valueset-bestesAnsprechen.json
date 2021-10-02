@@ -3,7 +3,7 @@
     "url": "http://uk-koeln.de/fhir/ValueSet/nngm/bestesAnsprechen",
     "title": "Systematische Therapie BestesAnsprechen",
     "name": "Systematische_Therapie_BestesAnsprechen",
-    "status": "active",
+    "status": "draft",
     "compose": {
         "include": [
             {

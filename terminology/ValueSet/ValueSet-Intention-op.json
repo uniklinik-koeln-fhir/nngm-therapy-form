@@ -4,7 +4,7 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Operation Intention des Eingriffs",
     "name": "nNGM_ValueSet_Operation_IntentionDesEingriffs",
-    "status": "active",
+    "status": "draft",
     "experimental": false,
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",

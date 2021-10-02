@@ -4,7 +4,7 @@
   "version": "1.0",
   "title": "nNGM: ValueSet Operation Resektionsstatus",
   "name": "nNGM_ValueSet_Operation_Resektionsstatus",
-  "status": "active",
+  "status": "draft",
   "experimental": false,
   "date": "2020-10-31",
   "publisher": "Uniklinik Köln",

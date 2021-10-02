@@ -4,7 +4,7 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Strahlentherapie Intention-Therapie",
     "name": "nNGM_ValueSet_Strahlentherapie_Intention-Therapie",
-    "status": "active",
+    "status": "draft",
     "experimental": true,
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",

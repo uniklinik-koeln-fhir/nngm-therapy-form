@@ -4,7 +4,7 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Sonstige Therapie Intention",
     "name": "nNGM_ValueSet_SonstigeTherapie_Intention",
-    "status": "active",
+    "status": "draft",
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",
     "description": "Intention der Sonstigen Therapie incl. Other",

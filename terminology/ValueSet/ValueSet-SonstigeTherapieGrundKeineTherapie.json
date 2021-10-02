@@ -4,7 +4,7 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Sonstige Therapie Grund Keine Therapie",
     "name": "nNGM_ValueSet_SonstigeTherapie_GrundKeineTherapie",
-    "status": "active",
+    "status": "draft",
     "date": "2020-08-02",
     "publisher": "Uniklinik Köln",
     "description": "Grund Keine Therapie der Sonstigen Therapie incl. Unknown",

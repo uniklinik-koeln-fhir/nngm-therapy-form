@@ -4,74 +4,74 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Statusreason Systemische Therapie",
     "name": "nNGM_ValueSet_Statusreason_Sytemische_Therapie",
-    "status": "active",
+    "status": "draft",
     "experimental": false,
     "date": "2018-10-31",
     "publisher": "Uniklinik Köln",
     "description": "Statusreason Systemische Therapie",
-  "compose": {
-      "include": [
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie"
-          },
-          {
-              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-              "concept": [
-                  {
-                      "code": "not-applicable",
-                      "display": "Not Applicable"
-                  }
-              ]
-          }
-      ]
-  },
-  "expansion": {
-      "identifier": "d7cfc522-dc72-4414-b7b6-33099f8e9782",
-      "timestamp": "2020-10-13T10:43:15+00:00",
-      "total": 7,
-      "contains": [
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "nebenwirkungen",
-              "display": "Nebenwirkungen"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "ablehnungPatient",
-              "display": "Ablehnung durch den Patienten"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "progress",
-              "display": "Progress"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "vielversprechendereTherapieoption",
-              "display": "Vielversprechendere Therapieoption"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "verstorben",
-              "display": "Patient verstorben"
-          },
-          {
-              "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
-              "version": "1.0",
-              "code": "sonstiges",
-              "display": "Sonstiges"
-          },
-          {
-              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
-              "version": "4.0.1",
-              "code": "not-applicable",
-              "display": "Not Applicable"
-          }
-      ]
-  }
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "concept": [
+                    {
+                        "code": "not-applicable",
+                        "display": "Not Applicable"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "d7cfc522-dc72-4414-b7b6-33099f8e9782",
+        "timestamp": "2020-10-13T10:43:15+00:00",
+        "total": 7,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "nebenwirkungen",
+                "display": "Nebenwirkungen"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "ablehnungPatient",
+                "display": "Ablehnung durch den Patienten"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "progress",
+                "display": "Progress"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "vielversprechendereTherapieoption",
+                "display": "Vielversprechendere Therapieoption"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "verstorben",
+                "display": "Patient verstorben"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieStatusTherapie",
+                "version": "1.0",
+                "code": "sonstiges",
+                "display": "Sonstiges"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "version": "4.0.1",
+                "code": "not-applicable",
+                "display": "Not Applicable"
+            }
+        ]
+    }
 }

@@ -4,6 +4,7 @@
     "version": "1.0",
     "title": "nNGM: ValueSet Sonstige Therapie Lokalisation",
     "name": "nNGM_ValueSet_SonstigeTherapie_Lokalisation",
+    "status": "draft",
     "compose": {
         "include": [
             {

@@ -1,80 +1,80 @@
 {
-  "resourceType": "ValueSet",
-  "url": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund",
-  "title": "nNGM Valueset Strahlentherapie Ende Grund",
-  "status": "draft",
-  "compose": {
-    "include": [
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"
-        },
-        {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "concept": [
-                {
-                    "code": "NA",
-                    "display": "not applicable"
-                }
-            ]
-        }
-    ]
-},
-"expansion": {
-    "identifier": "48f1e143-6490-4fa3-b999-9cb4a1650f76",
-    "timestamp": "2020-11-13T13:33:59+00:00",
-    "total": 10,
-    "contains": [
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Reguläres Ende",
-            "display": "Reguläres Ende"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Abbruch wegen Nebenwirkungen",
-            "display": "Abbruch wegen Nebenwirkungen"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Pause wegen Nebenwirkungen",
-            "display": "Pause wegen Nebenwirkungen"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Abbruch wegen Progress",
-            "display": "Abbruch wegen Progress"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Ablehnung durch den Patienten",
-            "display": "Ablehnung durch den Patienten"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Vielversprechendere Therapieoption",
-            "display": "Vielversprechendere Therapieoption"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Patient verstorben",
-            "display": "Patient verstorben"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "Sonstiges",
-            "display": "Sonstiges"
-        },
-        {
-            "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-            "code": "N/A",
-            "display": "N/A"
-        },
-        {
-            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "version": "2018-08-12",
-            "code": "NA",
-            "display": "not applicable"
-        }
-    ]
-}
+    "resourceType": "ValueSet",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Ende_Grund",
+    "title": "nNGM Valueset Strahlentherapie Ende Grund",
+    "status": "draft",
+    "compose": {
+        "include": [
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                "concept": [
+                    {
+                        "code": "NA",
+                        "display": "not applicable"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "48f1e143-6490-4fa3-b999-9cb4a1650f76",
+        "timestamp": "2020-11-13T13:33:59+00:00",
+        "total": 10,
+        "contains": [
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Reguläres Ende",
+                "display": "Reguläres Ende"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Abbruch wegen Nebenwirkungen",
+                "display": "Abbruch wegen Nebenwirkungen"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Pause wegen Nebenwirkungen",
+                "display": "Pause wegen Nebenwirkungen"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Abbruch wegen Progress",
+                "display": "Abbruch wegen Progress"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Ablehnung durch den Patienten",
+                "display": "Ablehnung durch den Patienten"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Vielversprechendere Therapieoption",
+                "display": "Vielversprechendere Therapieoption"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Patient verstorben",
+                "display": "Patient verstorben"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "Sonstiges",
+                "display": "Sonstiges"
+            },
+            {
+                "system": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
+                "code": "N/A",
+                "display": "N/A"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+                "version": "2018-08-12",
+                "code": "NA",
+                "display": "not applicable"
+            }
+        ]
+    }
 }
