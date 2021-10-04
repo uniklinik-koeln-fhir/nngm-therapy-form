@@ -1,18 +1,15 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-strahlentherapie",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Strahlentherapie Intention-Therapie",
-    "name": "nNGM_ValueSet_Strahlentherapie_Intention-Therapie",
-    "status": "draft",
-    "experimental": true,
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "Intention von systemischen und Strahlentherapien",
+    "id": "ValueSet-nNGM-Strahlentherapie-Intention",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieIntention",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Strahlentherapie Intention",
+    "name": "ValueSet - Strahlentherapie - Intention",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/intention-therapie",
                 "concept": [
                     {
                         "code": "Kurativ",
@@ -62,43 +59,43 @@
         "contains": [
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Palliativ",
                 "display": "Palliativ"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Kurativ",
                 "display": "Kurativ"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Adjuvant",
                 "display": "Adjuvant"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Neoadjuvant",
                 "display": "Neoadjuvant"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Prophylaktisch",
                 "display": "Prophylaktisch"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Definitiv mit Chemotherapie",
                 "display": "Definitiv mit Chemotherapie"
             },
             {
                 "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
-                "version": "1.0",
+                "version": "1.0.0",
                 "code": "Sonstiges",
                 "display": "Sonstiges"
             },
