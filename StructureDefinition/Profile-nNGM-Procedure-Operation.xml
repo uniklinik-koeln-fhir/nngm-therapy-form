@@ -22,6 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:lymphadenektomie">
       <path value="Procedure.extension" />
