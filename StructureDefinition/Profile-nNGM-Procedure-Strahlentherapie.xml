@@ -155,9 +155,10 @@
     <element id="Procedure.performer.actor.display">
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/ExecutingOrganizationTyp" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/DurchfuehrendeEinrichtung" />
       </binding>
     </element>
     <element id="Procedure.reasonCode">
@@ -168,10 +169,6 @@
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-strahlentherapie" />
       </binding>
     </element>
-    <element id="Procedure.reasonCode.coding">
-      <path value="Procedure.reasonCode.coding" />
-      <min value="1" />
-    </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
@@ -179,10 +176,6 @@
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/Bestrahlungsziel" />
       </binding>
-    </element>
-    <element id="Procedure.bodySite.coding">
-      <path value="Procedure.bodySite.coding" />
-      <min value="1" />
     </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />
