@@ -99,6 +99,7 @@
         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
         <code value="C15329" />
       </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding.extension">
       <path value="Procedure.code.coding.extension" />
