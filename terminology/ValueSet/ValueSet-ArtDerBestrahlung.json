@@ -1,13 +1,11 @@
 {
   "resourceType": "ValueSet",
+  "id": "ValueSet-nNGM-Strahlentherapie-ArtDerBestrahlung",
   "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/StrahlentherapieArtDerBestrahlung",
-  "version": "1.0",
-  "title": "nNGM: ValueSet Strahlentherapie Art Der Bestrahlung",
-  "name": "nNGM_ValueSet_Strahlentherapie_ArtDerBestrahlung",
-  "status": "draft",
-  "date": "2018-10-31",
-  "publisher": "Uniklinik Köln",
-  "description": "Bestrahlungsziel",
+  "version": "1.0.0",
+  "title": "ValueSet - nNGM - Strahlentherapie - Art Der Bestrahlung",
+  "name": "ValueSet_nNGM_Strahlentherapie_ArtDerBestrahlung",
+  "status": "active",
   "compose": {
       "include": [
           {

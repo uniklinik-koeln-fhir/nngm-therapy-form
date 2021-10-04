@@ -22,6 +22,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:dosis">
       <path value="Procedure.extension" />
@@ -42,6 +43,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.extension:dosis.extension:einzeldosis">
       <path value="Procedure.extension.extension" />
@@ -70,50 +72,16 @@
     </element>
     <element id="Procedure.status">
       <path value="Procedure.status" />
+      <fixedCode value="completed" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.statusReason">
       <path value="Procedure.statusReason" />
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.statusReason.coding">
-      <path value="Procedure.statusReason.coding" />
-      <min value="1" />
-      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
       </binding>
-    </element>
-    <element id="Procedure.statusReason.coding.system">
-      <path value="Procedure.statusReason.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.statusReason.coding.code">
-      <path value="Procedure.statusReason.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.category">
-      <path value="Procedure.category" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.category.coding">
-      <path value="Procedure.category.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Procedure.category.coding.system">
-      <path value="Procedure.category.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/cancer-base/procedure-category" />
-    </element>
-    <element id="Procedure.category.coding.code">
-      <path value="Procedure.category.coding.code" />
-      <min value="1" />
-      <fixedCode value="radiotherapy" />
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
@@ -129,13 +97,14 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code.extension:artDerBestrahlung">
       <path value="Procedure.code.extension" />
       <sliceName value="artDerBestrahlung" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/art-der-bestrahlung" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/StrahlentherapieArtDerBestrahlung" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -149,15 +118,7 @@
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM/patient" />
-      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.subject.reference">
-      <path value="Procedure.subject.reference" />
-      <min value="1" />
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
