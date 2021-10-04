@@ -143,6 +143,7 @@
     <element id="Procedure.performer.actor.display">
       <path value="Procedure.performer.actor.display" />
       <min value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/DurchfuehrendeEinrichtung" />
