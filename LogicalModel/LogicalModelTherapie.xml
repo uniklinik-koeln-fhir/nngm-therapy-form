@@ -260,14 +260,6 @@
         <code value="string" />
       </type>
     </element>
-    <element id="Therapie.Strahlentherapie.Dosis.Boost.BoostDosis">
-      <path value="Therapie.Strahlentherapie.Dosis.Boost.BoostDosis" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
     <element id="Therapie.Strahlentherapie.EndeDerBestrahlung">
       <path value="Therapie.Strahlentherapie.EndeDerBestrahlung" />
       <min value="0" />
