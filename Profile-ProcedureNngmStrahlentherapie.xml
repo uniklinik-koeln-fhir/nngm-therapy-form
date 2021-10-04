@@ -4,7 +4,7 @@
   <version value="0.2" />
   <name value="ProcedureNngmStrahlentherapie" />
   <title value="nNGM Strahlentherapie" />
-  <status value="active" />
+  <status value="draft" />
   <experimental value="false" />
   <date value="2019-10-18" />
   <publisher value="Universitätsklinikum Köln" />
