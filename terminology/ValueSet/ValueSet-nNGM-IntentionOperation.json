@@ -9,7 +9,7 @@
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "concept": [
                     {
                         "code": "Kurativ",
@@ -50,31 +50,31 @@
         "total": 6,
         "contains": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "version": "1.0",
                 "code": "Palliativ",
                 "display": "Palliativ"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "version": "1.0",
                 "code": "Kurativ",
                 "display": "Kurativ"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "version": "1.0",
                 "code": "Revision/Komplikation",
                 "display": "Revision/Komplikation"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "version": "1.0",
                 "code": "Diagnostisch",
                 "display": "Diagnostisch"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-therapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
                 "version": "1.0",
                 "code": "Sonstiges",
                 "display": "Sonstiges"
