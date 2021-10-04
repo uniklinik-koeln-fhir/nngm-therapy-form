@@ -108,13 +108,26 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.code.coding.system">
-      <path value="Procedure.code.coding.system" />
-      <fixedUri value="http://ncit.nci.nih.gov" />
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <min value="1" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
     </element>
-    <element id="Procedure.code.coding.code">
+    <element id="Procedure.code.coding:ncit">
       <path value="Procedure.code.coding.code" />
-      <fixedCode value="C15313" />
+      <sliceName value="ncit" />
+      <patternCoding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+        <code value="C15313" />
+      </patternCoding>
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
