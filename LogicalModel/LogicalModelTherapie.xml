@@ -469,8 +469,8 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption">
-      <path value="Therapie.SystemischeTherapie.Erhalungstherapie.ErhaltungstherapieAlsOption" />
+    <element id="Therapie.SystemischeTherapie.Erhaltungstherapie.ErhaltungstherapieAlsOption">
+      <path value="Therapie.SystemischeTherapie.Erhaltungstherapie.ErhaltungstherapieAlsOption" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -478,8 +478,8 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie">
-      <path value="Therapie.SystemischeTherapie.Erhalungstherapie.MedikationErhalungstherapie" />
+    <element id="Therapie.SystemischeTherapie.Erhaltungstherapie.MedikationErhalungstherapie">
+      <path value="Therapie.SystemischeTherapie.Erhaltungstherapie.MedikationErhalungstherapie" />
       <min value="0" />
       <max value="*" />
       <type>
