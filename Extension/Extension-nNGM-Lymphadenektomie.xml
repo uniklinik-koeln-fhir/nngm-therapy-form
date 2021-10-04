@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-nNGM-Lymphadenektomie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/lymphadenektomie" />
+  <version value="1.0.0" />
   <name value="Extension_nNGM_Lymphadenektomie" />
   <title value="Extension - nNGM - Lymphadenektomie" />
   <status value="active" />
