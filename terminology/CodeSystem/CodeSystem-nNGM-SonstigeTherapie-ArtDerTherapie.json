@@ -1,0 +1,26 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "CodeSystem-nNGM-SonstigeTherapie-ArtDerTherapie",
+	"url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieArtDerTherapie",
+	"version": "1.0.0",
+	"title": "CodeSystem - nNGM - Sonstige Therapie - Art Der Therapie",
+	"name": "CodeSystem_nNGM_SonstigeTherapie_ArtDerTherapie",
+	"status": "active",
+	"content": "complete",
+	"count": 3,
+	"concept": [
+	  {
+		"code": "lokales Verfahren",
+		"display": "Lokales Verfahren"
+	  },
+	  {
+		"code": "anderes Verfahren",
+		"display": "anderes Verfahren"
+	  },
+	  {
+		"code": "keine Therapie / Best Supportive Care",
+		"display": "keine Therapie / Best Supportive Care"
+	  }
+	]
+  }

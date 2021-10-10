@@ -1,17 +1,15 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Sonstige Therapie Art der Therapie",
-    "name": "nNGM_ValueSet_SonstigeTherapie_ArtDerTherapie",
-    "status": "draft",
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "ArtDerTherapie",
+    "id": "ValueSet-nNGM-SonstigeTherapie-ArtDerTherapie",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieArtDerTherapie",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Sonstige Therapie - Art der Therapie",
+    "name": "ValueSet_nNGM_SonstigeTherapie_ArtDerTherapie",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie"
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie"
             }
         ]
     },
@@ -21,19 +19,19 @@
         "total": 3,
         "contains": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie",
                 "version": "1.0",
                 "code": "lokales Verfahren",
                 "display": "Lokales Verfahren"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie",
                 "version": "1.0",
                 "code": "anderes Verfahren",
                 "display": "anderes Verfahren"
             },
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieArtDerTherapie",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie",
                 "version": "1.0",
                 "code": "keine Therapie / Best Supportive Care",
                 "display": "keine Therapie / Best Supportive Care"

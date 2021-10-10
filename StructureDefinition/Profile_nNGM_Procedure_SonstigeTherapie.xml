@@ -41,7 +41,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieArtDerTherapie" />
       </binding>
     </element>
     <element id="Procedure.code">
@@ -95,10 +95,6 @@
         <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.subject.reference">
-      <path value="Procedure.subject.reference" />
-      <min value="1" />
     </element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]" />
@@ -168,39 +164,13 @@
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
       </binding>
     </element>
-    <element id="Procedure.reasonCode.coding.system">
-      <path value="Procedure.reasonCode.coding.system" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.reasonCode.coding.code">
-      <path value="Procedure.reasonCode.coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Procedure.bodySite.coding">
-      <path value="Procedure.bodySite.coding" />
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
       </binding>
-    </element>
-    <element id="Procedure.bodySite.coding.system">
-      <path value="Procedure.bodySite.coding.system" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.bodySite.coding.code">
-      <path value="Procedure.bodySite.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Procedure.bodySite.text">
-      <path value="Procedure.bodySite.text" />
-      <mustSupport value="true" />
     </element>
     <element id="Procedure.note">
       <path value="Procedure.note" />
