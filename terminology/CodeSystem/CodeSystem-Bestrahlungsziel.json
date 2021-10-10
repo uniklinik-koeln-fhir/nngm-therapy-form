@@ -1,22 +1,13 @@
 {
   "resourceType": "CodeSystem",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/Strahlentherapie_Bestrahlungsziel",
-  "version": "1.0",
+  "id": "CodeSystem-nNGM-Strahlentherapie-Bestrahlungsziel",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/StrahlentherapieBestrahlungsziel",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/StrahlentherapieBestrahlungsziel",
+  "version": "1.0.0",
   "experimental": false,
-  "title": "nNGM: CodeSystem Strahlentherapie Bestrahlungsziel",
-  "name": "nNGM_CodeSystem_Strahlentherapie_Bestrahlungsziel",
-  "status": "draft",
-  "date": "2019-02-08",
-  "publisher": "Universitätsklinikum Köln",
-  "description": "Strahlentherapie Bestrahlungsziel",
-  "compositional": false, 
-  "caseSensitive": true,
+  "title": "CodeSystem - nNGM - Strahlentherapie - Bestrahlungsziel",
+  "name": "CodeSystem_nNGM_Strahlentherapie_Bestrahlungsziel",
+  "status": "active",
   "content": "complete",
   "count": 7,
   "concept": [
