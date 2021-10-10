@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
-  <name value="Maintenance" />
-  <status value="draft" />
+  <id value="Extension-nNGM-SonstigeTherapie-Erhaltungstherapie" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie" />
+  <name value="Extension_nNGM_SonstigeTherapie_Erhaltungstherapie" />
+  <title value="Extension_nNGM_SonstigeTherapie_Erhaltungstherapie" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -25,7 +27,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

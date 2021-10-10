@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Profile-nNGM-Procedure-SonstigeTherapie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie" />
-  <version value="0.2" />
-  <name value="ProcedureNngmSonstigeTherapie" />
-  <title value="nNGM Sonstige Therapie" />
-  <status value="draft" />
-  <date value="2019-10-18" />
-  <publisher value="Universitätsklinikum Köln" />
+  <version value="1.0.0" />
+  <name value="Profile_nNGM_Procedure_SonstigeTherapie" />
+  <title value="Profile - nNGM - Procedure - SonstigeTherapie" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -29,7 +28,7 @@
       <sliceName value="maintenance" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/maintenance" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -44,10 +43,6 @@
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/SonstigeTherapieArtDerTherapie" />
       </binding>
-    </element>
-    <element id="Procedure.category.coding">
-      <path value="Procedure.category.coding" />
-      <min value="1" />
     </element>
     <element id="Procedure.code">
       <path value="Procedure.code" />
