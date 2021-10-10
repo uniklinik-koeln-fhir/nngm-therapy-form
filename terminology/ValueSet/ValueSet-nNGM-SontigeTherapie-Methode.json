@@ -1,20 +1,18 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieMethodeUNK",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Sonstige Therapie Methode",
-    "name": "nNGM_ValueSet_SonstigeTherapie_Methode",
-    "status": "draft",
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "nNGM Operation Lokalisation",
+    "id": "ValueSet-nNGM-SontigeTherapie-Methode",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieMethode",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Sonstige Therapie - Methode",
+    "name": "ValueSet_nNGM_SonstigeTherapie_Methode",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieMethode"
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieMethode"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "concept": [
                     {
                         "code": "C17649",
@@ -48,7 +46,7 @@
                 "display": "Transarterielle Chemoembolisation"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "version": "20.02d",
                 "code": "C17649",
                 "display": "Other"
