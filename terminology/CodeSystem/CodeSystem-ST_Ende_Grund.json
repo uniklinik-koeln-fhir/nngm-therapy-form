@@ -1,10 +1,10 @@
 {
     "resourceType": "CodeSystem",
-    "url": "https://www.uk-koeln.de/nngm/CodeSystem/ST_Ende_Grund",
-    "name": "STEndeGrund",
-    "status": "draft",
-    "hierarchyMeaning": "classified-with",
-    "compositional": false,
+    "id": "CodeSystem-nNGM-GrundEndeTherapie",
+    "url": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundEndeTherapie",
+    "name": "CodeSystem-nNGM-GrundEndeTherapie",
+    "title": "CodeSystem - nNGM - Grund Ende Therapie",
+    "status": "active",
     "content": "complete",
     "count": 8,
     "concept":  [
