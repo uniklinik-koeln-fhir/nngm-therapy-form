@@ -90,10 +90,7 @@
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://uk-koeln.de/fhir/StructureDefinition/Patient/nNGM" />
-      </type>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
