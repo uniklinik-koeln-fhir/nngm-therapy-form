@@ -23,9 +23,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Procedure.extension:maintenance">
+    <element id="Procedure.extension:erhaltungstherapie">
       <path value="Procedure.extension" />
-      <sliceName value="maintenance" />
+      <sliceName value="erhaltungstherapie" />
       <type>
         <code value="Extension" />
         <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie" />
