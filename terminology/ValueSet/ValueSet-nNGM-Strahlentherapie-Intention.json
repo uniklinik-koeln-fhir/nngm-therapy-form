@@ -4,7 +4,7 @@
     "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieIntention",
     "version": "1.0.0",
     "title": "ValueSet - nNGM - Strahlentherapie Intention",
-    "name": "ValueSet - Strahlentherapie - Intention",
+    "name": "ValueSet_Strahlentherapie_Intention",
     "status": "active",
     "compose": {
         "include": [
