@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "ValueSet-nNGM-OperationIntention",
+    "id": "ValueSet-nNGM-Operation-Intention",
     "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationIntention",
     "version": "1.0.0",
     "title": "ValueSet - nNGM - Operation - Intention",
