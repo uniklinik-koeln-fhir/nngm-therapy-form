@@ -80,7 +80,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/cancer-base/therapie-statusreason" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieGrundEnde" />
       </binding>
     </element>
     <element id="Procedure.code">
@@ -166,7 +166,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-strahlentherapie" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieIntention" />
       </binding>
     </element>
     <element id="Procedure.bodySite">
@@ -174,7 +174,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/ngnm/Bestrahlungsziel" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/StrahlentherapieBestrahlungsziel" />
       </binding>
     </element>
     <element id="Procedure.note">
