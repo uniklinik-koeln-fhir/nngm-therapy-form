@@ -10,45 +10,37 @@
     "concept":  [
         {
             "code": "Reguläres Ende",
-            "display": "Reguläres Ende",
-            "definition": "Reguläres Ende"
+            "display": "Reguläres Ende"
         },
         {
             "code": "Abbruch wegen Nebenwirkungen",
-            "display": "Abbruch wegen Nebenwirkungen",
-            "definition": "Abbruch wegen Nebenwirkungen"
+            "display": "Abbruch wegen Nebenwirkungen"
         },
         {
             "code": "Pause wegen Nebenwirkungen",
-            "display": "Pause wegen Nebenwirkungen",
-            "definition": "Pause wegen Nebenwirkungen"
+            "display": "Pause wegen Nebenwirkungen"
         },
         {
             "code": "Abbruch wegen Progress",
-            "display": "Abbruch wegen Progress",
-            "definition": "Abbruch wegen Progress"
+            "display": "Abbruch wegen Progress"
         },
         {
             "code": "Ablehnung durch den Patienten",
-            "display": "Ablehnung durch den Patienten",
-            "definition": "Ablehnung durch den Patienten"
+            "display": "Ablehnung durch den Patienten"
         },
         
         {
             "code": "Vielversprechendere Therapieoption",
-            "display": "Vielversprechendere Therapieoption",
-            "definition": "Vielversprechendere Therapieoption"
+            "display": "Vielversprechendere Therapieoption"
         },
         
         {
             "code": "Patient verstorben",
-            "display": "Patient verstorben",
-            "definition": "Patient verstorben"
+            "display": "Patient verstorben"
         },
         {
             "code": "Sonstiges",
-            "display": "Sonstiges",
-            "definition": "Sonstiges"
+            "display": "Sonstiges"
         }
     ]
 }
