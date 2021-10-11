@@ -1,7 +1,7 @@
 {
     "resourceType": "ValueSet",
     "id": "ValueSet-nNGM-SonstigeTherapie-Intention",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieIntention",
     "version": "1.0",
     "title": "ValueSet - nNGM - Sonstige Therapie - Intention",
     "name": "ValueSet_nNGM_SonstigeTherapie_Intention",

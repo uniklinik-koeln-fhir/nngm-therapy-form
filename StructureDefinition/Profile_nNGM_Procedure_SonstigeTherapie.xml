@@ -92,7 +92,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieIntention" />
       </binding>
     </element>
     <element id="Procedure.reasonCode.extension">
