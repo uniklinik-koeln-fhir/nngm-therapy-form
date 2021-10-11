@@ -4,7 +4,7 @@
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationLymphadenektomie" />
   <version value="1.0.0" />
   <name value="Extension_nNGM_Lymphadenektomie" />
-  <title value="Extension - nNGM - Lymphadenektomie" />
+  <title value="Extension - nNGM - Operation - Lymphadenektomie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
