@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "name": "Profile_nNGM_MedicationAdministration_SystemischeTherapie",
   "title": "Profile - nNGM - MedicationAdministration - Systemische Therapie",
-  "status": "draft",
+  "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
