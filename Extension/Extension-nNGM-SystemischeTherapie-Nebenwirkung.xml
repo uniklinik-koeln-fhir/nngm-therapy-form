@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-nNGM-SystemischeTherapie-Nebenwirkung" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/Nebenwirkung" />
-  <version value="0.2" />
-  <name value="ExtensionNngmNebenwirkung" />
-  <status value="draft" />
-  <date value="2019-10-18" />
-  <publisher value="Universitätsklinikum Köln" />
-  <description value="Sind Nebenwirkungen Grad III / Grad aufgetreten" />
+  <version value="1.0.0" />
+  <name value="Extension_nNGM_SystemischeTherapie_Nebenwirkung" />
+  <title value="Extension - nNGM - Systemische Therapie - Nebenwirkung" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
