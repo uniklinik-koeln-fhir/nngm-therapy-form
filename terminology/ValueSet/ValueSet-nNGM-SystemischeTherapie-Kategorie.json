@@ -1,26 +1,23 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/medicationAdministrationCategory",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Category Values für Systemische Therapie",
-    "name": "nNGM_ValueSet_Category_der_sytemischen_Therapie",
-    "status": "draft",
-    "experimental": false,
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "Katgorien der Systemischen Therapie",
+    "id": "ValueSet-nNGM-SystemischeTherapie-Kategorie",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieKategorie",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Systemische Therapie - Kategorie",
+    "name": "ValueSet_nNGM_SystemischeTherapie_Kategorie",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "concept": [
                     {
                         "code": "C25446",
-                        "display": "Änderung"
+                        "display": "Change"
                     },
                     {
                         "code": "C85582",
-                        "display": "aktuelle Therapie"
+                        "display": "Current Therapy"
                     }
                 ]
             },
@@ -49,12 +46,12 @@
             {
                 "system": "http://ncit.nci.nih.gov",
                 "code": "C25446",
-                "display": "Änderung"
+                "display": "Change"
             },
             {
                 "system": "http://ncit.nci.nih.gov",
                 "code": "C85582",
-                "display": "aktuelle Therapie"
+                "display": "Current Therapy"
             }
         ]
     }
