@@ -25,7 +25,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "mustSupport": "true"
       },
       {
         "id": "MedicationAdministration.extension:studientherapie",
