@@ -3,7 +3,7 @@
   <id value="Extension-nNGM-SystemischeTherapie-Erhaltungstherapie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/SystemischeTherapieErhaltungstherapie" />
   <name value="Extension_nNGM_SystemischeTherapie_Erhaltungstherapie" />
-  <title value="Extension-nNGM-SystemischeTherapie-Erhaltungstherapie" />
+  <title value="Extension - nNGM - Systemische Therapie - Erhaltungstherapie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>

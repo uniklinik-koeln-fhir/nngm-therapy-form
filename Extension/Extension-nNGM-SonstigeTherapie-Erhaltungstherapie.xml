@@ -3,7 +3,7 @@
   <id value="Extension-nNGM-SonstigeTherapie-Erhaltungstherapie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie" />
   <name value="Extension_nNGM_SonstigeTherapie_Erhaltungstherapie" />
-  <title value="Extension_nNGM_SonstigeTherapie_Erhaltungstherapie" />
+  <title value="Extension - nNGM - Sonstige Therapie - Erhaltungstherapie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>

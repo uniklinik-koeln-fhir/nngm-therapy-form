@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-nNGM-SonstigeTherapie-GrundKeineTherapie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieGrundKeineTherapie" />
-  <name value="Extension_nNGM_SonstigeTherapie_GrundKeineTherapie" />
+  <name value="Extension - nNGM - Sonstige Therapie - GrundKeineTherapie" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>

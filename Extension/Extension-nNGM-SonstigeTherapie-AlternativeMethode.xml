@@ -3,6 +3,7 @@
   <id value="Extension-nNGM-SonstigeTherapie-AlternativeMethode" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieAlternativeMethode" />
   <name value="Extension_nNGM_SonstigeTherapie_AlternativeMethode" />
+  <title value="Extension - nNGM - Sonstige Therapie - Alternative Methode" />
   <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
