@@ -1,13 +1,11 @@
 {
     "resourceType": "ValueSet",
-    "url": "http://uk-koeln.de/fhir/ValueSet/ngnm/systemischeErhaltungsmedikament",
-    "version": "1.0",
-    "title": "nNGM: ValueSet Systemische Therapie Erhaltungstherapie Medikament",
-    "name": "nNGM_ValueSet_Sytemische_Therapie_Erhaltungstherapie_Medikament",
-    "status": "draft",
-    "experimental": false,
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
+    "id": "ValueSet-nNGM-SystemischeTherapie-Erhaltungstherapie-Medikament",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieErhaltungstherapieMedikament",
+    "version": "1.0.0",
+    "title": "ValueSet - Systemische Therapie - Erhaltungstherapie - Medikament",
+    "name": "ValueSet_nNGM_SytemischeTherapie_Erhaltungstherapie_Medikament",
+    "status": "active",
     "compose": {
         "include": [
             {

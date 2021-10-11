@@ -1,46 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/NeuesTherapieschema" />
-  <name value="NeuesTherapieschema" />
-  <title value="Neues Therapieschema" />
-  <status value="draft" />
+  <id value="Extension-nNGM-SystemischeTherapie-NeuesTherapieschema" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieNeuesTherapieschema" />
+  <name value="Extension_nNGM_SystemischeTherapie_NeuesTherapieschema" />
+  <title value="Extension - nNGM - Systemische Therapie - Neues Therapieschema" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
   <context>
     <type value="element" />
-    <expression value="MedicationAdministration.medication[x]" />
+    <expression value="MedicationAdministration" />
   </context>
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
   <differential>
-    <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/NeuesTherapieschema" />
+    <element id="Extension">
+      <path value="Extension" />
+      <max value="1" />
     </element>
-    <element id="Extension.value[x]">
-      <path value="Extension.value[x]" />
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:nameNeuesSchema">
+      <path value="Extension.extension" />
+      <sliceName value="nameNeuesSchema" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:nameNeuesSchema.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="nameNeuesSchema" />
+    </element>
+    <element id="Extension.extension:nameNeuesSchema.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Extension.extension:datumDerAenderung">
+      <path value="Extension.extension" />
+      <sliceName value="datumDerAenderung" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:datumDerAenderung.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="datumDerAenderung" />
+    </element>
+    <element id="Extension.extension:datumDerAenderung.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+    </element>
+    <element id="Extension.extension:grundAenderung">
+      <path value="Extension.extension" />
+      <sliceName value="grundAenderung" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:grundAenderung.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="grundAenderung" />
+    </element>
+    <element id="Extension.extension:grundAenderung.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.value[x].coding">
-      <path value="Extension.value[x].coding" />
+    <element id="Extension.extension:grundAenderung.value[x]:valueCodeableConcept">
+      <path value="Extension.extension.value[x]" />
       <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieErhaltungstherapieMedikament" />
+      </binding>
     </element>
-    <element id="Extension.value[x].coding.system">
-      <path value="Extension.value[x].coding.system" />
-      <min value="1" />
-      <fixedUri value="http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation" />
-      <mustSupport value="true" />
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieNeuesTherapieschema" />
     </element>
-    <element id="Extension.value[x].coding.code">
-      <path value="Extension.value[x].coding.code" />
-      <min value="1" />
-      <mustSupport value="true" />
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
