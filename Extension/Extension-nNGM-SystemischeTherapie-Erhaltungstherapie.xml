@@ -71,6 +71,9 @@
       <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation" />
