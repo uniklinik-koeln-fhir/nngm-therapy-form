@@ -43,31 +43,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.extension:studientherapie.extension",
-        "path": "MedicationAdministration.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "MedicationAdministration.extension:studientherapie.extension:teilnahme",
-        "path": "MedicationAdministration.extension.extension",
-        "sliceName": "teilnahme",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.extension:studientherapie.extension:studie",
-        "path": "MedicationAdministration.extension.extension",
-        "sliceName": "studie",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationAdministration.extension:offLabelTherapie",
         "path": "MedicationAdministration.extension",
         "sliceName": "offLabelTherapie",
