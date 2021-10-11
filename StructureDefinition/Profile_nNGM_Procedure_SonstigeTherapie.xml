@@ -90,6 +90,10 @@
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
+      </binding>
     </element>
     <element id="Procedure.reasonCode.extension">
       <path value="Procedure.reasonCode.extension" />
@@ -104,9 +108,10 @@
     <element id="Procedure.reasonCode.extension:beschreibungAlternativeMethode">
       <path value="Procedure.reasonCode.extension" />
       <sliceName value="beschreibungAlternativeMethode" />
+      <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieAlternativeMethode" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -116,17 +121,9 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/grund-keine-therapie" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieGrundKeineTherapie" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Procedure.reasonCode.coding">
-      <path value="Procedure.reasonCode.coding" />
-      <mustSupport value="true" />
-      <binding>
-        <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther" />
-      </binding>
     </element>
     <element id="Procedure.bodySite">
       <path value="Procedure.bodySite" />

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
-  <name value="BeschreibungAlternativerMethode" />
-  <status value="draft" />
+  <id value="Extension-nNGM-SonstigeTherapie-AlternativeMethode" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieAlternativeMethode" />
+  <name value="Extension_nNGM_SonstigeTherapie_AlternativeMethode" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
@@ -21,7 +22,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/beschreiung-alternativer-methode" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieAlternativeMethode" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
