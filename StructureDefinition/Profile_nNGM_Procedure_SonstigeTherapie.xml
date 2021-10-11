@@ -130,7 +130,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisationUNK" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisation" />
       </binding>
     </element>
     <element id="Procedure.note">
