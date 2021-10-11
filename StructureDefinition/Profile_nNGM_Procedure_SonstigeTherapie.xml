@@ -129,7 +129,7 @@
       <path value="Procedure.bodySite" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieLokalisation" />
       </binding>
     </element>
