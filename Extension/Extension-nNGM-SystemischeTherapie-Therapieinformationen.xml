@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Extension-nNGM-SystemischeTherapie-Therapieinformationen" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieTherapieinformationen" />
+  <version value="1.0.0" />
+  <name value="Extension_nNGM_SystemischeTherapie_Therapieinformationen" />
+  <status value="active" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="MedicationAdministration.supportingInformation" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:therapieInformationen">
+      <path value="Extension.extension" />
+      <sliceName value="therapieInformationen" />
+    </element>
+    <element id="Extension.extension:therapieInformationen.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="therapieInformationen" />
+    </element>
+    <element id="Extension.extension:therapieInformationen.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.extension:hilfreich">
+      <path value="Extension.extension" />
+      <sliceName value="hilfreich" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:hilfreich.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="hilfreich" />
+    </element>
+    <element id="Extension.extension:hilfreich.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:umgesetzt">
+      <path value="Extension.extension" />
+      <sliceName value="umgesetzt" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:umgesetzt.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="umgesetzt" />
+    </element>
+    <element id="Extension.extension:umgesetzt.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="boolean" />
+      </type>
+    </element>
+    <element id="Extension.extension:GrundNichtumsetzung">
+      <path value="Extension.extension" />
+      <sliceName value="GrundNichtumsetzung" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:GrundNichtumsetzung.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="GrundNichtumsetzung" />
+    </element>
+    <element id="Extension.extension:nichtumsetzungGrund.value[x]">
+      <path value="Extension.extension.value[x]" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung" />
+      </binding>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
+    </element>
+    <element id="Extension.value[x]">
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
