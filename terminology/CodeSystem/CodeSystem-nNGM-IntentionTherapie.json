@@ -49,6 +49,10 @@
     {
       "code": "Diagnostisch",
       "display": "Diagnostisch"
+    },
+    {
+      "code": "Alternative Methoden",
+      "display": "Alternative Methoden"
     }
   ]
 }

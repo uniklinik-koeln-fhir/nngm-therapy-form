@@ -1,17 +1,21 @@
 {
     "resourceType": "ValueSet",
+    "id": "ValueSet-nNGM-SonstigeTherapie-Intention",
     "url": "http://uk-koeln.de/fhir/ValueSet/nngm/intention-sonstige-therapieOther",
     "version": "1.0",
-    "title": "nNGM: ValueSet Sonstige Therapie Intention",
-    "name": "nNGM_ValueSet_SonstigeTherapie_Intention",
-    "status": "draft",
-    "date": "2018-10-31",
-    "publisher": "Uniklinik Köln",
-    "description": "Intention der Sonstigen Therapie incl. Other",
+    "title": "ValueSet - nNGM - Sonstige Therapie - Intention",
+    "name": "ValueSet_nNGM_SonstigeTherapie_Intention",
+    "status": "active",
     "compose": {
         "include": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-sonstige-therapie"
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+                "concept": [
+                    {
+                        "code": "Alternative Methoden",
+                        "display": "Alternative Methoden"
+                    }
+                ]
             },
             {
                 "system": "http://ncit.nci.nih.gov",
@@ -30,9 +34,9 @@
         "total": 2,
         "contains": [
             {
-                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/intention-sonstige-therapie",
-                "version": "1.0",
-                "code": "alternative-methoden",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+                "version": "1.0.0",
+                "code": "Alternative Methoden",
                 "display": "Alternative Methoden"
             },
             {
