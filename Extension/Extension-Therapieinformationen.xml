@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen" />
-  <version value="0.2" />
-  <name value="ExtensionNngmTherapieinformationen" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2019-10-18" />
-  <publisher value="Universitätsklinikum Köln" />
+  <id value="Extension-nNGM-SystemischeTherapie-Therapieinformationen" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieTherapieinformationen" />
+  <version value="1.0.0" />
+  <name value="Extension_nNGM_SystemischeTherapie_Therapieinformationen" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -73,14 +71,14 @@
         <code value="boolean" />
       </type>
     </element>
-    <element id="Extension.extension:nichtumsetzungGrund">
+    <element id="Extension.extension:GrundNichtumsetzung">
       <path value="Extension.extension" />
-      <sliceName value="nichtumsetzungGrund" />
+      <sliceName value="GrundNichtumsetzung" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:nichtumsetzungGrund.url">
+    <element id="Extension.extension:GrundNichtumsetzung.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="nichtumsetzungGrund" />
+      <fixedUri value="GrundNichtumsetzung" />
     </element>
     <element id="Extension.extension:nichtumsetzungGrund.value[x]">
       <path value="Extension.extension.value[x]" />
@@ -92,10 +90,6 @@
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung" />
       </binding>
-    </element>
-    <element id="Extension.extension:nichtumsetzungGrund.value[x].coding">
-      <path value="Extension.extension.value[x].coding" />
-      <min value="1" />
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />

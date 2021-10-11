@@ -372,7 +372,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/therapieinformationen"
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieTherapieinformationen"
             ]
           }
         ],
