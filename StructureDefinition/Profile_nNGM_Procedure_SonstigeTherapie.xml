@@ -58,7 +58,6 @@
     </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.performed[x]">
