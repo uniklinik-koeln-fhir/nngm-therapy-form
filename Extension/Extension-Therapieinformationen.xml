@@ -38,7 +38,7 @@
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
-        <code value="CodeableConcept" />
+        <code value="Reference" />
       </type>
     </element>
     <element id="Extension.extension:hilfreich">
