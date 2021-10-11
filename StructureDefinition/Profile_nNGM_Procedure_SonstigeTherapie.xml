@@ -31,40 +31,27 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Procedure.code.extension">
-      <path value="Procedure.code.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Procedure.code.extension:methode">
-      <path value="Procedure.code.extension" />
-      <sliceName value="methode" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/methode-sonstige-therapie" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="Procedure.code.coding.system">
-      <path value="Procedure.code.coding.system" />
+    <element id="Procedure.code.coding:ncit">
+      <path value="Procedure.code.coding" />
+      <sliceName value="ncit" />
       <min value="1" />
-      <fixedUri value="http://ncit.nci.nih.gov" />
-    </element>
-    <element id="Procedure.code.coding.code">
-      <path value="Procedure.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="C15645" />
+      <patternCoding>
+        <system value="http://ncit.nci.nih.gov" />
+        <code value="C15645" />
+      </patternCoding>
     </element>
     <element id="Procedure.code.text">
       <path value="Procedure.code.text" />
