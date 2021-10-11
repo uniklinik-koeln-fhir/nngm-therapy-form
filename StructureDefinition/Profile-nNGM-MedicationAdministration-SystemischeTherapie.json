@@ -64,7 +64,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie"
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/SystemischeTherapieErhaltungstherapie"
             ]
           }
         ],
