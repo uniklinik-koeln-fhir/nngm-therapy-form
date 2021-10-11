@@ -576,15 +576,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund">
-      <path value="Therapie.SonstigeTherapie.Therapiemerkmale.TherapieendeGrund" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="string" />
-      </type>
-      <mustSupport value="true" />
-    </element>
     <element id="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung">
       <path value="Therapie.SonstigeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung" />
       <min value="0" />
