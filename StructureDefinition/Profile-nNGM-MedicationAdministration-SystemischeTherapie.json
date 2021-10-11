@@ -82,19 +82,17 @@
             ]
           }
         ],
-        "max": "1",
         "mustSupport": true
       },
       {
         "id": "MedicationAdministration.extension:aenderungDesSchemas",
         "path": "MedicationAdministration.extension",
         "sliceName": "aenderungDesSchemas",
-        "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/DatumAenderung"
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieNeuesTherapieschema"
             ]
           }
         ],

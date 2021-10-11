@@ -30,16 +30,16 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="Extension.extension:nameNeuesSchema">
+    <element id="Extension.extension:beschreibungNeuesSchema">
       <path value="Extension.extension" />
-      <sliceName value="nameNeuesSchema" />
+      <sliceName value="beschreibungNeuesSchema" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:nameNeuesSchema.url">
+    <element id="Extension.extension:beschreibungNeuesSchema.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="nameNeuesSchema" />
+      <fixedUri value="beschreibungNeuesSchema" />
     </element>
-    <element id="Extension.extension:nameNeuesSchema.value[x]">
+    <element id="Extension.extension:beschreibungNeuesSchema.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
