@@ -354,14 +354,6 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Therapie.SystemischeTherapie.Therapiemerkmale.ArtDesTherapieendes">
-      <path value="Therapie.SystemischeTherapie.Therapiemerkmale.ArtDesTherapieendes" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="string" />
-      </type>
-    </element>
     <element id="Therapie.SystemischeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung">
       <path value="Therapie.SystemischeTherapie.Therapiemerkmale.DurchfuehrendeEinrichtung" />
       <min value="0" />
