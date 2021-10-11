@@ -29,14 +29,14 @@
         "mustSupport": "true"
       },
       {
-        "id": "MedicationAdministration.extension:studientherapie",
+        "id": "MedicationAdministration.extension:studienteilnahme",
         "path": "MedicationAdministration.extension",
-        "sliceName": "studientherapie",
+        "sliceName": "studienteilnahme",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie"
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieStudienteilnahme"
             ]
           }
         ],

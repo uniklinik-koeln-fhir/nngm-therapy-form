@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
-  <version value="0.2" />
-  <name value="ExtensionCcrStudientherapie" />
-  <title value="Studientherapie" />
-  <status value="draft" />
-  <date value="2019-10-18" />
-  <publisher value="Universitätsklinikum Köln" />
+  <id value="Extension-nNGM-SystemischeTherapie-Studienteilnahme" />
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieStudienteilnahme" />
+  <version value="1.0.0" />
+  <name value="Extension_nNGM_SystemischeTherapie_Studienteilnahme" />
+  <title value="Extension - nNGM - SystemischeTherapie - Studienteilnahme" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <kind value="complex-type" />
   <abstract value="false" />
@@ -59,6 +58,7 @@
     <element id="Extension.extension:studie">
       <path value="Extension.extension" />
       <sliceName value="studie" />
+      <max value="1" />
     </element>
     <element id="Extension.extension:studie.url">
       <path value="Extension.extension.url" />
