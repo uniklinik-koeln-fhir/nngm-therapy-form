@@ -64,7 +64,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie"
+              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SonstigeTherapieErhaltungstherapie"
             ]
           }
         ],
@@ -108,33 +108,6 @@
         "path": "MedicationAdministration.statusReason",
         "max": "1",
         "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.statusReason.extension",
-        "path": "MedicationAdministration.statusReason.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "MedicationAdministration.statusReason.extension:grundAenderungdesTherapieschemas",
-        "path": "MedicationAdministration.statusReason.extension",
-        "sliceName": "grundAenderungdesTherapieschemas",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/grundAenderung"
-            ]
-          }
-        ]
       },
       {
         "id": "MedicationAdministration.statusReason.coding",
@@ -201,34 +174,6 @@
           "strength": "required",
           "valueSet": "http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation"
         }
-      },
-      {
-        "id": "MedicationAdministration.medication[x].extension",
-        "path": "MedicationAdministration.medication[x].extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "MedicationAdministration.medication[x].extension:neuesTherapieschema",
-        "path": "MedicationAdministration.medication[x].extension",
-        "sliceName": "neuesTherapieschema",
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/NeuesTherapieschema"
-            ]
-          }
-        ],
-        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.medication[x].extension:neuesTherapieschema.value[x]",
