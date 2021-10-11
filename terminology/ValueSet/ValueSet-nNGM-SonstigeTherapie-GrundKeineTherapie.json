@@ -1,0 +1,50 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-nNGM-SonstigeTherapie-GrundKeineTherapie",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nngm/SonstigeTherapieGrundKeineTherapie",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Sonstige Therapie - GrundKeineTherapie",
+    "name": "ValueSet_nNGM_SonstigeTherapie_GrundKeineTherapie",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieGrundKeineTherapie"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "concept": [
+                    {
+                        "code": "unknown",
+                        "display": "unknown"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "8f21d8e4-8720-4eac-b353-dd4caef85729",
+        "timestamp": "2020-10-13T10:42:57+00:00",
+        "total": 3,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieGrundKeineTherapie",
+                "version": "1.0",
+                "code": "Patientenwunsch",
+                "display": "Patientenwunsch"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieGrundKeineTherapie",
+                "version": "1.0",
+                "code": "ECOG",
+                "display": "ECOG"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                "version": "4.0.1",
+                "code": "unknown",
+                "display": "Unknown"
+            }
+        ]
+    }
+}
