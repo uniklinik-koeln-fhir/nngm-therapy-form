@@ -29,7 +29,7 @@
       <sliceName value="lymphadenektomie" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/lymphadenektomie" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationLymphadenektomie" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -68,7 +68,7 @@
       <sliceName value="resektion" />
       <type>
         <code value="Extension" />
-        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/resektion" />
+        <profile value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationResektion" />
       </type>
       <mustSupport value="true" />
     </element>
