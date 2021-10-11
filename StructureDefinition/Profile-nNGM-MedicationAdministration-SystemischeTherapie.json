@@ -57,9 +57,9 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.extension:Erhaltungstherapie",
+        "id": "MedicationAdministration.extension:erhaltungstherapie",
         "path": "MedicationAdministration.extension",
-        "sliceName": "Erhaltungstherapie",
+        "sliceName": "erhaltungstherapie",
         "type": [
           {
             "code": "Extension",
@@ -68,31 +68,6 @@
             ]
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension",
-        "path": "MedicationAdministration.extension.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "rules": "open"
-        }
-      },
-      {
-        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension:option",
-        "path": "MedicationAdministration.extension.extension",
-        "sliceName": "option",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationAdministration.extension:Erhaltungstherapie.extension:medikament",
-        "path": "MedicationAdministration.extension.extension",
-        "sliceName": "medikament",
         "mustSupport": true
       },
       {
