@@ -34,7 +34,6 @@
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
       <slicing>
         <discriminator>
