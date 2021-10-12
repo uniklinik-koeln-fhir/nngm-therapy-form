@@ -113,7 +113,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieBeurteilungNach" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieBeurteilungNach" />
       </binding>
     </element>
   </differential>

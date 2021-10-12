@@ -1,0 +1,35 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-nNGM-SystemischeTherapie-BeurteilungNach",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieBeurteilungNach",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Systemische Therapie - Beurteilung Nach",
+    "name": "ValueSet_nNGM_SystemischeTherapie_BeurteilungNach",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieBeurteilungNach"
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "5189b0f7-6b87-4ce8-9b25-b07ef3edc7f1",
+        "timestamp": "2020-10-15T13:29:26+00:00",
+        "total": 2,
+        "contains": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieBeurteilungNach",
+                "version": "1.0",
+                "code": "RECIST",
+                "display": "RECIST"
+            },
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieBeurteilungNach",
+                "version": "1.0",
+                "code": "Behandelnder Arzt",
+                "display": "Behandelnder Arzt"
+            }
+        ]
+    }
+}
