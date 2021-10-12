@@ -4,7 +4,7 @@
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/BestResponse" />
   <name value="Profile_nNGM_Observation_BestResponse" />
   <title value="Profile - nNGM - Observation - BestResponse" />
-  <status value="draft" />
+  <status value="active" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="sct-concept" />
