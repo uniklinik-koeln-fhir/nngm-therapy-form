@@ -40,6 +40,7 @@
     <element id="Observation.partOf">
       <path value="Observation.partOf" />
       <min value="1" />
+      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Observation.status">
@@ -47,25 +48,29 @@
       <fixedCode value="final" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
-    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding.system">
-      <path value="Observation.code.coding.system" />
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
       <min value="1" />
-      <fixedUri value="http://ncit.nci.nih.gov" />
+      <mustSupport value="true" />
     </element>
-    <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code" />
+    <element id="Observation.code.coding:ncit">
+      <path value="Observation.code.coding" />
+      <sliceName value="ncit" />
       <min value="1" />
-      <fixedCode value="C94536" />
+      <patternCoding>
+        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+        <code value="C94536" />
+      </patternCoding>
     </element>
     <element id="Observation.subject">
       <path value="Observation.subject" />
@@ -88,8 +93,14 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.value[x].coding">
-      <path value="Observation.value[x].coding" />
+    <element id="Observation.value[x]:valueCodeableConcept">
+      <path value="Observation.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <min value="1" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/bestesAnsprechen" />
