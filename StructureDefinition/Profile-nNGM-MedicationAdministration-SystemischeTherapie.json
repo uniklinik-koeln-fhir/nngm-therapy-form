@@ -131,10 +131,21 @@
             "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:valueCodeableConcept",
+        "path": "MedicationAdministration.medication[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation"
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieMedikament"
         }
       },
       {

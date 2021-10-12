@@ -1,10 +1,10 @@
 {
     "resourceType": "ValueSet",
-    "id": "ValueSet-nNGM-SystemischeTherapie-Erhaltungstherapie-Medikament",
-    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieErhaltungstherapieMedikament",
+    "id": "ValueSet-nNGM-SystemischeTherapie-Medikament",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieMedikament",
     "version": "1.0.0",
-    "title": "ValueSet - Systemische Therapie - Erhaltungstherapie - Medikament",
-    "name": "ValueSet_nNGM_SytemischeTherapie_Erhaltungstherapie_Medikament",
+    "title": "ValueSet - Systemische Therapie - Medikament",
+    "name": "ValueSet_nNGM_SytemischeTherapie_Medikament",
     "status": "active",
     "compose": {
         "include": [
