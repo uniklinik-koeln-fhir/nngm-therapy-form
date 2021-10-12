@@ -134,9 +134,9 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationAdministration.medication[x]:valueCodeableConcept",
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept",
         "path": "MedicationAdministration.medication[x]",
-        "sliceName": "valueCodeableConcept",
+        "sliceName": "medicationCodeableConcept",
         "type": [
           {
             "code": "CodeableConcept"
