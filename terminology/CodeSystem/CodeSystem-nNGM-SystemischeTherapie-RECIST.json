@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-nNGM-SystemischeTherapie-RECIST",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieRECIST",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieRECIST",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Systemsiche Therapie - RECIST",
+  "name": "CodeSystem_nNGM_SystemischeTherapie_RECIST",
+  "status": "active",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "CR",
+      "display": "Complete Remission"
+    },
+    {
+      "code": "PR",
+      "display": "Partial Remission"
+    },
+    {
+      "code": "PD",
+      "display": "Progressive Disease"
+    },
+    {
+      "code": "SD",
+      "display": "Stable Disease"
+    }
+  ]
+}

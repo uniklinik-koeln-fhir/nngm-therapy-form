@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CodeSystem-nNGM-OperationLokalisation",
+  "id": "CodeSystem-nNGM-Operation-Lokalisation",
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
   "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation",
   "version": "1.0.0",

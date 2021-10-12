@@ -1,22 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SystemischeTherapieGrundNichtumsetzung",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/SystemischeTherapieGrundNichtumsetzung",
-  "version": "1.0",
-  "title": "nNGM CodeSystem Systemische Therapie Grund Nichtumsetzung",
-  "name": "nNGM_CodeSystem_ SystemischeTherapie_GrundNichtumsetzung",
-  "status": "draft",
-  "experimental": false,
-  "date": "2019-02-08",
-  "publisher": "Universitätsklinikum Köln",
-  "description": "Systemische Therapie Grund Nichtumsetzung",
-  "caseSensitive": true,
-  "compositional": false,
+  "id": "CodeSystem-nNGM-SystemischeTherapie-GrundNichtumsetzung",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieGrundNichtumsetzung",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieGrundNichtumsetzung",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Systemische Therapie - Grund Nichtumsetzung",
+  "name": "CodeSystem_nNGM_SystemischeTherapie_GrundNichtumsetzung",
+  "status": "active",
   "content": "complete",
   "count": 8,
   "concept": [

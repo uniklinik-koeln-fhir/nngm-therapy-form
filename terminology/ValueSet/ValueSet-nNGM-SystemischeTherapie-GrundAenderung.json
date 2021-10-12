@@ -9,7 +9,7 @@
     "compose": {
         "include": [
             {
-                "system": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundAenderung"
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieGrundAenderung"
             }
         ]
     },
@@ -19,12 +19,12 @@
         "total": 3,
         "contains": [
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieGrundAenderung",
                 "code": "Nebenwirkungen/Unverträglichkeit",
                 "display": "Nebenwirkungen/Unverträglichkeit"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieGrundAenderung",
                 "code": "Ablehnung des Patienten",
                 "display": "Ablehnung des Patienten"
             }

@@ -1,0 +1,23 @@
+{
+    "resourceType": "CodeSystem",
+    "id": "CodeSystem-nNGM-SystemischeTherapie-GrundAenderung",
+    "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieGrundAenderung",
+    "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieGrundAenderung",
+    "version": "1.0.0",
+    "title": "CodeSystem - nNGM - Systemische Therapie - GrundAenderung",
+    "name": "CodeSystem_nNGM_SystemischeTherapie_GrundAenderung",
+    "status": "active",
+    "content": "complete",
+    "count": 2,
+    "concept": [
+      {
+        "code": "Nebenwirkungen/Unverträglichkeit",
+        "display": "Nebenwirkungen/Unverträglichkeit"
+      },
+      {
+        "code": "Ablehnung des Patienten",
+        "display": "Ablehnung des Patienten"
+      }
+    ]
+  }
+  
