@@ -1,0 +1,33 @@
+{
+    "resourceType": "ValueSet",
+    "id": "ValueSet-nNGM-SystemischeTherapie-GrundAenderung",
+    "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieGrundAenderung",
+    "version": "1.0.0",
+    "title": "ValueSet - nNGM - Systemische Therapie - Grund Änderung",
+    "name": "ValueSet_nNGM_SystemischeTherapie_GrundAenderung",
+    "status": "active",
+    "compose": {
+        "include": [
+            {
+                "system": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundAenderung"
+            }
+        ]
+    },
+    "expansion": {
+        "identifier": "50a7dc69-cfcb-4a52-b513-fb119e70a85e",
+        "timestamp": "2020-11-12T10:42:13+00:00",
+        "total": 3,
+        "contains": [
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "code": "Nebenwirkungen/Unverträglichkeit",
+                "display": "Nebenwirkungen/Unverträglichkeit"
+            },
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "code": "Ablehnung des Patienten",
+                "display": "Ablehnung des Patienten"
+            }
+        ]
+    }
+}

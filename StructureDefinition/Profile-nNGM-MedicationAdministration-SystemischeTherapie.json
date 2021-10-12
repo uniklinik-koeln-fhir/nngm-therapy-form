@@ -174,7 +174,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.supportingInformation.extension:therapieInformationen",
@@ -252,24 +253,28 @@
           {
             "code": "Quantity"
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.dosage.rate[x].value",
         "path": "MedicationAdministration.dosage.rate[x].value",
-        "min": 1
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.dosage.rate[x].system",
         "path": "MedicationAdministration.dosage.rate[x].system",
         "min": 1,
-        "fixedUri": "http://unitsofmeasure.org"
+        "fixedUri": "http://unitsofmeasure.org",
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.dosage.rate[x].code",
         "path": "MedicationAdministration.dosage.rate[x].code",
         "min": 1,
-        "fixedCode": "1"
+        "fixedCode": "1",
+        "mustSupport": true
       }
     ]
   }
