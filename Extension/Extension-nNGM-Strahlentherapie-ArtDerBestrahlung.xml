@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-nNGM-Strahlentherapie-ArtDerBestrahlung" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/StrahlentherapieArtDerBestrahlung" />
+  <version value="1.0.0" />
   <name value="Extension_nNGM_Strahlentherapie_ArtDerBestrahlung" />
   <title value="Extension - nNGM - Strahlentherapie - Art der Bestrahlung" />
   <status value="active" />

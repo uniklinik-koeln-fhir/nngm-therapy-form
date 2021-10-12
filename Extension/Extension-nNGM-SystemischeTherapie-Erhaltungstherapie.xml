@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Extension-nNGM-SystemischeTherapie-Erhaltungstherapie" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Extension/SystemischeTherapieErhaltungstherapie" />
+  <version value="1.0.0" />
   <name value="Extension_nNGM_SystemischeTherapie_Erhaltungstherapie" />
   <title value="Extension - nNGM - Systemische Therapie - Erhaltungstherapie" />
   <status value="active" />
