@@ -4,7 +4,7 @@
     "url": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieMedikament",
     "version": "1.0.0",
     "title": "ValueSet - Systemische Therapie - Medikament",
-    "name": "ValueSet_nNGM_SytemischeTherapie_Medikament",
+    "name": "ValueSet_nNGM_SystemischeTherapie_Medikament",
     "status": "active",
     "compose": {
         "include": [
