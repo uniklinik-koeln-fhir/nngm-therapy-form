@@ -62,23 +62,23 @@
         <code value="dateTime" />
       </type>
     </element>
-    <element id="Extension.extension:grundAenderung">
+    <element id="Extension.extension:grundNichtumsetzung">
       <path value="Extension.extension" />
-      <sliceName value="grundAenderung" />
+      <sliceName value="grundNichtumsetzung" />
       <max value="1" />
     </element>
-    <element id="Extension.extension:grundAenderung.url">
+    <element id="Extension.extension:grundNichtumsetzung.url">
       <path value="Extension.extension.url" />
-      <fixedUri value="grundAenderung" />
+      <fixedUri value="grundNichtumsetzung" />
     </element>
-    <element id="Extension.extension:grundAenderung.value[x]">
+    <element id="Extension.extension:grundNichtumsetzung.value[x]">
       <path value="Extension.extension.value[x]" />
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
-    <element id="Extension.extension:grundAenderung.value[x]:valueCodeableConcept">
+    <element id="Extension.extension:grundNichtumsetzung.value[x]:valueCodeableConcept">
       <path value="Extension.extension.value[x]" />
       <sliceName value="valueCodeableConcept" />
       <min value="1" />
@@ -87,7 +87,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieErhaltungstherapieMedikament" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieGrundNichtumsetzung" />
       </binding>
     </element>
     <element id="Extension.url">
