@@ -104,7 +104,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nngm/bestesAnsprechen" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieBestesAnsprechen" />
       </binding>
     </element>
     <element id="Observation.method">
