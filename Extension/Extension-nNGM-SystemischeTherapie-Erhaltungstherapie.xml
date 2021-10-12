@@ -76,7 +76,7 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieMedikation" />
+        <valueSet value="http://uk-koeln.de/fhir/ValueSet/SystemischeTherapieErhaltungstherapieMedikation" />
       </binding>
     </element>
     <element id="Extension.url">
