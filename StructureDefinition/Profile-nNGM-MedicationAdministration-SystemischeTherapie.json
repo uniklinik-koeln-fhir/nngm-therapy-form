@@ -232,7 +232,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://uk-koeln.de/fhir/ValueSet/ngnm/intention-systemisch"
+          "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieIntention"
         }
       },
       {
