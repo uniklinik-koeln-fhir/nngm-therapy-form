@@ -2,6 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="Profile-nNGM-Observation-BestResponse" />
   <url value="http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/BestResponse" />
+  <version value="1.0.0" />
   <name value="Profile_nNGM_Observation_BestResponse" />
   <title value="Profile - nNGM - Observation - BestResponse" />
   <status value="active" />
