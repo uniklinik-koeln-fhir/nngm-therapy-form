@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "id": "CodeSystem-nNGM-SystemischeTherapie-BestesAnsprechen-DivergentesGeschehen",
+  "id": "CodeSystem-nNGM-SystemischeTherapie-BestesAnsprechen-DivGeschn",
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieDivergentesGeschehen",
   "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieDivergentesGeschehen",
   "version": "1.0.0",
