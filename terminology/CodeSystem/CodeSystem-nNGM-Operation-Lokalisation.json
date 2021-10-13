@@ -4,7 +4,6 @@
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
   "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/OperationLokalisation",
   "version": "1.0.0",
-  "experimental": false,
   "title": "CodeSystem - nNGM - Operation - Lokalisation",
   "name": "CodeSystem_nNGM_Operation_Lokalisation",
   "status": "active",

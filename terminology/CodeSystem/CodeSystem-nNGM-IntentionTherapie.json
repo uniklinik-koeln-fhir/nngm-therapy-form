@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "id": "CodeSystem-nNGM-IntentionTherapie",
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
-  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nngm/IntentionTherapie",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/IntentionTherapie",
   "version": "1.0.0",
   "title": "CodeSystem - nNGM - Intention Therapie",
   "name": "CodeSystem_nNGM_IntentionTherapie",

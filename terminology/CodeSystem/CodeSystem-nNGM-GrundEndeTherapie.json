@@ -2,6 +2,8 @@
     "resourceType": "CodeSystem",
     "id": "CodeSystem-nNGM-GrundEndeTherapie",
     "url": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundEndeTherapie",
+    "valueSet": "http://www.uk-koeln.de/nNGM/ValueSet/GrundEndeTherapie",
+    "version": "1.0.0",
     "name": "CodeSystem-nNGM-GrundEndeTherapie",
     "title": "CodeSystem - nNGM - Grund Ende Therapie",
     "status": "active",

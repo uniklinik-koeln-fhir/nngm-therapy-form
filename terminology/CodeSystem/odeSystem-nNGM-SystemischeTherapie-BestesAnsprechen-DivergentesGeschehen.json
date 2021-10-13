@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-nNGM-SystemischeTherapie-BestesAnsprechen-DivergentesGeschehen",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieDivergentesGeschehen",
+  "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieDivergentesGeschehen",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Systemische Therapie - Bestes Ansprechen - Divergentes Geschehen",
+  "name": "CodeSystem_nNGM_SystemischeTherapie_BestesAnsprechen_DivergentesGeschehen",
+  "status": "active",
+  "content": "complete",
+  "count": 1,
+  "concept": [
+    {
+      "code": "Divergentes Geschehen (nach RECIST nicht möglich)",
+      "display": "Divergentes Geschehen (nach RECIST nicht möglich)"
+    }
+  ]
+}
