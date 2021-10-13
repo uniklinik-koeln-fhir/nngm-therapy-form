@@ -1,0 +1,26 @@
+{
+	"resourceType": "CodeSystem",
+	"id": "CodeSystem-nNGM-SonstigeTherapie-Methode",
+	"url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieMethode",
+	"valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SonstigeTherapieMethode",
+	"version": "1.0.0",
+	"title": "CodeSystem - nNGM - Sonstige Therapie - Methode",
+	"name": "CodeSystem_nNGM_SonstigeTherapie_Methode",
+	"status": "active",
+	"content": "complete",
+	"count": 3,
+	"concept": [
+	  {
+		"code": "Selektive interne Radiotherapie",
+		"display": "Selektive interne Radiotherapie"
+	  },
+	  {
+		"code": "Radiofrequenzablation",
+		"display": "Radiofrequenzablation"
+	  },
+	  {
+		"code": "Transarterielle Chemoembolisation",
+		"display": "Transarterielle Chemoembolisation"
+	  }
+	]
+  }

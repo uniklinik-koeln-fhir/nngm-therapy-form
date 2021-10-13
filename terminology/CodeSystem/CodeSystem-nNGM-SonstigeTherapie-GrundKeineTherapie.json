@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "CodeSystem-nNGM-SonstigeTherapie-GrundKeineTherapie",
+  "url": "http://uk-koeln.de/fhir/CodeSystem/nngm/SonstigeTherapieGrundKeineTherapie",
+  "version": "1.0.0",
+  "title": "CodeSystem - nNGM - Sonstige Therapie - Grund Keine Therapie",
+  "name": "CodeSystem_nNGM_SonstigeTherapie_GrundKeineTherapie",
+  "status": "active",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "Patientenwunsch",
+      "display": "Patientenwunsch"
+    },
+    {
+      "code": "ECOG",
+      "display": "ECOG"
+    }
+  ]
+}

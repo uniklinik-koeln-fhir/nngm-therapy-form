@@ -1,22 +1,12 @@
 {
   "resourceType": "CodeSystem",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
+  "id": "CodeSystem-nNGM-SystemischeTherapie-Medikation",
   "url": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation",
   "valueSet": "http://uk-koeln.de/fhir/ValueSet/nNGM/SystemischeTherapieMedikation",
-  "version": "1.0",
-  "name": "nNGM_CodeSystem_SystemischeTherapie_Medikation",
-  "title": "nNGM: CodeSystem Systemsische Therapie Medikation",
-  "status": "draft",
-  "experimental": true,
-  "date": "2019-02-08",
-  "publisher": "Universitätsklinikum Köln",
-  "description": "Systemische Therapie Status Therapie",
-  "caseSensitive": true,
-  "compositional": false,
+  "version": "1.0.0",
+  "name": "CodeSystem_nNGM_SystemischeTherapie_Medikation",
+  "title": "CodeSystem - nNGM - Systemische Therapie - Medikation",
+  "status": "active",
   "content": "complete",
   "count": 88,
   "concept": [
