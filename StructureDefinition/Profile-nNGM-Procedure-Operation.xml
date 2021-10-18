@@ -102,6 +102,27 @@
       </patternCoding>
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.code.coding.extension">
+      <path value="Procedure.code.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.code.coding.extension:seitenlokalisation">
+      <path value="Procedure.code.coding.extension" />
+      <sliceName value="seitenlokalisation" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://fhir.de/StructureDefinition/seitenlokalisation" />
+      </type>
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.subject">
       <path value="Procedure.subject" />
       <mustSupport value="true" />
