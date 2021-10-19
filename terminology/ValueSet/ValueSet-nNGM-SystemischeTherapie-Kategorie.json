@@ -44,12 +44,12 @@
                 "display": "Not Applicable"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "code": "C25446",
                 "display": "Change"
             },
             {
-                "system": "http://ncit.nci.nih.gov",
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
                 "code": "C85582",
                 "display": "Current Therapy"
             }
