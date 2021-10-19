@@ -1,0 +1,109 @@
+{
+    "resourceType": "Procedure",
+    "id": "ExampleProcedureStrahlentherapie",
+    "meta": {
+        "profile": [
+            "http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/Strahlentherapie"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/strahlentherapie-dosis",
+            "extension": [
+                {
+                    "url": "einzeldosis",
+                    "valueQuantity": {
+                        "value": 2.2,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "Gy"
+                    }
+                },
+                {
+                    "url": "gesamtdosis",
+                    "valueQuantity": {
+                        "value": 49.3,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "Gy"
+                    }
+                },
+                {
+                    "url": "boost",
+                    "valueBoolean": true
+                },
+                {
+                    "url": "boostdosis",
+                    "valueQuantity": {
+                        "value": 81.5,
+                        "system": "http://unitsofmeasure.org",
+                        "code": "Gy"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": "completed",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundEndeTherapie",
+                "code": "Reguläres Ende"
+            }
+        ]
+    },
+    "code": {
+        "extension": [
+            {
+                "url": "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/StrahlentherapieArtDerBestrahlung",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieArtDerBestrahlung",
+                            "code": "konventionelle Bestrahlung"
+                        }
+                    ]
+                }
+            }
+        ],
+        "coding": [
+            {
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "code": "C15313",
+                "display": "Radiation Therapy"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ExamplePatientPatient"
+    },
+    "performedPeriod": {
+        "start": "2021-01-01",
+        "end": "2021-03-01"
+    },
+    "performer": [
+        {
+            "actor": {
+                "display": "nNGM-Zentrum"
+            }
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+                    "code": "Kurativ"
+                }
+            ]
+        }
+    ],
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
+                    "code": "Primärtumorregion"
+                }
+            ]
+        }
+    ]
+}
