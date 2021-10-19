@@ -83,7 +83,6 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <min value="1" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -91,10 +90,11 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:ncit">
-      <path value="Procedure.code.coding.code" />
+      <path value="Procedure.code.coding" />
       <sliceName value="ncit" />
       <patternCoding>
         <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
@@ -116,11 +116,11 @@
     <element id="Procedure.code.coding.extension:seitenlokalisation">
       <path value="Procedure.code.coding.extension" />
       <sliceName value="seitenlokalisation" />
+      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://fhir.de/StructureDefinition/seitenlokalisation" />
       </type>
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Procedure.subject">
@@ -153,8 +153,8 @@
     </element>
     <element id="Procedure.reasonCode">
       <path value="Procedure.reasonCode" />
-      <mustSupport value="true" />
       <max value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://uk-koeln.de/fhir/ValueSet/nNGM/OperationIntention" />
