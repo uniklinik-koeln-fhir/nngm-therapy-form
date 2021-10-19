@@ -1,0 +1,106 @@
+{
+    "resourceType": "Procedure",
+    "id": "ExampleProcedureOperation",
+    "meta": {
+        "profile": [
+            "http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/OP"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
+            "valueReference": {
+                "reference": "EpisodeOfCare/ExampleEpisodeOfCareVersorgungsfall"
+            }
+        }
+    ],
+    "status": "completed",
+    "code": {
+        "extension": [
+            {
+                "url": "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationArtDesEingriffs",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtDesEingriffs",
+                            "code": "Bilobektomie"
+                        }
+                    ]
+                }
+            },
+            {
+                "url": "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationResektion",
+                "extension": [
+                    {
+                        "url": "resektionsart",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationArtResektion",
+                                    "code": "Resektion des Primarius"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "url": "resektionsstatus",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA26542-3"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "coding": [
+            {
+                "extension": [
+                    {
+                        "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                        "valueCoding": {
+                            "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                            "code": "L",
+                            "display": "links"
+                        }
+                    }
+                ],
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "code": "C15329",
+                "display": "Surgical Procedure"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ExamplePatientPatient"
+    },
+    "performedDateTime": "2021-01-01",
+    "performer": [
+        {
+            "actor": {
+                "display": "Niedergelassene Einrichtung - Chirurgie"
+            }
+        }
+    ],
+    "reasonCode": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+                "code": "Kurativ"
+            }
+        ]
+    },
+    "bodySite": [
+        {
+            "coding": [
+                {
+                    "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+                    "code": "Lunge"
+                }
+            ]
+        }
+    ]
+}
