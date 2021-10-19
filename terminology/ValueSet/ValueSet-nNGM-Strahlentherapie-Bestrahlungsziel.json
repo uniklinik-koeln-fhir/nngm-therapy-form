@@ -58,43 +58,43 @@
     "total": 8,
     "contains": [
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Brustwand rechts",
             "display": "Brustwand rechts"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Brustwand links",
             "display": "Brustwand links"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Primärtumorregion",
             "display": "Primärtumorregion"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Regionäre Lymphabflusswege",
             "display": "Regionäre Lymphabflusswege"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Knochen",
             "display": "Knochen"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Mediastinum",
             "display": "Mediastinum"
         },
         {
-            "system": "http://uk-koeln.de/fhir/CodeSystem/nngm/Strahlentherapie_Bestrahlungsziel",
+            "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/StrahlentherapieBestrahlungsziel",
             "version": "1.0.0",
             "code": "Gehirn",
             "display": "Gehirn"
