@@ -1,0 +1,49 @@
+{
+    "resourceType": "Procedure",
+    "id": "ExampleProcedureSonstigeTherapie",
+    "meta": {
+        "profile": [
+            "http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/SonstigeTherapie"
+        ]
+    },
+    "status": "completed",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SonstigeTherapieArtDerTherapie",
+                "code": "lokales Verfahren"
+            }
+        ]
+    },
+    "code": {
+        "coding": [
+            {
+                "system": "http://ncit.nci.nih.gov",
+                "code": "C15645",
+                "display": "Other Therapy"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ExamplePatientPatient"
+    },
+    "performedPeriod": {
+        "start": "2021-01-01",
+        "end": "2021-03-01"
+    },
+    "performer": [
+        {
+            "actor": {
+                "display": "nNGM-Zentrum"
+            }
+        }
+    ],
+    "bodySite": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/OperationLokalisation",
+                "code": "Lunge"
+            }
+        ]
+    }
+}
