@@ -1,0 +1,43 @@
+{
+    "resourceType": "Observation",
+    "id": "ExampleObservationBestResponse",
+    "meta": {
+        "profile": [
+            "http://uk-koeln.de/fhir/StructureDefinition/Observation/nNGM/BestResponse"
+        ]
+    },
+    "partOf": {
+        "reference": "MedicationAdministration/ExampleMedicationAdministration"
+    },
+    "status": "final",
+    "code": {
+        "coding": [
+            {
+                "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                "code": "C94536",
+                "display": "Best Overall Response"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ExamplePatientPatient"
+    },
+    "effectiveDateTime": "2021-01-01",
+    "valueCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieRECIST",
+                "code": "CR",
+                "display": "Complete Remission"
+            }
+        ]
+    },
+    "method": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieBeurteilungNach",
+                "code": "RECIST"
+            }
+        ]
+    }
+}
