@@ -82,7 +82,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/erhaltungstherapie" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/SystemischeTherapieErhaltungstherapie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

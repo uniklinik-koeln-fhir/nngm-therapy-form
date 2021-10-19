@@ -74,7 +74,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/cancer-base/studientherapie" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieStudienteilnahme" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />

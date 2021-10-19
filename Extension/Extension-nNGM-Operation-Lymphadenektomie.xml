@@ -28,7 +28,7 @@
     </element>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/lymphadenektomie" />
+      <fixedUri value="http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/OperationLymphadenektomie" />
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
