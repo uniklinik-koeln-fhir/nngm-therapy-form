@@ -1,0 +1,88 @@
+{
+    "resourceType": "MedicationAdministration",
+    "id": "ExampleMedicationAdministration",
+    "meta": {
+        "profile": [
+            "http://uk-koeln.de/fhir/StructureDefinition/Procedure/nNGM/MedicationAdministration"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://uk-koeln.de/fhir/StructureDefinition/Extension/nNGM/SystemischeTherapieStudienteilnahme",
+            "extension": [
+                {
+                    "url": "teilnahme",
+                    "valueBoolean": "true"
+                },
+                {
+                    "url": "studie",
+                    "valueReference": {
+                        "reference": "ResearchStudy/ExampleResearchStudyStudie"
+                    }
+                }
+            ]
+        }
+    ],
+    "status": "completed",
+    "statusReason": {
+        "coding": [
+            {
+                "system": "http://www.uk-koeln.de/nNGM/CodeSystem/GrundEndeTherapie",
+                "code": "Reguläres Ende"
+            }
+        ]
+    },
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+                    "code": "C85582",
+                    "display": "Current Therapy"
+                }
+            ]
+        }
+    ],
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/SystemischeTherapieMedikation",
+                "code": "Nintedanib"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/ExamplePatientPatient"
+    },
+    "context": {
+        "reference": "EpisodeOfCare/ExampleEpisodeOfCareVersorgungsfall"
+    },
+    "effectivePeriod": {
+        "start": "2021-01-01",
+        "end": "2021-03-01"
+    },
+    "performer": [
+        {
+            "actor": {
+                "display": "nNGM-Zentrum"
+            }
+        }
+    ],
+    "reasonCode": [
+        {
+            "coding": [
+                {
+                    "system": "http://uk-koeln.de/fhir/CodeSystem/nNGM/IntentionTherapie",
+                    "code": "Kurativ"
+                }
+            ]
+        }
+    ],
+    "dosage": {
+        "rateQuantity": {
+            "value": 2,
+            "system": "http://unitsofmeasure.org",
+            "code": "1"
+        }
+    }
+}
