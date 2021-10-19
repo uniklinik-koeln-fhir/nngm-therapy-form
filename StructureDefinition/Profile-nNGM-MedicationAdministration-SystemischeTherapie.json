@@ -142,6 +142,7 @@
             "code": "CodeableConcept"
           }
         ],
+        "min": 1,
         "mustSupport": true,
         "binding": {
           "strength": "required",
