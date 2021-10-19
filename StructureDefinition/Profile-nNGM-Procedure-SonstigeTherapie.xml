@@ -33,8 +33,6 @@
     </element>
     <element id="Procedure.code.coding">
       <path value="Procedure.code.coding" />
-      <min value="1" />
-      <mustSupport value="true" />
       <slicing>
         <discriminator>
           <type value="pattern" />
@@ -42,6 +40,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Procedure.code.coding:ncit">
       <path value="Procedure.code.coding" />
