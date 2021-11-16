@@ -70,6 +70,16 @@
       <sliceName value="boostdosisInGesamtdosis" />
       <mustSupport value="true" />
     </element>
+    <element id="Procedure.extension:episodeOfCare">
+      <path value="Procedure.extension" />
+      <sliceName value="episodeOfCare" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare" />
+      </type>
+      <mustSupport value="true" />
+    </element>
     <element id="Procedure.status">
       <path value="Procedure.status" />
       <fixedCode value="completed" />
