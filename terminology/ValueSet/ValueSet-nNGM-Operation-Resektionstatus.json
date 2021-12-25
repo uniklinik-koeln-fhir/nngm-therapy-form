@@ -9,19 +9,23 @@
   "compose": {
     "include": [
       {
-        "system": "http://loinc.org",
+        "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "LA26542-3",
-            "display": "R0"
+            "code": "258253006",
+            "display": "Residual tumor stage RX (finding)"
           },
           {
-            "code": "LA26543-1",
-            "display": "R1"
+            "code": "258254000",
+            "display": "Residual tumor stage R0 (finding)"
           },
           {
-            "code": "LA26544-9",
-            "display": "R2"
+            "code": "278271003",
+            "display": "Residual tumor stage R1 (finding)"
+          },
+          {
+            "code": "278272005",
+            "display": "Residual tumor stage R2 (finding)"
           }
         ]
       },
@@ -48,19 +52,24 @@
         "display": "Unknown"
       },
       {
-        "system": "http://loinc.org",
-        "code": "LA26542-3",
-        "display": "R0"
+        "system": "http://snomed.info/sct",
+        "code": "258253006",
+        "display": "Residual tumor stage RX (finding)"
       },
       {
-        "system": "http://loinc.org",
-        "code": "LA26543-1",
-        "display": "R1"
+        "system": "http://snomed.info/sct",
+        "code": "258254000",
+        "display": "Residual tumor stage R0 (finding)"
       },
       {
-        "system": "http://loinc.org",
-        "code": "LA26544-9",
-        "display": "R2"
+        "system": "http://snomed.info/sct",
+        "code": "278271003",
+        "display": "Residual tumor stage R1 (finding)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "278272005",
+        "display": "Residual tumor stage R2 (finding)"
       }
     ]
   }
